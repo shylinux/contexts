@@ -1,0 +1,2 @@
+localhost http://localhost:9020
+shylinux https://shylinux.com
