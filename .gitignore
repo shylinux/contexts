@@ -1,3 +1,4 @@
+src/node_modules/
 src/binpack.go
 src/version.go
 etc/
