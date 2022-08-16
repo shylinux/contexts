@@ -14,8 +14,6 @@ import (
 	_ "shylinux.com/x/icebergs/misc/wework"
 	_ "shylinux.com/x/icebergs/misc/wx"
 
-	_ "shylinux.com/x/icebergs/misc/ssh"
-
 	_ "shylinux.com/x/golang-story/src/compile"
 	_ "shylinux.com/x/golang-story/src/grafana"
 	_ "shylinux.com/x/golang-story/src/project"
