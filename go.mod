@@ -11,21 +11,7 @@ require (
 )
 
 require (
-	shylinux.com/x/ice v1.0.8
-	shylinux.com/x/icebergs v1.3.3
-	shylinux.com/x/toolkits v0.6.7
-)
-
-replace (
-	shylinux.com/x/ice => ./usr/release
-	shylinux.com/x/icebergs => ./usr/icebergs
-	shylinux.com/x/toolkits => ./usr/toolkits
-)
-
-replace (
-	shylinux.com/x/golang-story => ./usr/golang-story
-	shylinux.com/x/linux-story => ./usr/linux-story
-	shylinux.com/x/mysql-story => ./usr/mysql-story
-	shylinux.com/x/nginx-story => ./usr/nginx-story
-	shylinux.com/x/redis-story => ./usr/redis-story
+	shylinux.com/x/ice v1.1.0
+	shylinux.com/x/icebergs v1.3.4
+	shylinux.com/x/toolkits v0.6.8
 )

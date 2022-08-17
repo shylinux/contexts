@@ -11,7 +11,7 @@ require (
 )
 
 require (
-	shylinux.com/x/ice v1.0.8
-	shylinux.com/x/icebergs v1.3.3
-	shylinux.com/x/toolkits v0.6.7
+	shylinux.com/x/ice v1.1.0
+	shylinux.com/x/icebergs v1.3.4
+	shylinux.com/x/toolkits v0.6.8
 )
