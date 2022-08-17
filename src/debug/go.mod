@@ -11,11 +11,9 @@ require (
 )
 
 require (
-	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa // indirect
-	shylinux.com/x/ice v1.0.8
-	shylinux.com/x/icebergs v1.3.3
-	shylinux.com/x/toolkits v0.6.7
-	shylinux.com/x/webview v0.0.1 // indirect
+	shylinux.com/x/ice v1.1.0
+	shylinux.com/x/icebergs v1.3.5
+	shylinux.com/x/toolkits v0.6.8
 )
 
 replace (
