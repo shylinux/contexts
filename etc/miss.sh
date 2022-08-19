@@ -23,8 +23,8 @@ ish_miss_prepare nginx-story
 ish_miss_prepare golang-story
 ish_miss_prepare redis-story
 ish_miss_prepare mysql-story
-ish_miss_prepare release
 
+ish_miss_prepare release
 ish_miss_prepare_contexts
 ish_miss_prepare_intshell
 ish_miss_prepare_icebergs
