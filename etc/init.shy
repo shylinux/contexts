@@ -1,3 +1,6 @@
+~cli
+	daemon import
+
 ~aaa 
 	role white void web.code.git.spide
 	role white void web.code.git.trend
@@ -27,6 +30,6 @@
 	event action listen event dream.create cmd web.code.tmux.session
 
 ~ssh
-	target web.code
 	target web.chat
+	target web.code
 	source local.shy
