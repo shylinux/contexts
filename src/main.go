@@ -21,6 +21,7 @@ import (
 	_ "shylinux.com/x/golang-story/src/runtime"
 
 	_ "shylinux.com/x/mysql-story/src/client"
+	_ "shylinux.com/x/mysql-story/src/es"
 	_ "shylinux.com/x/mysql-story/src/server"
 	_ "shylinux.com/x/nginx-story/src/server"
 	_ "shylinux.com/x/redis-story/src/client"
