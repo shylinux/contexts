@@ -20,15 +20,15 @@ import (
 	_ "shylinux.com/x/golang-story/src/prometheus"
 	_ "shylinux.com/x/golang-story/src/runtime"
 
-	_ "shylinux.com/x/mysql-story/src/clickhouse"
 	_ "shylinux.com/x/mysql-story/src/client"
-	_ "shylinux.com/x/mysql-story/src/elasticsearch"
 	_ "shylinux.com/x/mysql-story/src/server"
 	_ "shylinux.com/x/nginx-story/src/server"
 	_ "shylinux.com/x/redis-story/src/client"
-	_ "shylinux.com/x/redis-story/src/kafka"
-	_ "shylinux.com/x/redis-story/src/pulsar"
 	_ "shylinux.com/x/redis-story/src/server"
+	// _ "shylinux.com/x/mysql-story/src/clickhouse"
+	// _ "shylinux.com/x/mysql-story/src/elasticsearch"
+	// _ "shylinux.com/x/redis-story/src/kafka"
+	// _ "shylinux.com/x/redis-story/src/pulsar"
 )
 
 func main() { print(ice.Run()) }
