@@ -42,8 +42,4 @@ source "usr/icebergs/misc/java/spring.shy"
 source "usr/icebergs/misc/node/compile.shy"
 source "usr/icebergs/misc/node/vue.shy"
 source "usr/icebergs/misc/coder/coder.shy"
-spark shell `
-systemctl start docker
-docker run --user=root -w /root -it alpine
-sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
-`
+
