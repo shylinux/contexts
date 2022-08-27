@@ -15,13 +15,24 @@ import (
 	_ "shylinux.com/x/icebergs/misc/wx"
 
 	_ "shylinux.com/x/golang-story/src/compile"
-	_ "shylinux.com/x/golang-story/src/grafana"
 	_ "shylinux.com/x/golang-story/src/project"
-	_ "shylinux.com/x/golang-story/src/prometheus"
 	_ "shylinux.com/x/golang-story/src/runtime"
+
+	_ "shylinux.com/x/golang-story/src/grafana"
+	_ "shylinux.com/x/golang-story/src/prometheus"
+	_ "shylinux.com/x/linux-story/src/docker"
+	_ "shylinux.com/x/linux-story/src/kubernetes"
+
+	_ "shylinux.com/x/linux-story/src/busybox"
+	_ "shylinux.com/x/linux-story/src/gcc"
+	_ "shylinux.com/x/linux-story/src/gdb"
+	_ "shylinux.com/x/linux-story/src/glibc"
+	_ "shylinux.com/x/linux-story/src/kernel"
+	_ "shylinux.com/x/linux-story/src/qemu"
 
 	_ "shylinux.com/x/mysql-story/src/client"
 	_ "shylinux.com/x/mysql-story/src/server"
+	_ "shylinux.com/x/nginx-story/src/client"
 	_ "shylinux.com/x/nginx-story/src/server"
 	_ "shylinux.com/x/redis-story/src/client"
 	_ "shylinux.com/x/redis-story/src/server"
