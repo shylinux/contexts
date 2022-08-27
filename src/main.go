@@ -21,6 +21,7 @@ import (
 	_ "shylinux.com/x/golang-story/src/grafana"
 	_ "shylinux.com/x/golang-story/src/prometheus"
 	_ "shylinux.com/x/linux-story/src/docker"
+	_ "shylinux.com/x/linux-story/src/ffmpeg"
 	_ "shylinux.com/x/linux-story/src/kubernetes"
 
 	_ "shylinux.com/x/linux-story/src/busybox"
