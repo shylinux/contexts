@@ -55,7 +55,8 @@ profile "测试群"
 		~ web.code install upgrade webpack binpack autogen compile publish
 		~ web.code.git server status
 	research "测试 research"
-		~ web.code favor bench pprof xterm case
+		~ web.code favor bench pprof xterm
+		web.code.docker.runtime
 operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role
