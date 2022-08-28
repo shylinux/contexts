@@ -16,5 +16,5 @@ usr/install/jdk-18/bin
 usr/install/docker
 usr/local/go/bin
 usr/local/bin
-publish
+usr/publish
 bin
