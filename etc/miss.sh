@@ -12,6 +12,16 @@ ish_miss_prepare_compile
 ish_miss_prepare_develop
 ish_miss_prepare_operate
 
+# ish_miss_prepare 20220202-family
+# ish_miss_prepare 20220624-career
+
+# ish_miss_prepare creackpty
+# ish_miss_prepare websocket
+# ish_miss_prepare go-qrcode
+# ish_miss_prepare go-sql-mysql
+# ish_miss_prepare webview
+# ish_miss_prepare echarts
+
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 
