@@ -28,6 +28,7 @@ import (
 	_ "shylinux.com/x/golang-story/src/prometheus"
 
 	_ "shylinux.com/x/linux-story/src/busybox"
+	_ "shylinux.com/x/linux-story/src/ctags"
 	_ "shylinux.com/x/linux-story/src/ffmpeg"
 	_ "shylinux.com/x/linux-story/src/gcc"
 	_ "shylinux.com/x/linux-story/src/gdb"
