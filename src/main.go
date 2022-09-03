@@ -42,6 +42,9 @@ import (
 	_ "shylinux.com/x/nginx-story/src/server"
 	_ "shylinux.com/x/redis-story/src/client"
 	_ "shylinux.com/x/redis-story/src/server"
+
+	_ "shylinux.com/x/golang-story/src/data"
+	_ "shylinux.com/x/golang-story/src/data/leecode"
 )
 
 func main() { print(ice.Run()) }

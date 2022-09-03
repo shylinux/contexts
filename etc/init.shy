@@ -32,4 +32,5 @@
 ~ssh
 	target web.chat
 	target web.code
+	target web.code.data
 	source local.shy
