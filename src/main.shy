@@ -10,7 +10,7 @@ label `
 code wiki chat team mall
 linux nginx context redis mysql
 bash git golang vim tmux
-`
+` fg blue bg yellow
 
 chapter "理论"
 label `

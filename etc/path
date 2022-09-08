@@ -1,7 +1,3 @@
-usr/install/busybox-1.33.0/_install/usr/sbin
-usr/install/busybox-1.33.0/_install/usr/bin
-usr/install/busybox-1.33.0/_install/sbin
-usr/install/busybox-1.33.0/_install/bin
 usr/install/ffmpeg-4.2.1/_install/bin
 usr/install/qemu-3.1.0/_install/bin
 usr/install/gcc-4.8.4/_install/bin

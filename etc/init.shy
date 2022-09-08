@@ -1,3 +1,6 @@
+~web.code.nginx
+	server module name demo
+
 ~cli
 	daemon import
 

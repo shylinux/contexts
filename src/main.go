@@ -23,6 +23,7 @@ import (
 	_ "shylinux.com/x/golang-story/src/tcmalloc"
 
 	_ "shylinux.com/x/golang-story/src/docker"
+	_ "shylinux.com/x/golang-story/src/gotags"
 	_ "shylinux.com/x/golang-story/src/grafana"
 	_ "shylinux.com/x/golang-story/src/kubernetes"
 	_ "shylinux.com/x/golang-story/src/prometheus"
@@ -35,6 +36,7 @@ import (
 	_ "shylinux.com/x/linux-story/src/glibc"
 	_ "shylinux.com/x/linux-story/src/kernel"
 	_ "shylinux.com/x/linux-story/src/qemu"
+	_ "shylinux.com/x/linux-story/src/sysctl"
 
 	_ "shylinux.com/x/mysql-story/src/client"
 	_ "shylinux.com/x/mysql-story/src/server"
