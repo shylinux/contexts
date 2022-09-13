@@ -53,10 +53,10 @@ project "研发群"
 profile "测试群"
 	release "发布 release"
 		~ web.code install upgrade webpack binpack autogen compile publish
+		web.code.docker.client
 		~ web.code.git server status
 	research "测试 research"
 		~ web.code favor bench pprof xterm
-		web.code.docker.client
 operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role
