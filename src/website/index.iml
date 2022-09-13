@@ -56,7 +56,7 @@ profile "测试群"
 		~ web.code.git server status
 	research "测试 research"
 		~ web.code favor bench pprof xterm
-		web.code.docker.runtime
+		web.code.docker.client
 operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role

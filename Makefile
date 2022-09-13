@@ -24,6 +24,9 @@ arm:
 mipsle:
 	GOOS=linux GOARCH=mipsle go build -o usr/publish/ice.linux.mipsle src/main.go src/version.go src/binpack.go
 
+docker:
+	docker image build -t $${PWD##*/} bin/
+
 %: src/%.go
 	@echo && date
 	go build -v -o usr/publish/$@ src/$@.go && chmod u+x usr/publish/$@
