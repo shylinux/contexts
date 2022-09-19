@@ -47,6 +47,8 @@ import (
 
 	_ "shylinux.com/x/golang-story/src/data"
 	_ "shylinux.com/x/golang-story/src/data/leecode"
+
+	_ "shylinux.com/x/contexts/src/h2"
 )
 
 func main() { print(ice.Run()) }

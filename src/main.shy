@@ -1,3 +1,22 @@
+field "src/hi/hi.go" web.code.inner spark `
+package hi
+
+import (
+	"shylinux.com/x/ice"
+)
+
+type hi struct {
+	ice.Zone
+}
+
+func (h hi) List(m *ice.Message, arg ...string) {
+	h.Zone.List(m, arg...)
+}
+
+func init() { ice.Cmd("web.code.hi.hi", hi{}) }
+`
+return
+
 title "contexts"
 refer `
 官网 https://contexts.com.cn
@@ -43,3 +62,5 @@ source "usr/icebergs/misc/java/spring.shy"
 source "usr/icebergs/misc/node/compile.shy"
 source "usr/icebergs/misc/node/vue.shy"
 source "usr/icebergs/misc/coder/coder.shy"
+
+source h2/h2.shy
