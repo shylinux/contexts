@@ -1,22 +1,3 @@
-field "src/hi/hi.go" web.code.inner spark `
-package hi
-
-import (
-	"shylinux.com/x/ice"
-)
-
-type hi struct {
-	ice.Zone
-}
-
-func (h hi) List(m *ice.Message, arg ...string) {
-	h.Zone.List(m, arg...)
-}
-
-func init() { ice.Cmd("web.code.hi.hi", hi{}) }
-`
-return
-
 title "contexts"
 refer `
 官网 https://contexts.com.cn
