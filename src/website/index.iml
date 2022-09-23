@@ -52,12 +52,16 @@ project "研发群"
 		usr/mysql-story/src/elasticsearch/elasticsearch.shy "搜索引擎"
 		usr/mysql-story/src/clickhouse/clickhouse.shy "搜索引擎"
 profile "测试群"
-	release "发布 release"
-		~ web.code install upgrade webpack binpack autogen compile publish
+	release "流程 release"
+		~ web.code webpack compile publish
 		web.code.docker.client
+	 	web.space
+	 	web.dream
 		~ web.code.git server status
-	research "测试 research"
-		~ web.code favor bench pprof xterm
+	toolkit "工具 toolkit"
+		~ web.code favor xterm inner vimer bench pprof oauth
+	language "语言 language"
+		~ web.code c sh shy go js py
 operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role

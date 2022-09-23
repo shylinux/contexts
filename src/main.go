@@ -28,6 +28,8 @@ import (
 	_ "shylinux.com/x/golang-story/src/kubernetes"
 	_ "shylinux.com/x/golang-story/src/prometheus"
 
+	_ "shylinux.com/x/linux-story/iso/alpine"
+
 	_ "shylinux.com/x/linux-story/src/busybox"
 	_ "shylinux.com/x/linux-story/src/ctags"
 	_ "shylinux.com/x/linux-story/src/ffmpeg"

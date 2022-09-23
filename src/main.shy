@@ -43,5 +43,3 @@ source "usr/icebergs/misc/java/spring.shy"
 source "usr/icebergs/misc/node/compile.shy"
 source "usr/icebergs/misc/node/vue.shy"
 source "usr/icebergs/misc/coder/coder.shy"
-
-source h2/h2.shy

@@ -8,14 +8,20 @@
 	role white void web.wiki.alpha.find
 
 ~web.code
+	alpine mirrors
+	alpine tzone
+
+~web.code
 	webpack insert xterm
 	webpack insert xterm-addon-fit
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
+
 	favor remove zone _xterm
-	favor insert zone _xterm type "ice.bin source stdio"
-	favor insert zone _xterm type "tmux attach -t miss"
 	favor insert zone _xterm type "docker run -w /root -it alpine"
+	favor insert zone _xterm type "docker run -it contexts"
+	favor insert zone _xterm type "tmux attach -t miss"
+	favor insert zone _xterm type "ice.bin source stdio"
 	favor insert zone _xterm type "python"
 	favor insert zone _xterm type "node"
 
