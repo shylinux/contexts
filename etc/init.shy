@@ -10,6 +10,7 @@
 ~web.code
 	alpine mirrors
 	alpine tzone
+	publish
 
 ~web.code
 	webpack insert xterm
@@ -40,7 +41,8 @@
 
 ~gdb
 	# config timer meta.enable true
-	event action listen event dream.create cmd web.code.tmux.session
+	event listen event dream.create cmd web.code.tmux.session
+	event listen event serve.start cmd web.code.publish
 
 ~ssh
 	target web.chat
