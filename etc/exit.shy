@@ -1,2 +1,6 @@
+~aaa
+	sess export
+	user export
+
 ~cli
 	daemon export

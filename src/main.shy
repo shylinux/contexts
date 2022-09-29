@@ -26,7 +26,6 @@ contexts toolkits learning
 section "火山架"
 field "趋势图" web.code.git.trend args `volcanos`
 field "架构图" web.code.git.spide args `volcanos`
-field web.code.docker.client
 
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`
