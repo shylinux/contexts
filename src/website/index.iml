@@ -29,7 +29,7 @@ product "产品群"
 		web.code.input.wubi "五笔" args "line 你好"
 project "研发群"
 	studio "研发 studio"
-		web.code.vimer "编辑器"
+		web.code.vimer "编辑器" args "'src/,usr/icebergs/,usr/volcanos/' main.go"
 		web.code.git.status "代码库" name repos
 		web.code.xterm "命令行"
 		web.chat.iframe "浏览器"
