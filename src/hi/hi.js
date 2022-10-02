@@ -1,4 +1,4 @@
-Volcanos("onimport", {help: "导入数据", _init: function(can, msg) {
+Volcanos(chat.ONIMPORT, {help: "导入数据", _init: function(can, msg) {
 	msg.Echo("hello world")
 	msg.Echo("hello world")
 	msg.Echo("hello world")

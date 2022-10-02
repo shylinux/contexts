@@ -1,5 +1,10 @@
 #! /bin/sh
 
+function show() {
+	echo "hello world"
+}
+
+show
 _list
 echo
 

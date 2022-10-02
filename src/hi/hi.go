@@ -18,6 +18,9 @@ func (s hi) Show(m *ice.Message, arg ...string) {
 func (s hi) List(m *ice.Message, arg ...string) {
 	s.Zone.ListPage(m, arg...)
 	m.Echo("hello world")
+	m.Echo("hello world")
+	m.Echo("hello world")
+	m.Echo("hello world")
 }
 
 func init() { ice.Cmd("web.code.hi.hi", hi{}) }

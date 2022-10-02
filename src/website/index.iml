@@ -62,7 +62,7 @@ profile "测试群"
 	toolkit "工具 toolkit"
 		~ web.code favor xterm inner vimer bench pprof oauth
 	language "语言 language"
-		~ web.code c sh shy go js py
+		~ web.code c sh py shy js go
 operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role
