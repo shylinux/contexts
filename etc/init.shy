@@ -24,6 +24,20 @@
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
 
+	favor remove zone _open
+	favor insert zone _open type "open -a 'Terminal'" name "Terminal.png"
+	favor insert zone _open type "open -a 'Safari'" name "Safari.png"
+	favor insert zone _open type "open -a 'Google Chrome'" name "Google Chrome.png"
+	favor insert zone _open type "open -a 'Docker'" name "Docker.png"
+	favor insert zone _open type "open -a 'Finder'" name "Finder.png"
+	favor insert zone _open type "open -a 'Preview'" name "Preview.png"
+	favor insert zone _open type "open -a 'QuickTime Player'" name "QuickTime Player.png"
+	favor insert zone _open type "open -a 'Launchpad'" name "Launchpad.png"
+	favor insert zone _open type "open -a 'Mission Control'" name "Mission Control.png"
+	favor insert zone _open type "open -a 'Activity Monitor'" name "Activity Monitor.png"
+	favor insert zone _open type "open -a 'System Preferences'" name "System Preferences.png"
+	favor insert zone _open type "open -a 'Contexts'" name "Contexts.png"
+
 	favor remove zone _xterm
 	favor insert zone _xterm type "docker run -w /root -it alpine"
 	favor insert zone _xterm type "docker run -it contexts"
