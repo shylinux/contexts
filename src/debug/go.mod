@@ -8,6 +8,7 @@ require (
 	shylinux.com/x/mysql-story v0.5.2
 	shylinux.com/x/nginx-story v0.5.2
 	shylinux.com/x/redis-story v0.5.3
+	shylinux.com/x/webview v0.0.1
 )
 
 require (
