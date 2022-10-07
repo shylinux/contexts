@@ -53,7 +53,7 @@
 
 	config vimer meta.show.tabs ""
 	config vimer meta.show.exts "inner/search.js?a=1,inner/favor.js"
-	config vimer meta.show.plug "web.code.git.status,web.code.tmux.session,web.code.xterm,cli.system"
+	config vimer meta.show.plug "web.code.git.status,web.code.xterm,cli.system"
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86

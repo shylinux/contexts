@@ -11,3 +11,4 @@ ish_sys_cli_prompt
 ish_sys_cli_alias vi vim
 ish_sys_cli_alias t "tmux attach"
 
+[ -f ~/.bash_temp ] && source ~/.bash_temp; rm ~/.bash_temp &>/dev/null
