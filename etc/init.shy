@@ -24,37 +24,35 @@
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
 
-	favor remove zone _open
-	favor insert zone _open type "open -a 'Terminal'" name "Terminal.png"
-	favor insert zone _open type "open -a 'Safari'" name "Safari.png"
-	favor insert zone _open type "open -a 'Google Chrome'" name "Google Chrome.png"
-	favor insert zone _open type "open -a 'Docker'" name "Docker.png"
-	favor insert zone _open type "open -a 'Finder'" name "Finder.png"
-	favor insert zone _open type "open -a 'Preview'" name "Preview.png"
-	favor insert zone _open type "open -a 'QuickTime Player'" name "QuickTime Player.png"
-	favor insert zone _open type "open -a 'Launchpad'" name "Launchpad.png"
-	favor insert zone _open type "open -a 'Mission Control'" name "Mission Control.png"
-	favor insert zone _open type "open -a 'Activity Monitor'" name "Activity Monitor.png"
-	favor insert zone _open type "open -a 'System Preferences'" name "System Preferences.png"
-	favor insert zone _open type "open -a 'Contexts'" name "Contexts.png"
+	favor remove zone _system_app
+	favor insert zone _system_app type "open -a 'Terminal'" name "Terminal.png"
+	favor insert zone _system_app type "open -a 'Safari'" name "Safari.png"
+	favor insert zone _system_app type "open -a 'Google Chrome'" name "Google Chrome.png"
+	favor insert zone _system_app type "open -a 'Docker'" name "Docker.png"
+	favor insert zone _system_app type "open -a 'Finder'" name "Finder.png"
+	favor insert zone _system_app type "open -a 'Preview'" name "Preview.png"
+	favor insert zone _system_app type "open -a 'QuickTime Player'" name "QuickTime Player.png"
+	favor insert zone _system_app type "open -a 'Launchpad'" name "Launchpad.png"
+	favor insert zone _system_app type "open -a 'Mission Control'" name "Mission Control.png"
+	favor insert zone _system_app type "open -a 'Activity Monitor'" name "Activity Monitor.png"
+	favor insert zone _system_app type "open -a 'System Preferences'" name "System Preferences.png"
+	favor insert zone _system_app type "open -a 'Contexts'" name "Contexts.png"
 
-	favor remove zone _xterm
-	favor insert zone _xterm type "docker run -w /root -it alpine"
-	favor insert zone _xterm type "docker run -it contexts"
-	favor insert zone _xterm type "ice.bin source stdio"
-	favor insert zone _xterm type "tmux attach -t miss"
-	favor insert zone _xterm type "vim src/main.go"
-	favor insert zone _xterm type "python"
-	favor insert zone _xterm type "node"
+	favor remove zone _system_term
+	favor insert zone _system_term type "docker run -w /root -it alpine"
+	favor insert zone _system_term type "docker run -it contexts"
+	favor insert zone _system_term type "ice.bin source stdio"
+	favor insert zone _system_term type "tmux attach -t miss"
+	favor insert zone _system_term type "vim src/main.go"
+	favor insert zone _system_term type "python"
+	favor insert zone _system_term type "node"
 
 ~web.code
 	config inner meta.show.tabs ""
-	config inner meta.show.exts "inner/search.js?a=1"
 	config inner meta.show.plug ""
 
 	config vimer meta.show.tabs ""
-	config vimer meta.show.exts "inner/search.js?a=1,inner/favor.js"
-	config vimer meta.show.plug "web.code.git.status,web.code.xterm,cli.system"
+	config vimer meta.show.plug "web.code.git.status,web.code.favor,web.code.xterm"
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
