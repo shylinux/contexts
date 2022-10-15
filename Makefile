@@ -13,7 +13,7 @@ def:
 	@ [ -f src/binpack.go ] || echo "package main" > src/binpack.go
 
 app: def
-	CGO_ENABLED=1 go build -v -o usr/publish/contexts.app/Contents/MacOS/contexts src/webview.go src/version.go src/binpack.go && ./${binarys} forever stop && sleep 1 && open usr/publish/contexts.app
+	CGO_ENABLED=1 go build -v -o usr/publish/contexts.app/Contents/MacOS/contexts src/webview.go src/version.go src/binpack.go && ./${binarys} forever restart &>/dev/null
 	# hdiutil create usr/publish/tmp.dmg -ov -volname "ContextsInstall" -fs HFS+ -srcfolder "usr/publish/contexts.app"
 	# rm -f usr/publish/ContextsInstall.dmg
 	# hdiutil convert usr/publish/tmp.dmg -format UDZO -o usr/publish/ContextsInstall.dmg
