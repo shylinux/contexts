@@ -1,3 +1,0 @@
-shylinux https://shylinux.com
-localhost http://localhost:9020
-vimer "http://localhost:9020/chat/cmd/web.code.vimer?topic=black&path=src/,usr/icebergs/,usr/volcanos/&file=main.go"

@@ -1,0 +1,4 @@
+shylinux https://shylinux.com
+localhost http://localhost:9020
+vimer "http://localhost:9020/chat/cmd/web.code.vimer?path=src/,usr/icebergs/,usr/volcanos/&file=main.go"
+plan "http://localhost:9020/chat/cmd/web.team.plan"

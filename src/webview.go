@@ -23,6 +23,7 @@ func main() {
 		}
 	} else {
 		go ice.Run(web.SERVE, tcp.START)
+		defer ice.Pulse.Cmd(ice.EXIT)
 		time.Sleep(time.Second)
 		webview.Run(func(w *webview.WebView) ice.Any { return view{w} })
 	}
