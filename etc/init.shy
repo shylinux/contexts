@@ -52,7 +52,7 @@
 	config inner meta.show.plug ""
 
 	config vimer meta.show.tabs ""
-	config vimer meta.show.plug "web.code.git.status,web.code.favor,web.code.xterm"
+	config vimer meta.show.plug "web.code.favor,web.code.xterm"
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
