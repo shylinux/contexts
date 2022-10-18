@@ -31,6 +31,7 @@ project "研发群"
 	studio "研发 studio"
 		web.code.vimer "编辑器" args "'src/,usr/icebergs/,usr/volcanos/' main.go"
 		web.code.git.status "代码库" name repos
+		web.mall.goods "小商城"
 		web.team.plan "任务表"
 		web.wiki.word "上下文"
 	linux "系统 linux"
