@@ -1,5 +1,5 @@
-shylinux https://shylinux.com
-localhost http://localhost:9020
 vimer "http://localhost:9020/chat/cmd/web.code.vimer?topic=black&path=src/,usr/icebergs/,usr/volcanos/&file=main.go"
-goods "http://localhost:9020/chat/cmd/web.mall.goods"
-plan "http://localhost:9020/chat/cmd/web.team.plan"
+# goods "http://localhost:9020/chat/cmd/web.mall.goods"
+# plan "http://localhost:9020/chat/cmd/web.team.plan"
+# localhost http://localhost:9020
+# shylinux https://shylinux.com
