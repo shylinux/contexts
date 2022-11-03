@@ -36,9 +36,3 @@ field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
 spark md README.md
-
-source "usr/icebergs/misc/java/compile.shy"
-source "usr/icebergs/misc/java/spring.shy"
-source "usr/icebergs/misc/node/compile.shy"
-source "usr/icebergs/misc/node/vue.shy"
-source "usr/icebergs/misc/coder/coder.shy"
