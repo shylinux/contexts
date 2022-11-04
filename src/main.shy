@@ -10,7 +10,7 @@ contexts fg red
 		data
 		file
 	usr
-` font-size 24 show-block true
+` show-block true
 chain `
 contexts
 	src
@@ -23,13 +23,17 @@ contexts
 		data
 		file
 	usr
-`  font-size 24 ship-stroke blue
-
+`
 label `
 code wiki chat team mall
 linux nginx "context fg red" redis mysql
 bash git golang vim tmux
-` fg blue bg yellow
+`
+
+sequence `
+fe be redis mysql
+0 hi 1 he 2 good 1 nice 0
+`
 return
 
 title "contexts"
