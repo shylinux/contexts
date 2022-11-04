@@ -1,3 +1,24 @@
+chain `
+contexts
+	src
+	etc
+	bin
+	var
+		run
+		log
+		conf
+		data
+		file
+	usr
+` padding 30 font-size 24 show-block false
+
+label `
+code wiki chat team mall
+linux nginx "context bg red" redis mysql
+bash git golang vim tmux
+` fg blue bg yellow
+return
+
 title "contexts"
 refer `
 官网 https://contexts.com.cn
@@ -8,7 +29,7 @@ refer `
 chapter "实践"
 label `
 code wiki chat team mall
-linux nginx context redis mysql
+linux nginx "context bg red" redis mysql
 bash git golang vim tmux
 ` fg blue bg yellow
 
