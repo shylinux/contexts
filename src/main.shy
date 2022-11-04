@@ -1,4 +1,17 @@
 chain `
+contexts fg red
+	src
+	etc
+	bin
+	var
+		run
+		log
+		conf
+		data
+		file
+	usr
+` font-size 24 show-block true
+chain `
 contexts
 	src
 	etc
@@ -10,11 +23,11 @@ contexts
 		data
 		file
 	usr
-` padding 30 font-size 24 show-block false
+`  font-size 24 ship-stroke blue
 
 label `
 code wiki chat team mall
-linux nginx "context bg red" redis mysql
+linux nginx "context fg red" redis mysql
 bash git golang vim tmux
 ` fg blue bg yellow
 return
