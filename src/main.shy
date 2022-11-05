@@ -36,7 +36,6 @@ sequence `
 fe be redis mysql
 0 hi 1 he 2 good 1 nice 0
 `
-return
 
 title "contexts"
 refer `
