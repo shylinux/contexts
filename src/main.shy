@@ -1,3 +1,5 @@
+audio some.m4a
+
 chain `
 contexts fg red
 	src
