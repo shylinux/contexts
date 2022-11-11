@@ -54,8 +54,8 @@ profile "测试群"
 	release "流程 release"
 		~ web.code webpack compile publish
 		web.code.docker.client
-	 	web.space
-	 	web.dream
+		web.space
+		web.dream
 		~ web.code.git server status
 	toolkit "工具 toolkit"
 		~ web.code favor xterm inner vimer bench pprof oauth
