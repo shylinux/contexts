@@ -28,7 +28,7 @@ Volcanos({river: {
 	}},
 	project: {name: "研发群", storm: {
 		studio: {name: "研发 studio", list: [
-			{name: "vimer", help: "编辑器", index: "web.code.vimer", args: ["src/,usr/icebergs/,usr/volcanos/", "main.go"]},
+			{name: "vimer", help: "编辑器", index: "web.code.vimer", args: ["src/,usr/volcanos/,usr/icebergs/", "main.go"]},
 			{name: "repos", help: "代码库", index: "web.code.git.status"},
 			{name: "plan", help: "任务表", index: "web.team.plan"},
 			{name: "ctx", help: "上下文", index: "web.wiki.word"},
