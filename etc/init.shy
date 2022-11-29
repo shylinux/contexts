@@ -6,7 +6,6 @@
 	sess import
 
 ~web.chat 
-	river import
 	config footer meta.email ""
 
 ~aaa 
@@ -58,7 +57,7 @@
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
-	wubi load file usr/wubi-dict/person zone person
+	# wubi load file usr/wubi-dict/person zone person
 
 ~gdb
 	# config timer meta.enable true
