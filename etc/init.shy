@@ -25,18 +25,20 @@
 	webpack insert xterm/css/xterm.css
 
 	favor remove zone _system_app
-	favor insert zone _system_app type "open -a 'Terminal'" name "Terminal.png"
-	favor insert zone _system_app type "open -a 'Safari'" name "Safari.png"
-	favor insert zone _system_app type "open -a 'Google Chrome'" name "Google Chrome.png"
-	favor insert zone _system_app type "open -a 'Docker'" name "Docker.png"
-	favor insert zone _system_app type "open -a 'Finder'" name "Finder.png"
-	favor insert zone _system_app type "open -a 'Preview'" name "Preview.png"
-	favor insert zone _system_app type "open -a 'QuickTime Player'" name "QuickTime Player.png"
-	favor insert zone _system_app type "open -a 'Launchpad'" name "Launchpad.png"
-	favor insert zone _system_app type "open -a 'Mission Control'" name "Mission Control.png"
-	favor insert zone _system_app type "open -a 'Activity Monitor'" name "Activity Monitor.png"
-	favor insert zone _system_app type "open -a 'System Preferences'" name "System Preferences.png"
-	favor insert zone _system_app type "open -a 'Contexts'" name "Contexts.png"
+	favor insert zone _system_app type "open -a 'System Preferences'" text "System Preferences.png"
+	favor insert zone _system_app type "open -a 'Launchpad'" text "Launchpad.png"
+	favor insert zone _system_app type "open -a 'Mission Control'" text "Mission Control.png"
+	favor insert zone _system_app type "open -a 'Activity Monitor'" text "Activity Monitor.png"
+	favor insert zone _system_app type "open -a 'Google Chrome'" text "Google Chrome.png"
+	favor insert zone _system_app type "open -a 'QuickTime Player'" text "QuickTime Player.png"
+	favor insert zone _system_app type "open -a 'Preview'" text "Preview.png"
+	favor insert zone _system_app type "open -a 'Finder'" text "Finder.png"
+	favor insert zone _system_app type "open -a 'Docker'" text "Docker.png"
+	favor insert zone _system_app type "open -a 'Safari'" text "Safari.png"
+	favor insert zone _system_app type "open -a 'Terminal'" text "Terminal.png"
+	favor insert zone _system_app type "open -a 'Contexts'" text "Contexts.png"
+	favor insert zone _system_app type "open 'http://localhost:9020'" name localhost text "Google Chrome.png"
+	favor insert zone _system_app type "open 'https://shylinux.com'" name shylinux text "Google Chrome.png"
 
 	favor remove zone _system_term
 	favor insert zone _system_term type "docker run -w /root -it alpine"
