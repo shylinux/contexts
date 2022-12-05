@@ -21,11 +21,12 @@ ish_miss_prepare_operate
 # ish_miss_prepare go-sql-mysql
 # ish_miss_prepare webview
 # ish_miss_prepare echarts
+# ish_miss_prepare icons
+# ish_miss_prepare gogit
 
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 
-ish_miss_prepare icons
 ish_miss_prepare linux-story
 ish_miss_prepare nginx-story
 ish_miss_prepare golang-story
