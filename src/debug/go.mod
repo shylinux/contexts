@@ -8,17 +8,18 @@ require (
 	shylinux.com/x/mysql-story v0.5.2
 	shylinux.com/x/nginx-story v0.5.2
 	shylinux.com/x/redis-story v0.5.3
-	shylinux.com/x/webview v0.0.1
 )
 
 require (
-	golang.org/x/crypto v0.3.0 // indirect
+	shylinux.com/x/gogit v0.0.1
 	shylinux.com/x/ice v1.1.7
 	shylinux.com/x/icebergs v1.4.3
 	shylinux.com/x/toolkits v0.7.0
+	shylinux.com/x/webview v0.0.1
 )
 
 replace (
+	shylinux.com/x/gogit => ./usr/gogit
 	shylinux.com/x/ice => ./usr/release
 	shylinux.com/x/icebergs => ./usr/icebergs
 	shylinux.com/x/toolkits => ./usr/toolkits
