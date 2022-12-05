@@ -1,6 +1,3 @@
-~web.chat 
-	river export
-
 ~aaa
 	sess export
 	user export
