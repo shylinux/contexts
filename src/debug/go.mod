@@ -19,6 +19,7 @@ require (
 )
 
 replace (
+	shylinux.com/x/gogit => ./usr/gogit
 	shylinux.com/x/ice => ./usr/release
 	shylinux.com/x/icebergs => ./usr/icebergs
 	shylinux.com/x/toolkits => ./usr/toolkits
