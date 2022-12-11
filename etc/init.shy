@@ -69,6 +69,5 @@
 	event listen event user.create cmd aaa.sess
 
 ~ssh
-	target web.code
-	target web.chat
+	target web.code.tmux
 	source local.shy
