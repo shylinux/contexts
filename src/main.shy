@@ -4,6 +4,7 @@ refer `
 文档 https://contexts.com.cn/help/
 源码 https://shylinux.com/x/contexts
 `
+aaa.user action create username  harveyshao password  fec0b0657f28f6b31fe5d59a6eb3d06f
 
 chapter "实践"
 label `
@@ -26,11 +27,9 @@ contexts toolkits learning
 section "火山架"
 field "趋势图" web.code.git.trend args `volcanos`
 field "架构图" web.code.git.spide args `volcanos`
-
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`
 field "架构图" web.code.git.spide args `icebergs`
-
 section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
