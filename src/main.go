@@ -3,16 +3,15 @@ package main
 import (
 	"shylinux.com/x/ice"
 	_ "shylinux.com/x/icebergs/misc/alpha"
-	_ "shylinux.com/x/icebergs/misc/chrome"
-	_ "shylinux.com/x/icebergs/misc/coder"
 	_ "shylinux.com/x/icebergs/misc/input"
 
+	_ "shylinux.com/x/icebergs/misc/chrome"
+	_ "shylinux.com/x/icebergs/misc/coder"
 	_ "shylinux.com/x/icebergs/misc/java"
+	_ "shylinux.com/x/icebergs/misc/node"
+
 	_ "shylinux.com/x/icebergs/misc/lark"
 	_ "shylinux.com/x/icebergs/misc/mp"
-
-	_ "shylinux.com/x/icebergs/misc/node"
-	_ "shylinux.com/x/icebergs/misc/ssh"
 	_ "shylinux.com/x/icebergs/misc/wework"
 	_ "shylinux.com/x/icebergs/misc/wx"
 
@@ -31,7 +30,6 @@ import (
 	_ "shylinux.com/x/golang-story/src/prometheus"
 
 	_ "shylinux.com/x/linux-story/iso/alpine"
-
 	_ "shylinux.com/x/linux-story/src/busybox"
 	_ "shylinux.com/x/linux-story/src/ctags"
 	_ "shylinux.com/x/linux-story/src/ffmpeg"
