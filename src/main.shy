@@ -4,8 +4,6 @@ refer `
 文档 https://contexts.com.cn/help/
 源码 https://shylinux.com/x/contexts
 `
-aaa.user action create username  harveyshao password  fec0b0657f28f6b31fe5d59a6eb3d06f
-
 chapter "实践"
 label `
 code wiki chat team mall

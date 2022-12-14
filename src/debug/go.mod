@@ -11,8 +11,7 @@ require (
 )
 
 require (
-	golang.org/x/crypto v0.4.0 // indirect
-	shylinux.com/x/gogit v0.0.5
+	shylinux.com/x/gogit v0.0.6
 	shylinux.com/x/ice v1.2.0
 	shylinux.com/x/icebergs v1.4.6
 	shylinux.com/x/toolkits v0.7.1
@@ -20,7 +19,6 @@ require (
 )
 
 replace (
-	shylinux.com/x/gogit => ./usr/gogit
 	shylinux.com/x/ice => ./usr/release
 	shylinux.com/x/icebergs => ./usr/icebergs
 	shylinux.com/x/toolkits => ./usr/toolkits
