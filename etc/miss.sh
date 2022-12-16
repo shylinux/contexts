@@ -24,8 +24,8 @@ ish_miss_prepare_operate
 # ish_miss_prepare icons
 # ish_miss_prepare gogit
 
-# ish_miss_prepare wubi-dict
-# ish_miss_prepare word-dict
+ish_miss_prepare wubi-dict
+ish_miss_prepare word-dict
 
 ish_miss_prepare linux-story
 ish_miss_prepare nginx-story
