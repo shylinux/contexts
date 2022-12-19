@@ -1,3 +1,12 @@
+field "src/main.go" web.code.inner spark `
+package main
+
+func main() {
+	println("hello world")
+}
+`
+return
+
 title "contexts"
 refer `
 官网 https://contexts.com.cn
