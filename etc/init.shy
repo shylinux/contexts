@@ -69,5 +69,6 @@
 	event listen event user.create cmd aaa.sess
 
 ~ssh
-	target web.code.chrome
+	# target web.code.chrome
+	target web.chat.lark
 	source local.shy
