@@ -15,19 +15,12 @@ import (
 	_ "shylinux.com/x/icebergs/misc/wework"
 	_ "shylinux.com/x/icebergs/misc/wx"
 
-	_ "shylinux.com/x/golang-story/src/compile"
-	_ "shylinux.com/x/golang-story/src/project"
-	_ "shylinux.com/x/golang-story/src/runtime"
-
-	_ "shylinux.com/x/golang-story/src/leveldb"
-	_ "shylinux.com/x/golang-story/src/rocksdb"
-	_ "shylinux.com/x/golang-story/src/tcmalloc"
-
-	_ "shylinux.com/x/golang-story/src/docker"
-	_ "shylinux.com/x/golang-story/src/gotags"
-	_ "shylinux.com/x/golang-story/src/grafana"
-	_ "shylinux.com/x/golang-story/src/kubernetes"
-	_ "shylinux.com/x/golang-story/src/prometheus"
+	_ "shylinux.com/x/mysql-story/src/client"
+	_ "shylinux.com/x/mysql-story/src/server"
+	_ "shylinux.com/x/nginx-story/src/client"
+	_ "shylinux.com/x/nginx-story/src/server"
+	_ "shylinux.com/x/redis-story/src/client"
+	_ "shylinux.com/x/redis-story/src/server"
 
 	_ "shylinux.com/x/linux-story/iso/alpine"
 	_ "shylinux.com/x/linux-story/src/busybox"
@@ -40,15 +33,15 @@ import (
 	_ "shylinux.com/x/linux-story/src/qemu"
 	_ "shylinux.com/x/linux-story/src/sysctl"
 
-	_ "shylinux.com/x/mysql-story/src/client"
-	_ "shylinux.com/x/mysql-story/src/server"
-	_ "shylinux.com/x/nginx-story/src/client"
-	_ "shylinux.com/x/nginx-story/src/server"
-	_ "shylinux.com/x/redis-story/src/client"
-	_ "shylinux.com/x/redis-story/src/server"
+	_ "shylinux.com/x/golang-story/src/compile"
+	_ "shylinux.com/x/golang-story/src/project"
+	_ "shylinux.com/x/golang-story/src/runtime"
 
-	_ "shylinux.com/x/golang-story/src/data"
-	_ "shylinux.com/x/golang-story/src/data/leecode"
+	_ "shylinux.com/x/golang-story/src/docker"
+	_ "shylinux.com/x/golang-story/src/gotags"
+	_ "shylinux.com/x/golang-story/src/grafana"
+	_ "shylinux.com/x/golang-story/src/kubernetes"
+	_ "shylinux.com/x/golang-story/src/prometheus"
 )
 
 func main() { print(ice.Run()) }

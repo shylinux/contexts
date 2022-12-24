@@ -5,9 +5,6 @@
 	user import
 	sess import
 
-~web.chat 
-	config footer meta.email ""
-
 ~aaa 
 	role white void web.code.git.spide
 	role white void web.code.git.trend
