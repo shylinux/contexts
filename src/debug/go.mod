@@ -11,22 +11,17 @@ require (
 )
 
 require (
-	shylinux.com/x/gogit v0.0.6
-	shylinux.com/x/ice v1.2.1
-	shylinux.com/x/icebergs v1.4.8
-	shylinux.com/x/toolkits v0.7.2
+	shylinux.com/x/gogit v0.0.7
+	shylinux.com/x/ice v1.2.4
+	shylinux.com/x/icebergs v1.5.0
+	shylinux.com/x/toolkits v0.7.3
 	shylinux.com/x/webview v0.0.1
 )
 
 replace (
-	shylinux.com/x/creackpty => ./usr/creackpty
-	shylinux.com/x/go-qrcode => ./usr/go-qrcode
-	shylinux.com/x/go-sql-mysql => ./usr/go-sql-mysql
-	shylinux.com/x/gogit => ./usr/gogit
 	shylinux.com/x/ice => ./usr/release
 	shylinux.com/x/icebergs => ./usr/icebergs
 	shylinux.com/x/toolkits => ./usr/toolkits
-	shylinux.com/x/websocket => ./usr/websocket
 )
 
 replace (
