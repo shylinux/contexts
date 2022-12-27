@@ -85,17 +85,9 @@ Volcanos({river: {
 		]},
 	}},
 	operate: {name: "运维群", storm: {
-		aaa: {name: "权限 aaa", index: [
-			"offer", "email", "user", "totp", "sess", "role",
-		]},
-		web: {name: "应用 web", index: [
-			"broad", "serve", "space", "dream", "share", "cache", "spide",
-		]},
-		cli: {name: "系统 cli", index: [
-			"qrcode", "daemon", "system", "runtime", "mirrors", "forever", "host", "port",
-		]},
-		nfs: {name: "文件 nfs", index: [
-			"cat", "dir", "pack", "tail", "trash",
-		]},
+		aaa: {name: "权限 aaa", index: ["offer", "email", "user", "totp", "sess", "role"]},
+		web: {name: "应用 web", index: ["broad", "serve", "space", "dream", "share", "cache", "spide"]},
+		cli: {name: "系统 cli", index: ["qrcode", "daemon", "system", "runtime", "mirrors", "forever", "host", "port"]},
+		nfs: {name: "文件 nfs", index: ["dir", "cat", "pack", "tail", "trash"]},
 	}},
 }})
