@@ -2,6 +2,7 @@ package hi
 
 import (
 	"shylinux.com/x/ice"
+	"shylinux.com/x/icebergs/base/ctx"
 )
 
 type hi struct {
@@ -17,10 +18,7 @@ func (s hi) Show(m *ice.Message, arg ...string) {
 
 func (s hi) List(m *ice.Message, arg ...string) {
 	s.Zone.ListPage(m, arg...)
-	m.Echo("hello world")
-	m.Echo("hello world")
-	m.Echo("hello world")
-	m.Echo("hello world")
+	ctx.Display
 }
 
 func init() { ice.Cmd("web.code.hi.hi", hi{}) }
