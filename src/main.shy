@@ -27,7 +27,18 @@ field "趋势图" web.code.git.trend args `volcanos`
 field "架构图" web.code.git.spide args `volcanos`
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`
+label `
+ctx mdb web aaa
+lex yac ssh gdb
+tcp nfs cli log
+`
+label `
+bash ssh git vim tmux
+java node chrome webview coder input alpha
+wx mp lark wework	
+` compact true
 field "架构图" web.code.git.spide args `icebergs`
+
 section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
