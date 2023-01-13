@@ -3,7 +3,17 @@ refer `
 官网 https://contexts.com.cn
 文档 https://contexts.com.cn/help/
 源码 https://shylinux.com/x/contexts
+颜色 https://www.cnblogs.com/cl1234/p/5545290.html
 `
+section "color"
+refer `
+https://www.w3.org/TR/?tag=css
+https://www.w3schools.com/colors/colors_names.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors
+https://docs.tizen.org/platform/what-is-tizen/overview/
+https://www.cnblogs.com/cl1234/p/5545290.html
+`
+
 chapter "实践"
 label `
 code wiki chat team mall
