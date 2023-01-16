@@ -14,6 +14,7 @@ Volcanos(chat.ONIMPORT, {_init: function(can, msg) {
 		back: {16: [27, 185], 18: [30, 208], 20: [33, 232], 24: [40, 278]},
 		"goto": {16: [82, 185], 18: [92, 208], 20: [102, 232], 24: [123, 278]},
 	})
+	can.page.Append(can, can._output, [{text: "\u2715", style: {"font-size": "24px"}}])
 	can.page.Append(can, can._output, [{view: html.IMG, style: {"background": "url(/publish/icon/full.jpg)", "background-size": "480px", height: 1290, width: 480}}])
 	can.sup.onimport.size(can.sup, can.ConfHeight()+html.ACTION_HEIGHT, can.sup.ConfWidth(480)), can.sup.onaction._output(can.sup, msg)
 }})
