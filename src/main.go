@@ -42,6 +42,8 @@ import (
 	_ "shylinux.com/x/golang-story/src/grafana"
 	_ "shylinux.com/x/golang-story/src/kubernetes"
 	_ "shylinux.com/x/golang-story/src/prometheus"
+
+	_ "shylinux.com/x/contexts/src/h2"
 )
 
 func main() { print(ice.Run()) }
