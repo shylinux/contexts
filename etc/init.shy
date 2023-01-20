@@ -51,8 +51,8 @@
 	config inner meta.show.plug ""
 
 	config vimer meta.show.tabs ""
-	config vimer meta.show.plug "web.code.favor,web.code.xterm"
-	config vimer meta.show.plug ""
+	config vimer meta.show.plug "can.debug,web.code.favor,web.code.xterm"
+	# config vimer meta.show.plug ""
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
@@ -66,6 +66,5 @@
 	event listen event user.create cmd aaa.sess
 
 ~ssh
-	# target web.code.chrome
-	target web.chat.lark
+	target web.code
 	source local.shy
