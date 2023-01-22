@@ -51,7 +51,7 @@
 	config inner meta.show.plug ""
 
 	config vimer meta.show.tabs ""
-	config vimer meta.show.plug "can.debug,web.chat.iframe,web.code.favor,web.code.xterm"
+	config vimer meta.show.plug "can.debug,web.chat.iframe,web.code.favor,web.code.xterm,can.topic"
 	# config vimer meta.show.plug ""
 
 ~web.code.input
