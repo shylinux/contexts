@@ -49,10 +49,8 @@
 ~web.code
 	config inner meta.show.tabs ""
 	config inner meta.show.plug ""
-
 	config vimer meta.show.tabs ""
-	config vimer meta.show.plug "can.debug,web.chat.iframe,web.code.favor,web.code.xterm,can.topic"
-	# config vimer meta.show.plug ""
+	config vimer meta.show.plug "web.chat.iframe"
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
