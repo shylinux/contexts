@@ -50,7 +50,7 @@
 	config inner meta.show.tabs ""
 	config inner meta.show.plug ""
 	config vimer meta.show.tabs ""
-	config vimer meta.show.plug "web.chat.iframe"
+	config vimer meta.show.plug "web.code.xterm,web.chat.iframe"
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
