@@ -4,6 +4,11 @@ refer `
 文档 https://contexts.com.cn/help/
 源码 https://shylinux.com/x/contexts
 `
+section "windows"
+refer `
+https://www.ngui.cc/el/1813831.html
+edge://settings/appearance
+`
 section "color"
 refer `
 颜色 https://www.cnblogs.com/cl1234/p/5545290.html
