@@ -10,6 +10,7 @@
 	role white void web.code.git.trend
 	role white void web.code.input.find
 	role white void web.wiki.alpha.find
+	role white void require/src
 
 ~web.code
 	alpine mirrors
