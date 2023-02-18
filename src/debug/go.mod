@@ -11,6 +11,7 @@ require (
 )
 
 require (
+	golang.org/x/crypto v0.6.0 // indirect
 	shylinux.com/x/gogit v0.0.7
 	shylinux.com/x/ice v1.2.7
 	shylinux.com/x/icebergs v1.5.2
