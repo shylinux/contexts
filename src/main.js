@@ -57,7 +57,6 @@ Volcanos({river: {
 	}},
 	profile: {name: "测试群", storm: {
 		release: {name: "发布 release", index: [
-			"web.code.webpack",
 			"web.code.compile",
 			"web.code.publish",
 			"web.code.docker.client",
