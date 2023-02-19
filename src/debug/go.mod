@@ -17,7 +17,7 @@ replace (
 )
 
 require (
-	shylinux.com/x/golang-story v0.5.7
+	shylinux.com/x/golang-story v0.5.8
 	shylinux.com/x/linux-story v0.5.4
 	shylinux.com/x/mysql-story v0.5.7
 	shylinux.com/x/nginx-story v0.5.7
