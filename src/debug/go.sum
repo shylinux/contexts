@@ -8,6 +8,10 @@ shylinux.com/x/go-sql-mysql v0.0.2 h1:XcsMEF3KnFmRu6EmxIwIF6M1o2tD1NQvel3U9m+1Ap
 shylinux.com/x/go-sql-mysql v0.0.2/go.mod h1:lHjRMZz5Lii6U+49fhkbCWgsnL+yux54SYJYWqASN8Y=
 shylinux.com/x/gogit v0.0.7 h1:2ep5QpXWLs0UBCywJuUHda/aagskYvFmn0nj3vpEdY4=
 shylinux.com/x/gogit v0.0.7/go.mod h1:wYfHxpQT1C8yNV+yC1jStIy0I12bfUCyJARhn0sNn1M=
+shylinux.com/x/golang-story v0.5.8 h1:HmP0VhtcVn/7RqMKNqstq9sLIJLGZpOGf2AphfoHJS8=
+shylinux.com/x/golang-story v0.5.8/go.mod h1:bv5ap76+uMkMLBlztFMQSZKmci2plRnw1SeJBulfAlw=
+shylinux.com/x/redis-story v0.5.8 h1:1MGebd/6YMFGULvPgcroEr2kLcSuLy1YHjisR8TpuDg=
+shylinux.com/x/redis-story v0.5.8/go.mod h1:5PAglQTnrWoCzog5RrQTtmQTH4feKEJIYon6t0tfr2g=
 shylinux.com/x/websocket v0.0.2 h1:aeeZyAsh6QN7+l5oMXlO9/rlQgx6CHvDtpZyAqMCSlU=
 shylinux.com/x/websocket v0.0.2/go.mod h1:yMcu4XS6JB11YRISXwvubh7dPM6rWPdzIRv0CrshQBY=
 shylinux.com/x/webview v0.0.2 h1:T0f2sDdiMCdDPjYwD1WS64ASBGwvZKPZkxDQ84d+ZQs=
