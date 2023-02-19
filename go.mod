@@ -7,7 +7,7 @@ replace (
 	shylinux.com/x/linux-story => ./usr/linux-story
 	shylinux.com/x/mysql-story => ./usr/mysql-story
 	shylinux.com/x/nginx-story => ./usr/nginx-story
-// shylinux.com/x/redis-story => ./usr/redis-story
+	shylinux.com/x/redis-story => ./usr/redis-story
 )
 
 replace (
