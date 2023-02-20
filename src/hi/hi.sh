@@ -1,22 +1,10 @@
-#! /bin/sh
+#!/bin/sh
 
-function show() {
-	echo "hello world"
-}
+echo "$ISH_CTX_SCRIPT <= $ISH_CTX_MODULE"
+echo "$TERM $PWD $HOME $PATH"
+echo "hello world $content $@"
 
-require "he.sh"
-require "/require/shylinux.com/x/contexts@v2.9.2/src/hi/he.sh"
-require "http://localhost:9020/require/shylinux.com/x/contexts@v2.9.2/src/hi/he.sh"
-require "https://shylinux.com/x/contexts@v2.9.2/src/hi/he.sh?content=what"
-
-show
-_list
-echo
-
-_list hi
-echo
-
-_list hi 1
-echo
-
-echo "hello world"
+require "he.sh?content=what" nice
+require "/require/shylinux.com/x/contexts@v2.9.3/src/hi/he.sh"
+require "http://192.168.10.8:9020/require/shylinux.com/x/contexts@v2.9.3/src/hi/he.sh"
+# require "https://shylinux.com/x/contexts@v2.9.3/src/hi/he.sh?content=what"
