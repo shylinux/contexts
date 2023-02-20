@@ -1,0 +1,4 @@
+package hi
+
+func init() {
+}
