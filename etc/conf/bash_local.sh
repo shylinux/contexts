@@ -13,5 +13,6 @@ ish_sys_path_load
 ish_sys_cli_prompt
 ish_sys_cli_alias vi vim
 ish_sys_cli_alias t "tmux attach"
+ish_sys_cli_alias alpine "docker run -w /root -e 'LANG=en_US.UTF-8' -it alpine"
 
 [ -f ~/.bash_temp ] && source ~/.bash_temp; rm ~/.bash_temp &>/dev/null
