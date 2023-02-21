@@ -39,7 +39,7 @@ ish_miss_prepare_volcanos
 ish_miss_prepare_learning
 
 _prepare_ttc() {
-	ish_sys_link_create ~/.bash_local $PWD/etc/conf/bash_local.sh
+	ish_sys_link_create ~/.bash_local.sh $PWD/etc/conf/bash_local.sh
 	ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 	ish_sys_cli_prepare
 	require dev/vim/vim.sh
