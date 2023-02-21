@@ -1,19 +1,18 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish/plug.sh ]; then source $HOME/.ish/plug.sh; else
-	ctx_temp=$(mktemp); if curl -h &>/dev/null; then curl -o $ctx_temp -fsSL https://shylinux.com; else wget -O $ctx_temp -q http://shylinux.com; fi; source $ctx_temp intshell
+	local temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL https://shylinux.com; else wget -O $temp -q http://shylinux.com; fi; source $temp intshell
 fi
-
-require sys/cli/file.sh
-ish_sys_path_load
 
 require miss.sh
 ish_miss_prepare_compile
 ish_miss_prepare_develop
-ish_miss_prepare_operate
+ish_miss_prepare_project
 
 # ish_miss_prepare 20220202-family
 # ish_miss_prepare 20220624-career
+# ish_miss_prepare wubi-dict
+# ish_miss_prepare word-dict
 
 # ish_miss_prepare go-sql-mysql
 # ish_miss_prepare go-qrcode
@@ -24,16 +23,12 @@ ish_miss_prepare_operate
 # ish_miss_prepare icons
 ish_miss_prepare gogit
 
-# ish_miss_prepare wubi-dict
-# ish_miss_prepare word-dict
-
 ish_miss_prepare linux-story
 ish_miss_prepare nginx-story
 ish_miss_prepare golang-story
 ish_miss_prepare redis-story
 ish_miss_prepare mysql-story
 ish_miss_prepare release
-
 ish_miss_prepare_intshell
 ish_miss_prepare_contexts
 ish_miss_prepare_icebergs
@@ -46,10 +41,8 @@ _prepare_ttc() {
 	ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 	require sys/cli/cli.sh
 	ish_sys_cli_prepare
-
 	require dev/vim/vim.sh
 	ish_dev_vim_prepare
-
 	if tmux -V; then
 		require dev/tmux/tmux.sh
 		ish_dev_tmux_prepare
