@@ -5,6 +5,8 @@ if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish
 fi
 
 require miss.sh
+require sys/sys.sh
+require sys/dev.sh
 ish_miss_prepare_compile
 ish_miss_prepare_develop
 ish_miss_prepare_project
@@ -39,7 +41,6 @@ ish_miss_prepare_learning
 _prepare_ttc() {
 	ish_sys_link_create ~/.bash_local $PWD/etc/conf/bash_local.sh
 	ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
-	require sys/cli/cli.sh
 	ish_sys_cli_prepare
 	require dev/vim/vim.sh
 	ish_dev_vim_prepare
