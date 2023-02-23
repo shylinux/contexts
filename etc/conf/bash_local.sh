@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-export LC_ALL=en_US.utf-8
+export LC_ALL=en_US.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1
 touch ~/.hushlogin
 
