@@ -20,7 +20,7 @@ prepare_package() {
 main() {
 	case "$1" in
 		app) # 生产环境
-			export ctx_log=/dev/stdout
+			# export ctx_log=/dev/stdout
 			shift && prepare_ice && while true; do
 				bin/ice.bin forever start dev dev "$@" && break
 			done
