@@ -20,7 +20,10 @@ prepare_package() {
 main() {
 	case "$1" in
 		app) # 生产环境
-			shift && prepare_ice && bin/ice.bin forever start dev dev "$@"
+			export ctx_log=/dev/stdout
+			shift && prepare_ice && while true; do
+				bin/ice.bin forever start dev dev "$@" && break
+			done
 			;;
 		dev) # 开发环境
 			shift && prepare_package && source etc/miss.sh "$@"
