@@ -22,11 +22,15 @@ main() {
 		app) # 生产环境
 			# export ctx_log=/dev/stdout
 			shift && prepare_ice && while true; do
-				bin/ice.bin forever start dev dev "$@" && break
+				# bin/ice.bin forever start dev dev "$@" && break
+				bin/ice.bin serve start dev dev "$@" && break
 			done
 			;;
 		dev) # 开发环境
-			shift && prepare_package && source etc/miss.sh "$@"
+			shift && prepare_system
+			git config --global url."$ctx_dev".insteadOf https://shylinux.com
+			git clone https://shylinux.com/x/contexts
+			cd contexts && source etc/miss.sh "$@"
 			;;
 		cmd) # 命令环境
 		   	ish_sys_dev_init >/dev/null; shift; [ -n "$*" ] && ish_sys_dev_run "$@"
