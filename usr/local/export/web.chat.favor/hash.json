@@ -31,28 +31,12 @@
       "type": "link"
     }
   },
-  "5aa1ad": {
-    "meta": {
-      "name": "app",
-      "text": "export ctx_dev=http://192.168.8.145:9020; temp=$(mktemp); if curl -h \u0026\u003e/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp app username harveyshao usernick \"码神\"",
-      "time": "2023-03-01 12:45:08",
-      "type": "shell"
-    }
-  },
   "65cc8f": {
     "meta": {
       "name": "192.168.10.1",
       "text": "http://192.168.10.1",
       "time": "2023-03-01 12:06:48",
       "type": "link"
-    }
-  },
-  "7cb6c6": {
-    "meta": {
-      "name": "dev",
-      "text": "export ctx_dev=http://192.168.8.145:9020; temp=$(mktemp); if curl -h \u0026\u003e/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp dev username harveyshao usernick \"码神\"",
-      "time": "2023-03-01 12:45:26",
-      "type": "shell"
     }
   }
 }
