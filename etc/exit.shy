@@ -1,6 +1,7 @@
+~web.chat
+	favor export
 ~aaa
 	sess export
 	user export
-
 ~cli
 	daemon export

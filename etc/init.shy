@@ -5,6 +5,9 @@
 	user import
 	sess import
 
+~web.chat
+	favor import
+
 ~aaa 
 	role white void web.code.git.spide
 	role white void web.code.git.trend

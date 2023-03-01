@@ -1,7 +1,8 @@
 #!/bin/sh
 
+export ctx_dev=${ctx_dev:="https://shylinux.com"}
 if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish/plug.sh ]; then source $HOME/.ish/plug.sh; else
-	local temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL https://shylinux.com; else wget -O $temp -q http://shylinux.com; fi; source $temp intshell
+	temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp intshell
 fi
 
 require miss.sh
