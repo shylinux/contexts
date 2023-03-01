@@ -17,15 +17,12 @@ replace (
 )
 
 replace (
-	shylinux.com/x/go-sql-mysql => ./usr/go-sql-mysql
-	shylinux.com/x/gogit => ./usr/gogit
-	shylinux.com/x/webview => ./usr/webview
-)
-
-replace (
 	shylinux.com/x/creackpty => ./usr/creackpty
 	shylinux.com/x/go-qrcode => ./usr/go-qrcode
+	shylinux.com/x/go-sql-mysql => ./usr/go-sql-mysql
+	shylinux.com/x/gogit => ./usr/gogit
 	shylinux.com/x/websocket => ./usr/websocket
+	shylinux.com/x/webview => ./usr/webview
 )
 
 require (
