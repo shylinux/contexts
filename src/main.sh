@@ -3,8 +3,6 @@
 main() {
 	case "$1" in
 		app) # 生产环境
-			# export ctx_log=/dev/stdout
-			# shift && prepare_ice && bin/ice.bin forever start dev dev "$@"
 			shift && prepare_ice && while echo; do
 				bin/ice.bin serve start dev dev "$@" && break
 			done

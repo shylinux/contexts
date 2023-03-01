@@ -63,7 +63,7 @@
 ~gdb
 	# config timer meta.enable true
 	event listen event dream.create cmd web.code.tmux.session
-	event listen event serve.start cmd web.code.publish
+	# event listen event serve.start cmd web.code.publish
 	event listen event sess.create cmd aaa.sess
 	event listen event user.create cmd aaa.sess
 
