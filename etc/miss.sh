@@ -1,9 +1,9 @@
 #!/bin/sh
 
-export ctx_dev=${ctx_dev:="https://shylinux.com"}
-if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish/plug.sh ]; then source $HOME/.ish/plug.sh; else
-	temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp intshell
-fi
+# export ctx_dev=${ctx_dev:="https://shylinux.com"}
+# if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish/plug.sh ]; then source $HOME/.ish/plug.sh; else
+# 	temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp intshell
+# fi
 
 require miss.sh
 require sys/sys.sh
@@ -17,14 +17,14 @@ ish_miss_prepare_project
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 
-# ish_miss_prepare go-sql-mysql
-# ish_miss_prepare go-qrcode
-# ish_miss_prepare creackpty
-# ish_miss_prepare websocket
-# ish_miss_prepare webview
+ish_miss_prepare go-sql-mysql
+ish_miss_prepare go-qrcode
+ish_miss_prepare creackpty
+ish_miss_prepare websocket
+ish_miss_prepare webview
 # ish_miss_prepare echarts
 # ish_miss_prepare icons
-# ish_miss_prepare gogit
+ish_miss_prepare gogit
 
 ish_miss_prepare linux-story
 ish_miss_prepare nginx-story

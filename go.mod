@@ -16,6 +16,18 @@ replace (
 	shylinux.com/x/toolkits => ./usr/toolkits
 )
 
+replace (
+	shylinux.com/x/go-sql-mysql => ./usr/go-sql-mysql
+	shylinux.com/x/gogit => ./usr/gogit
+	shylinux.com/x/webview => ./usr/webview
+)
+
+replace (
+	shylinux.com/x/creackpty => ./usr/creackpty
+	shylinux.com/x/go-qrcode => ./usr/go-qrcode
+	shylinux.com/x/websocket => ./usr/websocket
+)
+
 require (
 	shylinux.com/x/golang-story v0.5.8
 	shylinux.com/x/linux-story v0.5.4
