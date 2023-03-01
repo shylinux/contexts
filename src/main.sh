@@ -1,11 +1,5 @@
 #!/bin/sh
 
-_down_tar() { # 下载文件 file path
-	[ -f $1 ] && return; _down_big_file "$@" && tar -xf $1
-}
-_down_tars() { # 下载文件 file...
-	for file in "$@"; do _down_tar $file publish/$file; done
-}
 main() {
 	case "$1" in
 		app) # 生产环境
