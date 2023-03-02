@@ -60,6 +60,7 @@ Volcanos({river: {
 			"web.code.compile",
 			"web.code.publish",
 			"web.code.docker.client",
+			"web.code.tmux.session",
 			"web.space",
 			"web.dream",
 			"web.code.git.server",
