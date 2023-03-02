@@ -3,7 +3,7 @@
 main() {
 	case "$1" in
 		app) # 生产环境
-			shift && prepare_ice && while echo; do
+			shift && prepare_ice && while true; do
 				bin/ice.bin serve start dev dev "$@" && break
 			done
 			;;
