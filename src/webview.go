@@ -10,6 +10,8 @@ import (
 	"shylinux.com/x/icebergs/base/web"
 	"shylinux.com/x/icebergs/misc/webview"
 	kit "shylinux.com/x/toolkits"
+
+	_ "shylinux.com/x/contexts/src/h2"
 )
 
 type view struct{ *webview.WebView }
