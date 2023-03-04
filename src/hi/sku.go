@@ -1,4 +1,0 @@
-package hi
-
-func init() {
-}

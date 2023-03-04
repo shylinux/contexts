@@ -7,11 +7,12 @@ touch ~/.hushlogin
 export CTX_ROOT=${CTX_ROOT:=~/contexts}
 [ "$PWD" = "$HOME" ] && cd ~/contexts
 
-# export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ish_sys_path_load
 
 ish_sys_cli_prompt
 ish_sys_cli_alias vi vim
+ish_sys_cli_alias v vim
 ish_sys_cli_alias t "tmux attach"
 ish_sys_cli_alias busybox "docker run -w /root -it busybox"
 ish_sys_cli_alias alpine-dev "docker run -w /root -e 'LANG=en_US.UTF-8' -it alpine-dev sh"

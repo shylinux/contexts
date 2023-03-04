@@ -1,5 +1,7 @@
 #!/bin/sh
 
+require "shylinux.com/x/contexts/src/h2/h2.sh"
+
 main() {
 	case "$1" in
 		app) # 生产环境

@@ -7,20 +7,20 @@
       "type": "link"
     }
   },
-  "1b610e": {
-    "meta": {
-      "name": "192.168.8.187:9020",
-      "text": "http://192.168.8.187:9020/?debug=true",
-      "time": "2023-03-01 11:24:16",
-      "type": "link"
-    }
-  },
   "284e68": {
     "meta": {
       "name": "192.168.8.145:9020",
-      "text": "http://192.168.8.145:9020/chat/cmd/web.code.vimer?debug=true#usr/webview/:webview_test.go:1",
+      "text": "http://192.168.8.145:9020/chat/cmd/web.code.vimer?debug=true",
       "time": "2023-03-01 11:22:15",
       "type": "link"
+    }
+  },
+  "2b0c19": {
+    "meta": {
+      "name": "alpine",
+      "text": "docker run -w /root -e 'LC_ALL=en_US.UTF-8' -it alpine",
+      "time": "2023-03-04 12:39:07",
+      "type": "shell"
     }
   },
   "3d8fb3": {
@@ -36,6 +36,44 @@
       "name": "192.168.10.1",
       "text": "http://192.168.10.1",
       "time": "2023-03-01 12:06:48",
+      "type": "link"
+    }
+  },
+  "723b5b": {
+    "meta": {
+      "name": "busybox",
+      "text": "docker run -w /root -it busybox",
+      "time": "2023-03-04 12:34:00",
+      "type": "shell"
+    }
+  },
+  "938ac4": {
+    "meta": {
+      "name": "contexts.com.cn",
+      "text": "https://contexts.com.cn",
+      "time": "2023-03-04 15:25:59",
+      "type": "link"
+    }
+  },
+  "acf002": {
+    "meta": {
+      "text": "src/h2/h2.sh",
+      "time": "2023-03-04 13:07:07",
+      "type": "file"
+    }
+  },
+  "adb5dd": {
+    "meta": {
+      "text": "web.code.xterm",
+      "time": "2023-03-04 13:08:04",
+      "type": "index"
+    }
+  },
+  "c1220f": {
+    "meta": {
+      "name": "shylinux.com",
+      "text": "https://shylinux.com",
+      "time": "2023-03-04 15:25:45",
       "type": "link"
     }
   }
