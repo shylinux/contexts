@@ -31,6 +31,20 @@
       "type": "link"
     }
   },
+  "4ee328": {
+    "meta": {
+      "text": "Docker.app",
+      "time": "2023-03-04 18:16:41",
+      "type": "_open"
+    }
+  },
+  "512cfd": {
+    "meta": {
+      "text": "Google Chrome.app",
+      "time": "2023-03-04 18:09:53",
+      "type": "_open"
+    }
+  },
   "65cc8f": {
     "meta": {
       "name": "192.168.10.1",
@@ -47,6 +61,20 @@
       "type": "shell"
     }
   },
+  "76103b": {
+    "meta": {
+      "text": "Terminal.app",
+      "time": "2023-03-04 18:09:35",
+      "type": "_open"
+    }
+  },
+  "869184": {
+    "meta": {
+      "text": "web.code.xterm",
+      "time": "2023-03-04 13:08:04",
+      "type": "index"
+    }
+  },
   "938ac4": {
     "meta": {
       "name": "contexts.com.cn",
@@ -60,13 +88,6 @@
       "text": "src/h2/h2.sh",
       "time": "2023-03-04 13:07:07",
       "type": "file"
-    }
-  },
-  "adb5dd": {
-    "meta": {
-      "text": "web.code.xterm",
-      "time": "2023-03-04 13:08:04",
-      "type": "index"
     }
   },
   "c1220f": {
