@@ -68,14 +68,7 @@
       "type": "_open"
     }
   },
-  "869184": {
-    "meta": {
-      "text": "web.code.xterm",
-      "time": "2023-03-04 13:08:04",
-      "type": "index"
-    }
-  },
-  "938ac4": {
+  "937f9e": {
     "meta": {
       "name": "contexts.com.cn",
       "text": "https://contexts.com.cn",
@@ -96,6 +89,13 @@
       "text": "https://shylinux.com",
       "time": "2023-03-04 15:25:45",
       "type": "link"
+    }
+  },
+  "dd37a4": {
+    "meta": {
+      "text": "Safari.app",
+      "time": "2023-03-04 18:20:18",
+      "type": "_open"
     }
   }
 }
