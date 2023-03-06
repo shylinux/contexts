@@ -1,0 +1,7 @@
+src/binpack.go
+src/version.go
+etc/
+bin/
+var/
+usr/
+.*

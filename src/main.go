@@ -47,6 +47,8 @@ import (
 	_ "shylinux.com/x/contexts/src/hi"
 
 	_ "shylinux.com/x/contexts/src/h2"
+
+	_ "shylinux.com/x/contexts/src/h3"
 )
 
 func main() { print(ice.Run()) }

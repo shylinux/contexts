@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+	<style>button { font-size:24px; font-family:monospace; margin:10px; width:-webkit-fill-available; display:block; clear:both; }</style>
+	<script>
+		document.body.onkeydown = function(event) {
+			if (event.metaKey) {
+				switch (event.key) {
+				case "q": window.terminate(); break
+				}
+			}
+		}
+	</script>
+</head>
+<body>%s</body>
+</html>
+
