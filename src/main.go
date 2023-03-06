@@ -26,7 +26,8 @@ import (
 	_ "shylinux.com/x/linux-story/src/busybox"
 	_ "shylinux.com/x/linux-story/src/ctags"
 	_ "shylinux.com/x/linux-story/src/ffmpeg"
-	_ "shylinux.com/x/linux-story/src/gcc"
+
+	// _ "shylinux.com/x/linux-story/src/gcc"
 	_ "shylinux.com/x/linux-story/src/gdb"
 	_ "shylinux.com/x/linux-story/src/glibc"
 	_ "shylinux.com/x/linux-story/src/kernel"

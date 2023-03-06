@@ -1,6 +1,6 @@
 #!/bin/sh
 
-require "shylinux.com/x/contexts/src/h2/h2.sh"
+# require "shylinux.com/x/contexts/src/h2/h2.sh"
 
 main() {
 	case "$1" in
@@ -19,7 +19,8 @@ main() {
 		   	ish_sys_dev_init >/dev/null; shift; [ -n "$*" ] && ish_sys_dev_run "$@"
 			;;
 		*)
-			require src/hi/hi.sh
+			# require src/hi/hi.sh
+			echo "hello world"
 			;;
 	esac
 }
