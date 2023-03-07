@@ -1,0 +1,68 @@
+body.dark  { color:silver }
+body.dark legend { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none;background-color:#212121 }
+body.dark legend:hover { color:white }
+body.dark select { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none }
+body.dark select:hover { color:white }
+body.dark input { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none }
+body.dark input:hover { color:white }
+body.dark input:not([type=button]) { border-radius:0 }
+body.dark input:not([type=button]):hover { border:blue solid 1px }
+body.dark input:not([type=button]):focus { border:blue solid 1px }
+body.dark input.select:focus { border:blue solid 1px }
+body.dark input.select:hover { border:blue solid 1px }
+body.dark textarea:focus { border:blue solid 1px }
+body.dark textarea:hover { border:blue solid 1px }
+body.dark textarea { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none }
+body.dark textarea { border-radius:0 }
+body.dark form.option div.item.select { background-color:transparent }
+body.dark form.option div.item:hover { background-color:transparent }
+body.dark div.output { background-color:#0d1117 }
+body.dark div.status { background-color:black;color:silver }
+body.dark div.item.select { background-color:#212121;color:white }
+body.dark div.item:hover { background-color:#212121;color:white }
+body.dark span.item.select { background-color:#212121;color:white }
+body.dark span.item:hover { background-color:#212121;color:white }
+body.dark div.tabs div { background-color:black }
+body.dark div.tabs div:hover { background-color:#0d1117 }
+body.dark div.tabs div:hover { color:white }
+body.dark div.tabs div.select { background-color:#0d1117 }
+body.dark div.path { background-color:#0d1117 }
+body.dark div.path span:hover { background-color:#212121;color:white }
+body.dark div.plug legend { background-color:#0d1117 }
+body.dark div.plug legend.select { background-color:black;border-radius:10px }
+body.dark div.zone>div.item { background-color:black;color:silver }
+body.dark div.zone>div.item:hover { background-color:black;color:white }
+body.dark div.zone>div.list>div.zone>div.item { background-color:black;color:silver }
+body.dark div.zone>div.list>div.zone>div.item:hover { background-color:black;color:white }
+body.dark div.zone div.item>div.name:hover { color:white }
+body.dark tr.line.select { background-color:#212121;color:white }
+body.dark tr.line:hover { background-color:#212121;color:white }
+body.dark tr.line>td.line { background-color:#0d1117 }
+body.dark tr.line.select>td.line { background-color:#212121;color:white }
+body.dark div.complete>table { background-color:black;color:silver }
+body.dark table.content tr:hover { color:white;background-color:black }
+body.dark table.content th { background-color:black;color:silver }
+body.dark table.content.action td:last-child { background-color:black;color:silver }
+body.dark table.content td.select { background-color:#0d1117 }
+body.dark table.content td:hover { background-color:#0d1117 }
+body.dark h1:hover { background-color:#212121;color:white }
+body.dark h2:hover { background-color:#212121;color:white }
+body.dark h3:hover { background-color:#212121;color:white }
+body.dark a { color:blue }
+body.dark label { color:silver }
+body.dark fieldset.panel { background-color:black;color:silver }
+body.dark fieldset.panel>div.output { background-color:black;color:silver }
+body.dark fieldset.panel.Action div.output { background-color:#0d1117 }
+body.dark fieldset.plugin { background-color:black;border-radius:10px }
+body.dark fieldset.plugin >div.status { border-top:gray solid 1px }
+body.dark fieldset.story { background-color:black;border-radius:10px }
+body.dark fieldset.story >div.status { border-top:gray solid 1px }
+body.dark fieldset.input { background-color:black;border-radius:10px }body.dark fieldset.input div.output { background-color:black;border-radius:10px }
+body.dark fieldset.input { border-radius:0 }
+body.dark fieldset.input td.select { background-color:#0d1117 }
+body.dark fieldset.input td:hover { background-color:#212121 }
+body.dark fieldset.input tr:hover { background-color:#0d1117 }
+body.dark fieldset.float { background-color:black;border-radius:10px }
+body.dark div.float { background-color:black;border-radius:10px }
+body.dark div.carte div.item { background-color:black;color:silver; }
+body.dark div.carte div.item:hover { background-color:#212121;color:white }
