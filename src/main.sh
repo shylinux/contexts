@@ -5,6 +5,7 @@
 main() {
 	case "$1" in
 		app) # 生产环境
+			export PATH="$PWD/bin:$PWD/local/bin:$PWD/usr/local/go/bin:$PATH"
 			shift && prepare_ice && while true; do
 				bin/ice.bin serve start dev dev "$@" && break
 			done
