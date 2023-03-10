@@ -22,11 +22,11 @@ func main() {
 			if ice.Run(cli.SYSTEM, os.Args[0], "webview"); cli.IsSuccess(ice.Pulse) {
 				break
 			}
+			time.Sleep(time.Second)
 		}
 	} else {
 		go ice.Run(web.SERVE, tcp.START)
 		defer ice.Pulse.Cmd("exit")
-		time.Sleep(time.Second)
 		webview.Run(func(w *webview.WebView) ice.Any { return view{w} })
 	}
 }
