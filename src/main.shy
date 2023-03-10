@@ -4,6 +4,17 @@ refer `
 文档 https://contexts.com.cn/help/
 源码 https://shylinux.com/x/contexts
 `
+chapter "MacOS"
+chain `
+Trackpad
+Keyboard
+Finder
+Terminal
+Safari
+Dock
+contexts
+sshd
+`
 
 chapter "最近"
 section "windows"
