@@ -1,73 +1,24 @@
-~cli
-	daemon import
-
-~aaa 
-	user import
-	sess import
-
-~web.chat
-	favor import
-
-~aaa 
-	role white void web.code.git.spide
-	role white void web.code.git.trend
-	role white void web.code.input.find
-	role white void web.wiki.alpha.find
-	role white void require/src
-
-~web.code
-	alpine mirrors
-	alpine tzone
-
 ~web.code
 	webpack insert xterm
 	webpack insert xterm-addon-fit
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
 
-	favor remove zone _system_app
-	favor insert zone _system_app type "open -a 'System Preferences'" text "System Preferences.png"
-	favor insert zone _system_app type "open -a 'Launchpad'" text "Launchpad.png"
-	favor insert zone _system_app type "open -a 'Mission Control'" text "Mission Control.png"
-	favor insert zone _system_app type "open -a 'Activity Monitor'" text "Activity Monitor.png"
-	favor insert zone _system_app type "open -a 'Google Chrome'" text "Google Chrome.png"
-	favor insert zone _system_app type "open -a 'QuickTime Player'" text "QuickTime Player.png"
-	favor insert zone _system_app type "open -a 'Preview'" text "Preview.png"
-	favor insert zone _system_app type "open -a 'Finder'" text "Finder.png"
-	favor insert zone _system_app type "open -a 'Docker'" text "Docker.png"
-	favor insert zone _system_app type "open -a 'Safari'" text "Safari.png"
-	favor insert zone _system_app type "open -a 'Terminal'" text "Terminal.png"
-	favor insert zone _system_app type "open -a 'Contexts'" text "Contexts.png"
-	favor insert zone _system_app type "open 'http://localhost:9020'" name localhost text "Google Chrome.png"
-	favor insert zone _system_app type "open 'https://shylinux.com'" name shylinux text "Google Chrome.png"
-
-	favor remove zone _system_term
-	favor insert zone _system_term type "docker run -w /root -it alpine"
-	favor insert zone _system_term type "docker run -it contexts"
-	favor insert zone _system_term type "ice.bin source stdio"
-	favor insert zone _system_term type "tmux attach -t miss"
-	favor insert zone _system_term type "vim src/main.go"
-	favor insert zone _system_term type "python"
-	favor insert zone _system_term type "node"
-
-~web.code
-	config inner meta.show.tabs ""
-	config inner meta.show.plug ""
-	config vimer meta.show.tabs ""
-	config vimer meta.show.plug "web.code.xterm,web.chat.iframe"
-
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
 	# wubi load file usr/wubi-dict/person zone person
 
+~aaa 
+	role white void web.code.git.spide
+	role white void web.code.git.trend
+	role white void web.code.input.find
+	role white void web.wiki.alpha.find
+
 ~gdb
 	# config timer meta.enable true
-	event listen event dream.create cmd web.code.tmux.session
 	# event listen event serve.start cmd web.code.publish
-	event listen event sess.create cmd aaa.sess
-	event listen event user.create cmd aaa.sess
+	event listen event dream.create cmd web.code.tmux.session
 
 ~ssh
 	target web.code
 	source local.shy
-
