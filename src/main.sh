@@ -11,8 +11,8 @@ main() {
 			done
 			;;
 		dev) # 开发环境
-			shift && prepare_system
-			require miss.sh
+			shift && prepare_system; require miss.sh
+			[ -f ~/.gitconfig ] || ish_dev_git_prepare
 			git config --global url."$ctx_dev".insteadOf https://shylinux.com
 			git clone https://shylinux.com/x/contexts
 			cd contexts && source etc/miss.sh dev dev "$@"
