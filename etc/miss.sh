@@ -41,17 +41,9 @@ ish_miss_prepare webview
 ish_miss_prepare gogit
 
 _prepare_ttc() {
+	ish_sys_cli_prepare; ish_dev_vim_prepare; ish_dev_tmux_prepare
+	ish_sys_link_create ~/.bash_local.sh $PWD/etc/conf/bash_local.sh
 	ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
-	require dev/vim/vim.sh
-	ish_dev_vim_prepare
-	if tmux -V; then
-		require dev/tmux/tmux.sh
-		ish_dev_tmux_prepare
-  		ish_miss_prepare_session miss miss
-	else
-		ish_miss_serve_log
-	fi
+	if tmux -V; then ish_miss_prepare_session miss miss; else ish_miss_serve_log; fi
 }
-ish_sys_link_create ~/.bash_local.sh $PWD/etc/conf/bash_local.sh
-ish_sys_cli_prepare
 ish_miss_make; if [ -n "$*" ]; then ish_miss_serve "$@"; else _prepare_ttc; fi

@@ -12,6 +12,7 @@ main() {
 			;;
 		dev) # 开发环境
 			shift && prepare_system
+			require miss.sh
 			git config --global url."$ctx_dev".insteadOf https://shylinux.com
 			git clone https://shylinux.com/x/contexts
 			cd contexts && source etc/miss.sh dev dev "$@"
