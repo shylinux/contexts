@@ -61,10 +61,9 @@ Volcanos({river: {
 			"web.code.publish",
 			"web.code.docker.client",
 			"web.code.tmux.session",
-			"web.space",
-			"web.dream",
-			"web.code.git.server",
-			"web.code.git.status",
+			"web.code.xterm",
+			"web.dream", "web.space",
+			"web.code.git.server", "web.code.git.status",
 		]},
 		toolkit: {name: "工具 toolkit", index: [
 			"web.code.favor",

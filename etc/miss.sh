@@ -3,19 +3,18 @@
 if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish/plug.sh ]; then source $HOME/.ish/plug.sh; else
 	export ctx_dev=${ctx_dev:="https://shylinux.com"}
 	temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp intshell
-	require conf.sh; require miss.sh; ish_dev_git_prepare
-fi
+fi; require conf.sh; require miss.sh; ish_dev_git_prepare
 
 ish_miss_prepare_compile
 ish_miss_prepare_develop
 ish_miss_prepare_project
 
-ish_miss_prepare_intshell
 ish_miss_prepare_contexts
-ish_miss_prepare_icebergs
-ish_miss_prepare_toolkits
-ish_miss_prepare_volcanos
+ish_miss_prepare_intshell
 ish_miss_prepare_learning
+ish_miss_prepare_volcanos
+ish_miss_prepare_toolkits
+ish_miss_prepare_icebergs
 ish_miss_prepare release
 ish_miss_prepare linux-story
 ish_miss_prepare nginx-story
