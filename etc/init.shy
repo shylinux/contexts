@@ -1,3 +1,6 @@
+~cli
+	config forever meta.log.save true
+
 ~web.code
 	webpack insert xterm
 	webpack insert xterm-addon-fit

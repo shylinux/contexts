@@ -44,7 +44,6 @@ import (
 	_ "shylinux.com/x/golang-story/src/kubernetes"
 	_ "shylinux.com/x/golang-story/src/prometheus"
 
-	_ "shylinux.com/x/contexts/src/h2"
 	_ "shylinux.com/x/contexts/src/hi"
 )
 
