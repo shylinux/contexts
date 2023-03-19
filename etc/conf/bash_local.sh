@@ -12,7 +12,6 @@ if uname -s|grep -v MINGW &>/dev/null; then
 	export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 fi
 ish_sys_path_load
-
 ish_sys_cli_prompt
 ish_sys_cli_alias vi vim
 ish_sys_cli_alias v vim
