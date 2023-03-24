@@ -1,5 +1,6 @@
-~cli
-	config forever meta.log.save true
+~web.code.input
+	# wubi load file usr/wubi-dict/wubi86
+	# wubi load file usr/wubi-dict/person zone person
 
 ~web.code
 	webpack insert xterm
@@ -7,21 +8,16 @@
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
 
-~web.code.input
-	# wubi load file usr/wubi-dict/wubi86
-	# wubi load file usr/wubi-dict/person zone person
-
 ~aaa 
-	role white void web.code.git.spide
 	role white void web.code.git.trend
-	role white void web.code.input.find
-	role white void web.wiki.alpha.find
+	role white void web.code.git.spide
 
 ~gdb
 	# config timer meta.enable true
-	# event listen event serve.start cmd web.code.publish
-	event listen event dream.create cmd web.code.tmux.session
+	event listen event serve.start cmd web.serve
+	event listen event serve.start cmd web.broad
 	event listen event dream.create cmd web.code.xterm
+	event listen event dream.create cmd web.code.tmux.session
 
 ~ssh
 	target web.code
