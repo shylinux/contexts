@@ -1,0 +1,17 @@
+# demo script
+
+let a = 1+2*3+1-0
+
+func show {
+	if a > 2 {
+		system pwd
+	}
+	system pwd
+}
+show
+
+for a > 2 {
+	system pwd
+	let a = a - 1
+}
+show
