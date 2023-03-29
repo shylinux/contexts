@@ -1,5 +1,7 @@
 # demo script
 
+for i = 1; i < 10; i++ { pwd }
+return 
 let a = 1+2*3+1-0
 
 func show {
@@ -13,10 +15,6 @@ func show {
 show
 pwd
 
-for a > 2 {
-	pwd
-	let a = a - 1
-}
 show
 return
 pwd
