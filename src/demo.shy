@@ -1,20 +1,24 @@
 # demo script
 
-for i = 1; i < 10; i++ { pwd }
-return 
-let a = 1+2*3+1-0
-
-func show {
-	if a > 2 {
-		pwd
-	}
-	if a > 2 { pwd }
-	return
-	pwd
-}
-show
-pwd
-
-show
+let a = system(ls bin)
 return
-pwd
+
+let a = 1
+if a > 0 { pwd }
+if a = 2; a > 0 { pwd }
+for a = 2; a < 5; a++ { pwd }
+for a = 2; a < 5 {
+	pwd
+	let a = a + 1
+}
+let a = 2
+for a < 5 {
+	pwd
+	let a = a + 1
+}
+let a = 2
+for ;a < 5; {
+	pwd
+	let a = a + 1
+}
+
