@@ -4,14 +4,16 @@ let a = 1+2*3+1-0
 
 func show {
 	if a > 2 {
-		system pwd
+		pwd
 	}
-	system pwd
+	pwd
 }
 show
+pwd
 
 for a > 2 {
-	system pwd
+	pwd
 	let a = a - 1
 }
 show
+pwd
