@@ -1,6 +1,7 @@
 # demo script
 
 let a = system(ls bin)
+let a = system(ls, etc)
 return
 
 let a = 1
