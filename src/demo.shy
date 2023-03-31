@@ -1,25 +1,20 @@
 # demo script
 
-let a = system(ls bin)
-let a = system(ls, etc)
-return
+cmd space
 
-let a = 1
-if a > 0 { pwd }
-if a = 2; a > 0 { pwd }
+let a = 1;
+
+let a, b = 1, 2
+
+if a > 1 { pwd }
+
+if a, b = 2, 4; a > 1 { pwd }
+
 for a = 2; a < 5; a++ { pwd }
-for a = 2; a < 5 {
-	pwd
-	let a = a + 1
-}
-let a = 2
-for a < 5 {
-	pwd
-	let a = a + 1
-}
-let a = 2
-for ;a < 5; {
-	pwd
-	let a = a + 1
-}
 
+func show(a, b) (c, d) {
+	let c = system(ls, a)
+	return
+	pwd
+}
+let e, f = show(etc, bin)
