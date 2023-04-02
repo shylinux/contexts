@@ -1,20 +1,42 @@
-# demo script
-
-cmd space
-
-let a = 1;
-
-let a, b = 1, 2
-
-if a > 1 { pwd }
-
-if a, b = 2, 4; a > 1 { pwd }
-
-for a = 2; a < 5; a++ { pwd }
-
-func show(a, b) (c, d) {
-	let c = system(ls, a)
-	return
-	pwd
+func inputs(m, key) {
+	switch key {
+	case "name":
+		m.Push(key, "hi")
+	default:
+		m.Push(key, "good")
+	}
 }
-let e, f = show(etc, bin)
+func list(m, arg, name) {
+	m.Push("h1", "hi").Push("h1", "he")
+	m.Table(func(value) { m.Echo(value["h1"]) })
+	info; m.Cmdy("cli.qrcode", "hello world")
+	m.Action("list1", "list2", "list3")
+}
+func list1(m) {
+	let dict = kit.Dict("a", 1, "b", 2)
+	m.Echo("%#v", dict).Echo("\n")
+	m.Echo("%#v", dict["a"]).Echo("\n")
+	let list = kit.List("a", 1, "b", 2)
+	m.Echo("%#v", list).Echo("\n")
+	m.Echo("%#v", list[0]).Echo("\n")
+}
+func list2(m, name) {
+	if name == "h1" {
+		m.Echo("h1")
+	} else if name == "h2" {
+		m.Echo("h2")
+	} else {
+		m.Echo("h3")
+	}
+}
+func list3(m) {
+	for i = 0; i < 10; i++ {
+		m.Echo(i)
+		if i < 5 {
+			continue
+		}
+		if i > 1 {
+			break
+		}
+	}
+}
