@@ -1,9 +1,49 @@
 #! yac.stack
 
-func list(m, arg) {
+func list(m, arg, name) {
 	cli.system "pwd"
 	m.Copy(cli.system("pwd"))
 	m.Cmdy("cli.system", "pwd")
 	m.Cmdy(cli.SYSTEM, "pwd")
 	m.Cmdy(SYSTEM, "pwd")
+
+	m.Echo("%v", tcp.IsLocalHost(m, "127.0.0.1"))
+
+	defer func() { m.Echo("hello defer") }()
+	m.Push("h1", "hi").Push("h1", "he")
+	m.Table(func(value) { m.Echo(value["h1"]) })
+	m.Cmdy("tcp.host")
+	m.Action("list1", "list2", "list3")
+}
+func inputs(m, key) {
+	switch key {
+	case "name":
+		m.Push(key, "hi")
+	default:
+		m.Push(key, "good")
+	}
+}
+func list1(m) {
+	let dict = kit.Dict("a", 1, "b", 2)
+	m.Echo("%#v", dict).Echo("\n")
+	m.Echo("%#v", dict["a"]).Echo("\n")
+	let data = kit.List("a", 1, "b", 2)
+	m.Echo("%#v", data).Echo("\n")
+	m.Echo("%#v", data[0]).Echo("\n")
+}
+func list2(m, name) {
+	if name == "h1" {
+		m.Echo("h1")
+	} else if name == "h2" {
+		m.Echo("h2")
+	} else {
+		m.Echo("h3")
+	}
+}
+func list3(m) {
+	for i = 0; i < 10; i++ {
+		m.Echo(i)
+		if i < 5 { continue }
+		if i > 1 { break }
+	}
 }
