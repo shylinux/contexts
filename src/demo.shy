@@ -1,3 +1,5 @@
+#! yac.stack
+
 func inputs(m, key) {
 	switch key {
 	case "name":
@@ -7,6 +9,7 @@ func inputs(m, key) {
 	}
 }
 func list(m, arg, name) {
+	defer func() { m.Echo("hello defer") }()
 	m.Push("h1", "hi").Push("h1", "he")
 	m.Table(func(value) { m.Echo(value["h1"]) })
 	info; m.Cmdy("cli.qrcode", "hello world")
@@ -16,9 +19,9 @@ func list1(m) {
 	let dict = kit.Dict("a", 1, "b", 2)
 	m.Echo("%#v", dict).Echo("\n")
 	m.Echo("%#v", dict["a"]).Echo("\n")
-	let list = kit.List("a", 1, "b", 2)
-	m.Echo("%#v", list).Echo("\n")
-	m.Echo("%#v", list[0]).Echo("\n")
+	let data = kit.List("a", 1, "b", 2)
+	m.Echo("%#v", data).Echo("\n")
+	m.Echo("%#v", data[0]).Echo("\n")
 }
 func list2(m, name) {
 	if name == "h1" {
@@ -32,11 +35,7 @@ func list2(m, name) {
 func list3(m) {
 	for i = 0; i < 10; i++ {
 		m.Echo(i)
-		if i < 5 {
-			continue
-		}
-		if i > 1 {
-			break
-		}
+		if i < 5 { continue }
+		if i > 1 { break }
 	}
 }
