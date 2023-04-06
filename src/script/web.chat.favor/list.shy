@@ -1,0 +1,8 @@
+func create(m, type) {
+	m.Echo("hello world")
+}
+func list(m, hash) {
+	m.Echo("hello world")
+	m.Echo("hello world")
+	m.Action("create").StatusTime().Display()
+}

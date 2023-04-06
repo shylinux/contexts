@@ -1,0 +1,6 @@
+#! yac.stack
+
+func show(m) {
+	m.Echo("hello world")
+}
+
