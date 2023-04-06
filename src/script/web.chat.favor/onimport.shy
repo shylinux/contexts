@@ -1,4 +1,0 @@
-func _init(can, msg) {
-	msg.Echo("hello world")
-	msg.Dump(can)
-}

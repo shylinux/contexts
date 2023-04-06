@@ -1,23 +1,11 @@
 package tmux
 
-import (
-	ice "shylinux.com/x/icebergs"
-	"shylinux.com/x/icebergs/base/cli"
-	kit "shylinux.com/x/toolkits"
-)
+import "shylinux.com/x/ice"
 
-func init() { m.DebugStack() }
+type tmux struct{}
 
-const TMUX = "tmux"
+func (s tmux) List(m *ice.Message, arg ...string) {
+	m.Echo("hello world")
+}
 
-var Index = &ice.Context{Name: TMUX, Help: "工作台", Commands: ice.Commands{
-	TMUX: {Name: "tmux path auto start order build download", Help: "服务", Actions: ice.MergeActions(ice.Actions{
-		cli.START: {Help: "启动", Hand: func(m *ice.Message, arg ...string) {}},
-	}), Hand: func(m *ice.Message, arg ...string) {}},
-}}
-
-// func init() { code.Index.Register(Index, &web.Frame{}) }
-func init() { m.DebugStack() }
-func init() { m.Echo(kit.Formats(Index)) }
-func init() { m.Echo(kit.Formats(Index.Name)) }
-func init() { m.Echo(kit.Formats(Index.Commands[TMUX].Name)) }
+func init() { ice.Cmd("web.code.tmux2.tmux2", tmux{}) }
