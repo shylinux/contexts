@@ -40,6 +40,18 @@ require (
 )
 
 require (
+	fyne.io/fyne v1.4.3 // indirect
+	github.com/alecthomas/chroma v0.10.0 // indirect
+	github.com/go-sql-driver/mysql v1.7.0
+	github.com/gomarkdown/markdown v0.0.0-20230322041520-c84983bdbf2a
+	github.com/gomodule/redigo/redis v0.0.1
+	github.com/gorilla/websocket v1.5.0
+	github.com/nsf/termbox-go v1.1.1
+	github.com/pkg/sftp v1.13.5 // indirect
+	github.com/shylinux/icebergs v0.3.8
+	github.com/shylinux/toolkits v0.2.6
+	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
+	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 	shylinux.com/x/gogit v0.0.7
 	shylinux.com/x/webview v0.0.2
 )

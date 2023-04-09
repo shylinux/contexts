@@ -1,8 +1,6 @@
 package {{.Option "zone"}}
 
-import (
-	"shylinux.com/x/ice"
-)
+import "shylinux.com/x/ice"
 
 type {{.Option "name"}} struct {
 	ice.{{.Option "type"}}
