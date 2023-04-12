@@ -1,38 +1,5 @@
 title "contexts"
-refer `
-官网 https://contexts.com.cn
-文档 https://contexts.com.cn/help/
-源码 https://shylinux.com/x/contexts
-`
-chapter "MacOS"
-chain `
-Trackpad
-Keyboard
-Finder
-Terminal
-Safari
-Dock
-contexts
-sshd
-`
-
-chapter "最近"
-section "windows"
-refer `
-https://www.ngui.cc/el/1813831.html
-edge://settings/appearance
-`
-section "color"
-refer `
-颜色 https://www.cnblogs.com/cl1234/p/5545290.html
-https://www.w3.org/TR/?tag=css
-https://www.w3schools.com/colors/colors_names.asp
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors
-https://docs.tizen.org/platform/what-is-tizen/overview/
-https://www.cnblogs.com/cl1234/p/5545290.html
-http://www.unicode.org/charts/
-https://www.w3schools.com/charsets/ref_html_utf8.asp
-`
+source recent.shy
 
 chapter "实践"
 label `
@@ -55,6 +22,7 @@ contexts toolkits learning
 section "火山架"
 field "趋势图" web.code.git.trend args `volcanos`
 field "架构图" web.code.git.spide args `volcanos`
+
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`
 label `
@@ -73,16 +41,4 @@ section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
-spark md README.md
-source h5/h5.shy
-source h5/h5.shy
-source h6/h6.shy
-source h7/h7.shy
-source h8/h8.shy
-source h9/h9.shy
-source h3/h3.shy
-source h4/h4.shy
-source h5/h5.shy
-source h6/h6.shy
-source h7/h7.shy
-source h8/h8.shy
+spark README.md

@@ -1,0 +1,42 @@
+premenu
+endmenu
+spark inner `good night`
+video some/some.mov
+image avatar.jpeg
+image background.jpeg
+spark `good night`
+table `
+hi he
+1 2
+3 4
+`
+chapter "最近"
+section "MacOS"
+label `
+Trackpad
+Keyboard
+Finder
+Terminal
+Safari
+Dock
+contexts
+sshd
+`
+
+section "windows"
+refer `
+https://www.ngui.cc/el/1813831.html
+edge://settings/appearance
+`
+
+section "color"
+refer `
+颜色 https://www.cnblogs.com/cl1234/p/5545290.html
+https://www.w3.org/TR/?tag=css
+https://www.w3schools.com/colors/colors_names.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors
+https://docs.tizen.org/platform/what-is-tizen/overview/
+https://www.cnblogs.com/cl1234/p/5545290.html
+http://www.unicode.org/charts/
+https://www.w3schools.com/charsets/ref_html_utf8.asp
+`
