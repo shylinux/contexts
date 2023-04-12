@@ -52,10 +52,10 @@ body.light a { color:blue }
 body.light label { color:black }
 body.light fieldset.panel { background-color:white;color:black }
 body.light fieldset.panel>div.output { background-color:white;color:black }
-body.light fieldset.panel.Action div.output { background-color:white }
-body.light fieldset.plugin { background-color:aliceblue;border-radius:10px }
+body.light fieldset.panel.Action div.output { background-color:white; }
+body.light fieldset.plugin { background-color:aliceblue;border-radius:10px; }
 body.light fieldset.plugin >div.status { border-top:transparent solid 1px }
-body.light fieldset.story { background-color:aliceblue;border-radius:10px }
+body.light fieldset.story { background-color:aliceblue;border-radius:10px; }
 body.light fieldset.story >div.status { border-top:transparent solid 1px }
 body.light fieldset.input { background-color:aliceblue;border-radius:10px }body.light fieldset.input div.output { background-color:aliceblue;border-radius:10px }
 body.light fieldset.input { border-radius:0 }

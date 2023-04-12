@@ -1,9 +1,9 @@
 body.dark  { color:silver }
 body.dark legend { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none;background-color:#212121 }
 body.dark legend:hover { color:white }
-body.dark select { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none }
+body.dark select { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none; }
 body.dark select:hover { color:white }
-body.dark input { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none }
+body.dark input { background-color:#212121;color:silver;border-radius:5px;outline:none;box-shadow:none; }
 body.dark input:hover { color:white }
 body.dark input:not([type=button]) { border-radius:0 }
 body.dark input:not([type=button]):hover { border:blue solid 1px }
@@ -52,10 +52,10 @@ body.dark a { color:blue }
 body.dark label { color:silver }
 body.dark fieldset.panel { background-color:black;color:silver }
 body.dark fieldset.panel>div.output { background-color:black;color:silver }
-body.dark fieldset.panel.Action div.output { background-color:#0d1117 }
-body.dark fieldset.plugin { background-color:black;border-radius:10px }
+body.dark fieldset.panel.Action div.output { background-color:#0d1117; }
+body.dark fieldset.plugin { background-color:black;border-radius:10px; }
 body.dark fieldset.plugin >div.status { border-top:gray solid 1px }
-body.dark fieldset.story { background-color:black;border-radius:10px }
+body.dark fieldset.story { background-color:black;border-radius:10px; }
 body.dark fieldset.story >div.status { border-top:gray solid 1px }
 body.dark fieldset.input { background-color:black;border-radius:10px }body.dark fieldset.input div.output { background-color:black;border-radius:10px }
 body.dark fieldset.input { border-radius:0 }
