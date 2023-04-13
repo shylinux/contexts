@@ -6,22 +6,22 @@ label `
 code wiki chat team mall
 linux nginx docker redis mysql
 bash git golang vim tmux
-` fg blue bg yellow
+`
 
 chapter "理论"
 label `
 集群化 模块化 自动化
-` fg yellow bg black text.font-family none
+`
 
 chapter "项目"
 label `
 intshell icebergs volcanos
 contexts toolkits learning
-` fg red bg black
+`
 
 section "火山架"
-field "趋势图" web.code.git.trend args `volcanos`
 field "架构图" web.code.git.spide args `volcanos`
+field "趋势图" web.code.git.trend args `volcanos`
 
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`

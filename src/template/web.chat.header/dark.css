@@ -35,10 +35,10 @@ body.dark div.zone>div.item:hover { background-color:black;color:white }
 body.dark div.zone>div.list>div.zone>div.item { background-color:black;color:silver }
 body.dark div.zone>div.list>div.zone>div.item:hover { background-color:black;color:white }
 body.dark div.zone div.item>div.name:hover { color:white }
-body.dark tr.line.select { background-color:#212121;color:white }
-body.dark tr.line:hover { background-color:#212121;color:white }
+body.dark tr.line.select { background-color:#212121; }
+body.dark tr.line:hover { background-color:#212121; }
 body.dark tr.line>td.line { background-color:#0d1117 }
-body.dark tr.line.select>td.line { background-color:#212121;color:white }
+body.dark tr.line.select>td.line { background-color:#212121; }
 body.dark div.complete>table { background-color:black;color:silver }
 body.dark table.content tr:hover { color:white;background-color:black }
 body.dark table.content th { background-color:black;color:silver }
