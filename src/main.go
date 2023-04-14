@@ -16,8 +16,6 @@ import (
 	_ "shylinux.com/x/linux-story/iso/alpine"
 	_ "shylinux.com/x/linux-story/src/busybox"
 	_ "shylinux.com/x/linux-story/src/ctags"
-	_ "shylinux.com/x/mysql-story/src/client"
-	_ "shylinux.com/x/mysql-story/src/server"
 	_ "shylinux.com/x/nginx-story/src/client"
 	_ "shylinux.com/x/nginx-story/src/server"
 	_ "shylinux.com/x/redis-story/src/client"

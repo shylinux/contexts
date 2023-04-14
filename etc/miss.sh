@@ -20,7 +20,6 @@ ish_miss_prepare linux-story
 ish_miss_prepare nginx-story
 ish_miss_prepare golang-story
 ish_miss_prepare redis-story
-ish_miss_prepare mysql-story
 
 # ish_miss_prepare 20220202-family
 # ish_miss_prepare 20220624-career
@@ -29,11 +28,8 @@ ish_miss_prepare mysql-story
 # ish_miss_prepare echarts
 # ish_miss_prepare icons
 
-ish_miss_prepare go-sql-mysql
 ish_miss_prepare go-qrcode
-ish_miss_prepare creackpty
 ish_miss_prepare websocket
-ish_miss_prepare webview
 ish_miss_prepare gogit
 
 _prepare_ttc() {

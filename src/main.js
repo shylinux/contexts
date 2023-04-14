@@ -49,11 +49,6 @@ Volcanos({river: {
 			{name: "ctx", help: "消息队列", index: "web.wiki.word", args:["usr/redis-story/src/kafka/kafka.shy"]},
 			{name: "ctx", help: "消息队列", index: "web.wiki.word", args:["usr/redis-story/src/pulsar/pulsar.shy"]},
 		]},
-		mysql: {name: "存储 mysql", list: [
-			{name: "ctx", help: "数据存储", index: "web.wiki.word", args:["usr/mysql-story/src/main.shy"]},
-			{name: "ctx", help: "搜索引擎", index: "web.wiki.word", args:["usr/mysql-story/src/elasticsearch/elasticsearch.shy"]},
-			{name: "ctx", help: "搜索引擎", index: "web.wiki.word", args:["usr/mysql-story/src/clickhouse/clickhouse.shy"]},
-		]},
 	}},
 	profile: {name: "测试群", storm: {
 		release: {name: "发布 release", index: [
