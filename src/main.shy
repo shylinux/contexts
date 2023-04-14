@@ -2,6 +2,12 @@ title "contexts"
 source recent.shy
 
 chapter "实践"
+chain `
+ice
+	mdb
+	web
+	aaa
+`
 label `
 code wiki chat team mall
 linux nginx docker redis mysql
