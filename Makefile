@@ -6,7 +6,6 @@ binpack = src/binpack.go
 all: def
 	@date +"%Y-%m-%d %H:%M:%S"
 	go build -v -o ${binarys} src/main.go ${version} ${binpack} && ./${binarys} forever restart &>/dev/null
-	# go build -v -o ${binarys} src/main.go ${version} ${binpack}
 
 app: def
 	CGO_ENABLED=1 go build -v -o ${publish}/contexts.app/Contents/MacOS/contexts src/webview.go ${version} ${binpack} && ./${binarys} forever restart &>/dev/null

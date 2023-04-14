@@ -34,12 +34,7 @@ require (
 )
 
 require (
-	shylinux.com/x/ice v1.3.0
-	shylinux.com/x/icebergs v1.5.4
-	shylinux.com/x/toolkits v0.7.4
-)
-
-require (
-	shylinux.com/x/gogit v0.0.7
-	shylinux.com/x/webview v0.0.2
+	shylinux.com/x/ice v1.3.1
+	shylinux.com/x/icebergs v1.5.5
+	shylinux.com/x/toolkits v0.7.5
 )
