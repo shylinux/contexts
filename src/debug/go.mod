@@ -5,7 +5,6 @@ go 1.11
 replace (
 	shylinux.com/x/golang-story => ./usr/golang-story
 	shylinux.com/x/linux-story => ./usr/linux-story
-	shylinux.com/x/mysql-story => ./usr/mysql-story
 	shylinux.com/x/nginx-story => ./usr/nginx-story
 	shylinux.com/x/redis-story => ./usr/redis-story
 )
@@ -17,24 +16,20 @@ replace (
 )
 
 replace (
-	shylinux.com/x/creackpty => ./usr/creackpty
+	shylinux.com/x/go-git/v5 => ./usr/go-git
 	shylinux.com/x/go-qrcode => ./usr/go-qrcode
-	shylinux.com/x/go-sql-mysql => ./usr/go-sql-mysql
-	shylinux.com/x/gogit => ./usr/gogit
 	shylinux.com/x/websocket => ./usr/websocket
-	shylinux.com/x/webview => ./usr/webview
 )
 
 require (
 	shylinux.com/x/golang-story v0.5.8
 	shylinux.com/x/linux-story v0.5.4
-	shylinux.com/x/mysql-story v0.5.7
 	shylinux.com/x/nginx-story v0.5.7
 	shylinux.com/x/redis-story v0.5.8
 )
 
 require (
-	shylinux.com/x/ice v1.3.1
-	shylinux.com/x/icebergs v1.5.5
+	shylinux.com/x/ice v1.3.2
+	shylinux.com/x/icebergs v1.5.6
 	shylinux.com/x/toolkits v0.7.5
 )
