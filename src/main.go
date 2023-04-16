@@ -13,8 +13,6 @@ import (
 	_ "shylinux.com/x/icebergs/misc/java"
 	_ "shylinux.com/x/icebergs/misc/node"
 
-	_ "shylinux.com/x/icebergs/misc/repos"
-
 	_ "shylinux.com/x/linux-story/iso/alpine"
 	_ "shylinux.com/x/linux-story/src/busybox"
 	_ "shylinux.com/x/linux-story/src/ctags"
