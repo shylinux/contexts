@@ -5,6 +5,8 @@ export LC_ALL=en_US.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1
 touch ~/.hushlogin
 
+export GOPROXY=https://goproxy.cn
+export GOPRIVATE=shylinux.com
 export CTX_ROOT=${CTX_ROOT:=~/contexts}
 [ "$PWD" = "$HOME" ] && cd ~/contexts
 [ "$PWD" = "/" ] && cd ~/contexts

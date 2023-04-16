@@ -16,12 +16,14 @@ replace (
 )
 
 replace (
+	shylinux.com/x/go-git/v5 => ./usr/go-git
 	shylinux.com/x/go-qrcode => ./usr/go-qrcode
 	shylinux.com/x/gogit => ./usr/gogit
 	shylinux.com/x/websocket => ./usr/websocket
 )
 
 require (
+	shylinux.com/x/go-git/v5 v5.6.2
 	shylinux.com/x/golang-story v0.5.8
 	shylinux.com/x/linux-story v0.5.4
 	shylinux.com/x/nginx-story v0.5.7
