@@ -2,6 +2,12 @@ module shylinux.com/x/contexts
 
 go 1.11
 
+replace (
+	shylinux.com/x/ice => ./usr/release
+	shylinux.com/x/icebergs => ./usr/icebergs
+	shylinux.com/x/toolkits => ./usr/toolkits
+)
+
 require (
 	shylinux.com/x/golang-story v0.6.0
 	shylinux.com/x/linux-story v0.5.6
