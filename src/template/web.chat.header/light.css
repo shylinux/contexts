@@ -26,7 +26,6 @@ body.light div.tabs div { background-color:aliceblue }
 body.light div.tabs div:hover { background-color:white }
 body.light div.tabs div:hover { color:black }
 body.light div.tabs div.select { background-color:white }
-body.light div.path { background-color:white }
 body.light div.path span:hover { background-color:aliceblue;color:black }
 body.light div.plug legend { background-color:white }
 body.light div.plug legend.select { background-color:aliceblue;border-radius:10px }
