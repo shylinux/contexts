@@ -15,6 +15,12 @@ replace (
 	shylinux.com/x/toolkits => ./usr/toolkits
 )
 
+replace (
+	shylinux.com/x/go-git => ./usr/go-git
+	shylinux.com/x/go-qrcode => ./usr/go-qrcode
+	shylinux.com/x/websocket => ./usr/websocket
+)
+
 require (
 	shylinux.com/x/golang-story v0.6.0
 	shylinux.com/x/linux-story v0.5.6
