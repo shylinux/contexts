@@ -5,7 +5,6 @@ go 1.11
 require (
 	shylinux.com/x/golang-story v0.5.9
 	shylinux.com/x/linux-story v0.5.5
-	shylinux.com/x/mysql-story v0.5.8
 	shylinux.com/x/nginx-story v0.5.8
 	shylinux.com/x/redis-story v0.5.9
 )
