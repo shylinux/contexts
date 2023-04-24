@@ -2,12 +2,6 @@ title "contexts"
 source recent.shy
 
 chapter "实践"
-chain `
-ice
-	mdb
-	web
-	aaa
-`
 label `
 code wiki chat team mall
 linux nginx docker redis mysql
@@ -23,14 +17,21 @@ chapter "项目"
 label `
 intshell icebergs volcanos
 contexts toolkits learning
-`
+` index web.code.git.spide
 
 section "火山架"
-field "架构图" web.code.git.spide args `volcanos`
 field "趋势图" web.code.git.trend args `volcanos`
+field "架构图" web.code.git.spide args `volcanos`
 
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`
+field "架构图" web.code.git.spide args `icebergs`
+chain `
+ice
+	mdb
+	web
+	aaa
+`
 label `
 ctx mdb web aaa
 lex yac ssh gdb
@@ -41,7 +42,6 @@ bash ssh git vim tmux
 java node chrome webview coder input alpha
 wx mp lark wework	
 ` compact true
-field "架构图" web.code.git.spide args `icebergs`
 
 section "神农架"
 field "趋势图" web.code.git.trend args `intshell`

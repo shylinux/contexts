@@ -1,9 +1,8 @@
 src/binpack.go
 src/version.go
-etc/
+etc/local.shy
 bin/
 var/
 usr/
-tags
 .*
 
