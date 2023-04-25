@@ -1,6 +1,6 @@
 module shylinux.com/x/contexts
 
-go 1.11
+go 1.13
 
 replace (
 	shylinux.com/x/golang-story => ./usr/golang-story
