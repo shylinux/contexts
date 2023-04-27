@@ -1,4 +1,4 @@
-body.light  { color:black }
+body.light  { background-color:#4a566e; color:black }
 body.light legend { background-color:white;color:black;border-radius:5px;outline:none;box-shadow:none;background-color:lightsteelblue }
 body.light legend:hover { color:black }
 body.light select { background-color:white;color:black;border-radius:5px;outline:none;box-shadow:none }
@@ -63,6 +63,6 @@ body.light fieldset.input td.select { background-color:white }
 body.light fieldset.input td:hover { background-color:aliceblue }
 body.light fieldset.input tr:hover { background-color:white }
 body.light fieldset.float { background-color:aliceblue;border-radius:10px }
-body.light div.float { background-color:aliceblue;border-radius:10px }
+body.light div.float { background-color:aliceblue; }
 body.light div.carte div.item { background-color:aliceblue;color:black; }
 body.light div.carte div.item:hover { background-color:white;color:black }
