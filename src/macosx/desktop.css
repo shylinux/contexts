@@ -1,0 +1,43 @@
+fieldset.macosx.desktop { background-size:cover; background-position:center; color:#e8eaed; }
+body.dark fieldset.macosx.desktop>div.output { background-color:unset; }
+fieldset.macosx.desktop>div.output>fieldset.macosx>div.output { background-color:transparent; }
+fieldset.macosx.desktop>div.output>fieldset.macosx.menu { background-color:#08234ad1; color:#e8eaed; line-height:25px; height:25px; width:100%; position:absolute; top:0; }
+fieldset.macosx.desktop>div.output>fieldset.macosx.controls { background-color:#08234ad1; height:40%; width:240px; position:absolute; top:20px; right:0; }
+fieldset.macosx.desktop>div.output>fieldset.macosx.notifications { background-color:#08234ad1; height:80%; width:240px; position:absolute; top:10%; right:0; }
+fieldset.macosx.desktop>div.output>fieldset.macosx.dock { position:absolute; bottom:10px; left:300px; transition:margin-left 0.3s; }
+fieldset.macosx.desktop>div.output>fieldset.macosx.dock:hover { margin-left:-40px; transition:margin-left 0.3s; }
+fieldset.macosx.desktop>div.output>div.desktop:not(.select) { display:none; }
+fieldset.macosx.desktop>div.output>div.desktop>fieldset { position:absolute; }
+fieldset.macosx.desktop>div.output>div.desktop.scale>fieldset { scale:0.6; }
+// fieldset.macosx.desktop>div.output>div.desktop fieldset { background-color:#333434; border:#ffffff3d solid 1px; border-top:#ffffff52 ridge 2px; border-radius:10px; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset { background-color:#333434; border-radius:10px; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset>legend { background-color:unset; margin:10px 0; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset>form.option>* { margin:10px 0; background-color:unset; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset>div.action>* { margin:10px 0; }
+fieldset.macosx.desktop>div.output>div.desktop>fieldset>div.output { background-color:#1a1d1d; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset>div.status { background-color:transparent; border-top:#3e4040 solid 1px; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset>div.status>* { margin:10px 0; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset input { background-color:#333434; border:#404141 solid 1px; border-radius:5px; box-shadow:unset; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset input[type=button] { background-color:#5e5f5f; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset table.content th { background-color:unset; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset table.content.action td:last-child { background-color:unset; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset table.content tr:nth-child(odd) { background-color:#1a1d1e; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset table.content tr:nth-child(even) { background-color:#282B2F; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset>div.output.card>div.item { border:#3e4040 solid 1px; }
+fieldset.macosx.desktop>div.output>div.desktop fieldset>div.output.card>div.item>div.title { border-bottom:#3e4040 solid 1px; }
+
+fieldset.macosx.menu>div.output>div.item { padding:0 5px; float:right; cursor:pointer; }
+fieldset.macosx.menu>div.output>div.icon { padding:0 5px; float:right; cursor:pointer; }
+fieldset.macosx.dock>div.output { background-color:#02142196; border:#ffffff3d solid 1px; border-radius:20px; height:80px; min-width:200px; overflow:visible; display:flex; z-index:11; }
+fieldset.macosx.dock>div.output>div.item { text-align:center; align-self:baseline; transition:margin-top 0.3s; }
+fieldset.macosx.dock>div.output>div.item:hover { background-color:unset; margin-top:-80px; transition:margin-top 0.3s; }
+fieldset.macosx.dock>div.output>div.item img { width:80px; transition:width 0.3s; }
+fieldset.macosx.dock>div.output>div.item img:hover { width:160px; transition:width 0.3s; }
+
+div.carte.macosx.float { background:#29323beb; color:#e8eaed; font-size:14px; padding:10px; border:#ffffff5e solid 1px; border-radius:8px; }
+div.carte.macosx.float div.item { background:transparent; }
+div.carte.macosx.float hr { border-bottom:gray solid 1px; }
+
+fieldset.macosx.desktop input { color:#e8eaed; }
+fieldset.macosx.desktop>div.output>div.item { text-align:center; width:120px; float:left; overflow:hidden; }
+fieldset.macosx.desktop>div.output>div.item img { width:80px; }

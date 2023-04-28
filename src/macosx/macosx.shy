@@ -1,0 +1,13 @@
+title "macosx"
+chain `
+desktop
+	menu
+	dock
+	finder
+		trash
+		safari
+		preview
+		terminal
+	settings
+	notifications
+`

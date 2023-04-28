@@ -26,7 +26,7 @@ ish_miss_prepare redis-story
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 # ish_miss_prepare echarts
-# ish_miss_prepare icons
+ish_miss_prepare icons
 
 ish_miss_prepare websocket
 ish_miss_prepare go-qrcode
