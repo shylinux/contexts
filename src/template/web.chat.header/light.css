@@ -1,68 +1,52 @@
-body.light  { background-color:#4a566e; color:black }
-body.light legend { background-color:white;color:black;border-radius:5px;outline:none;box-shadow:none;background-color:lightsteelblue }
-body.light legend:hover { color:black }
-body.light select { background-color:white;color:black;border-radius:5px;outline:none;box-shadow:none }
-body.light select:hover { color:black }
-body.light input { background-color:white;color:black;border-radius:5px;outline:none;box-shadow:none }
-body.light input:hover { color:black }
-body.light input:not([type=button]) { border-radius:0 }
-body.light input:not([type=button]):hover { border:blue solid 1px }
-body.light input:not([type=button]):focus { border:blue solid 1px }
-body.light input.select:focus { border:blue solid 1px }
-body.light input.select:hover { border:blue solid 1px }
-body.light textarea:focus { border:blue solid 1px }
-body.light textarea:hover { border:blue solid 1px }
-body.light textarea { background-color:white;color:black;border-radius:5px;outline:none;box-shadow:none }
-body.light textarea { border-radius:0 }
-body.light form.option div.item.select { background-color:transparent }
-body.light form.option div.item:hover { background-color:transparent }
-body.light div.output { background-color:white }
-body.light div.status { background-color:aliceblue;color:black }
-body.light div.item.select { background-color:aliceblue;color:black }
-body.light div.item:hover { background-color:aliceblue;color:black }
-body.light span.item.select { background-color:aliceblue;color:black }
-body.light span.item:hover { background-color:aliceblue;color:black }
-body.light div.tabs div { background-color:aliceblue }
-body.light div.tabs div:hover { background-color:white; color:black }
-body.light div.tabs div.select { background-color:white; color:black }
-body.light div.action div.tabs:hover { background-color:white; color:black }
-body.light div.action div.tabs.select { background-color:white; color:black }
-body.light div.path span:hover { background-color:aliceblue;color:black }
-body.light div.plug legend { background-color:white }
-body.light div.plug legend.select { background-color:aliceblue;border-radius:10px }
-body.light div.zone>div.item { background-color:aliceblue;color:black }
-body.light div.zone>div.item:hover { background-color:aliceblue;color:black }
-body.light div.zone>div.list>div.zone>div.item { background-color:aliceblue;color:black }
-body.light div.zone>div.list>div.zone>div.item:hover { background-color:aliceblue;color:black }
-body.light div.zone div.item>div.name:hover { color:black }
-body.light tr.line.select { background-color:aliceblue; }
+body.light legend { background-color:lightsteelblue; border-radius:5px; }
+body.light select { border-radius:5px; }
+body.light input { background-color:white; border-radius:5px; }
+body.light input:not([type=button]) { border-radius:0; }
+body.light input:not([type=button]):hover { border:blue solid 1px; }
+body.light input:not([type=button]):focus { border:blue solid 1px; outline:none; }
+body.light table.content tr:hover { background-color:aliceblue; }
+body.light table.content th { background-color:aliceblue; }
+body.light table.content td:hover { background-color:aliceblue; }
+body.light table.content td.select { background-color:aliceblue; }
+body.light table.content.action td:last-child { background-color:aliceblue; }
 body.light tr.line:hover { background-color:aliceblue; }
-body.light tr.line>td.line { background-color:white }
-body.light tr.line.select>td.line { background-color:aliceblue; }
-body.light div.complete>table { background-color:aliceblue;color:black }
-body.light table.content tr:hover { color:black;background-color:aliceblue }
-body.light table.content th { background-color:aliceblue;color:black }
-body.light table.content.action td:last-child { background-color:aliceblue;color:black }
-body.light table.content td.select { background-color:white }
-body.light table.content td:hover { background-color:white }
-body.light h1:hover { background-color:aliceblue;color:black }
-body.light h2:hover { background-color:aliceblue;color:black }
-body.light h3:hover { background-color:aliceblue;color:black }
-body.light a { color:blue }
-body.light label { color:black }
-body.light fieldset.panel { background-color:white;color:black }
-body.light fieldset.panel>div.output { background-color:white;color:black }
-body.light fieldset.panel.Action div.output { background-color:white; }
-body.light fieldset.plugin { background-color:aliceblue;border-radius:10px; }
-body.light fieldset.plugin >div.status { border-top:transparent solid 1px }
-body.light fieldset.story { background-color:aliceblue;border-radius:10px; }
-body.light fieldset.story >div.status { border-top:transparent solid 1px }
-body.light fieldset.input { background-color:aliceblue;border-radius:10px }body.light fieldset.input div.output { background-color:aliceblue;border-radius:10px }
-body.light fieldset.input { border-radius:0 }
-body.light fieldset.input td.select { background-color:white }
-body.light fieldset.input td:hover { background-color:aliceblue }
-body.light fieldset.input tr:hover { background-color:white }
-body.light fieldset.float { background-color:aliceblue;border-radius:10px }
+body.light tr.line.select { background-color:aliceblue; }
+body.light h1:hover { background-color:aliceblue; }
+body.light h2:hover { background-color:aliceblue; }
+body.light h3:hover { background-color:aliceblue; }
+body.light div.item:hover { background-color:aliceblue; }
+body.light div.item.select { background-color:aliceblue; }
+body.light span.item:hover { background-color:aliceblue; }
+body.light span.item.select { background-color:aliceblue; }
+body.light form.option div.item:hover { background-color:white; }
+body.light form.option div.item.select { background-color:white; }
+body.light div.action div.tabs:hover { background-color:white; }
+body.light div.action div.tabs.select { background-color:white; }
+body.light div.output { background-color:white; }
+body.light fieldset>div.status { border-top:transparent solid 1px; }
+body.light fieldset:not(.panel) { background-color:aliceblue; color:black; border-radius:10px; }
+body.light fieldset.panel:not(.main) { background-color:#4a566e; color:#d0d3da; }
+body.light fieldset.panel:not(.main)>div.output { background-color:#4a566e; color:#d0d3da; }
+body.light fieldset.panel:not(.main)>div.output fieldset>div.output { color:black; }
+body.light fieldset.panel:not(.main)>div.output div.state:hover { background-color:#2b3446; color:white; }
+body.light fieldset.panel:not(.main)>div.output div.title:hover { background-color:#2b3446; color:white; }
+body.light fieldset.panel:not(.main)>div.output div.menu:hover { background-color:#2b3446; color:white; }
+body.light fieldset.panel:not(.main):not(.auto) div.item:hover { background-color:#2b3446; color:white; }
+body.light fieldset.panel:not(.main):not(.auto) div.item.select { background-color:#2b3446; color:white; }
+body.light fieldset.panel:not(.main):not(.auto) input { background-color:#6b7488; color:white; border-radius:5px; }
+body.light fieldset.panel:not(.main)>div.output>div.item>input::placeholder { background-color:#6b7488; color:#d0d3da; }
+body.light fieldset.panel:not(.main) label { color:#d0d3da; }
+body.light fieldset.input div.output { background-color:aliceblue; }
+body.light fieldset.input tr:hover { background-color:white; }
+body.light fieldset.input td:hover { background-color:white; }
 body.light div.float { background-color:aliceblue; }
-body.light div.carte div.item { background-color:aliceblue;color:black; }
-body.light div.carte div.item:hover { background-color:white;color:black }
+body.light div.carte div.item { background-color:aliceblue; }
+body.light div.carte div.item:hover { background-color:white; }
+body.light div.zone>div.item { background-color:aliceblue; }
+body.light div.zone>div.list>div.zone>div.item { background-color:aliceblue; }
+body.light div.tabs div { background-color:aliceblue; }
+body.light div.tabs div:hover { background-color:white; }
+body.light div.tabs div.select { background-color:white; }
+body.light div.plug legend { background-color:white }
+body.light div.plug legend.select { background-color:aliceblue; }
+body.light div.complete>table { background-color:aliceblue; }

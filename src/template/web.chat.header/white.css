@@ -1,0 +1,12 @@
+body.white { color:black; }
+body.white legend { color:white; }
+body.white input { background-color:#ffffff7d; color:black; }
+body.white textarea { background-color:white; color:black; }
+body.white table.content tr:hover { background-color:skyblue; }
+body.white table.content th { background-color:skyblue; }
+body.white table.content td:hover { background-color:skyblue; }
+body.white table.content.action td:last-child { background-color:skyblue; }
+body.white fieldset:not(.panel):not(.float):not(.full) { background-color:#ffffffa1; }
+body.white fieldset.float { background-color:aliceblue; }
+body.white fieldset.full { background-color:aliceblue; }
+body.white div.float { background-color:aliceblue; }

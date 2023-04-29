@@ -1,0 +1,17 @@
+body.black { background-color:black; color:cyan; }
+body.black legend { background-color:#243783bd; }
+body.black input { background-color:#243783bd; color:cyan; outline:none; }
+body.black textarea { background-color:#243783bd; color:cyan; outline:none; }
+body.black table.content th { background-color:steelblue; }
+body.black table.content.action td:last-child { background-color:steelblue; }
+body.black div.output { background-color:unset; }
+body.black fieldset>div.status { border-top:darkcyan solid 1px; }
+body.black fieldset:not(.panel):not(.float):not(.full) { background-color:#061c3c9e; }
+body.black fieldset.panel:not(.main):not(.auto) { background-color:unset; }
+body.black fieldset.panel:not(.main):not(.auto)>div.output { background-color:unset; }
+body.black div.float { background-color:#061c3ceb; }
+body.black div.zone>div.item { background-color:steelblue; color:white; }
+body.black div.zone>div.list>div.zone>div.item { background-color:#09466fc2; }
+body.black div.tabs div:hover { background-color:unset; color:white }
+body.black div.tabs div.select { background-color:unset; color:white }
+body.black select, body.black input[type=text], body.black textarea { box-shadow:4px 4px 20px 4px #626bd0; }

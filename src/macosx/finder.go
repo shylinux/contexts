@@ -13,7 +13,7 @@ const FINDER = "finder"
 
 func init() {
 	Index.MergeCommands(ice.Commands{
-		FINDER: {Name: "finder path auto create", Help: "浏览器", Actions: ice.MergeActions(CmdHashAction()), Hand: func(m *ice.Message, arg ...string) {
+		FINDER: {Name: "finder path auto create", Actions: CmdHashAction(), Hand: func(m *ice.Message, arg ...string) {
 			if len(arg) == 0 || strings.HasSuffix(arg[0], nfs.PS) {
 				switch kit.Select("", arg, 0) {
 				case ice.USR_LOCAL_WORK:
