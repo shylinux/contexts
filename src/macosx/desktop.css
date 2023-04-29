@@ -32,6 +32,9 @@ fieldset.macosx.dock>div.output>div.item { text-align:center; align-self:baselin
 fieldset.macosx.dock>div.output>div.item:hover { background-color:unset; margin-top:-80px; transition:margin-top 0.3s; }
 fieldset.macosx.dock>div.output>div.item img { width:80px; transition:width 0.3s; }
 fieldset.macosx.dock>div.output>div.item img:hover { width:160px; transition:width 0.3s; }
+fieldset.macosx.finder>div.output div.content>div.item { float:left; text-align:center; }
+fieldset.macosx.finder>div.output div.content>div.item img { width:84px; }
+fieldset.macosx.finder>div.output div.content>div.item div.name { text-align:center; }
 div.carte.macosx.float { font-size:14px; padding:10px; border:#ffffff5e solid 1px; border-radius:8px; }
 div.carte.macosx.float div.item { background:transparent; }
 div.carte.macosx.float hr { border-bottom:gray solid 1px; }

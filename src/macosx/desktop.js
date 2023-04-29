@@ -40,6 +40,7 @@ Volcanos(chat.ONIMPORT, {
 				"#32c840": function(event) { sub.onaction.full(event, sub) },
 			}, function(color, cb) { can.page.insertBefore(can, [{view: [[html.ITEM, html.BUTTON]], style: {"background-color": color, right: 10+20*index++}, onclick: cb}], sub._output) })
 			sub.onimport.size(sub, item.height, item.width, true), can.onmotion.move(can, sub._target, {"z-index": 10, top: 25, left: 100})
+			sub.onexport.record = function(sub, value, key, item) { can.onimport._window(can, item) }
 		}, can.ui.desktop)
 	},
 	layout: function(can) { can.page.styleHeight(can, can._output, can.ConfHeight()) },

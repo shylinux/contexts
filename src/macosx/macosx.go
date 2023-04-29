@@ -15,6 +15,8 @@ var Index = &ice.Context{Name: MACOSX}
 
 func init() { chat.Index.Register(Index, nil) }
 
+func Prefix(arg ...string) string { return chat.Prefix(MACOSX, kit.Keys(arg)) }
+
 func CmdHashAction(arg ...string) ice.Actions {
 	file := kit.FileLines(2)
 	return ice.MergeActions(ice.Actions{
