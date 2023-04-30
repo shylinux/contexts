@@ -13,9 +13,10 @@ fieldset.macos.desktop>div.output>div.desktop>fieldset { position:absolute; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>div.item.button { border-radius:20px; height:20px; width:20px; scale:0.7; position:absolute; top:15px; right:10px; }
 fieldset.macos.desktop>div.output>div.desktop.scale>fieldset { scale:0.6; }
 fieldset.macos.desktop>div.output>div.desktop fieldset { border-radius:10px; }
-fieldset.macos.desktop>div.output>div.desktop fieldset>legend { background-color:unset; margin:10px 0; }
-fieldset.macos.desktop>div.output>div.desktop fieldset>form.option>* { margin:10px 0; background-color:unset; }
-fieldset.macos.desktop>div.output>div.desktop fieldset>div.action>* { margin:10px 0; }
+fieldset.macos.desktop>div.output>div.desktop fieldset>legend { background-color:unset; padding-right:10px; margin:10px 0; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>* { margin:10px 0; background-color:unset; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>div.icon { margin-top:12px; margin-bottom:8px; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>div.action>* { margin:10px 0; }
 fieldset.macos.desktop>div.output>div.desktop fieldset>div.status { background-color:transparent; }
 fieldset.macos.desktop>div.output>div.desktop fieldset fieldset>legend { margin:0; }
 fieldset.macos.desktop>div.output>div.desktop fieldset fieldset>form.option>* { margin:0; background-color:unset; }

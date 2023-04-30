@@ -16,8 +16,8 @@ Volcanos(chat.ONIMPORT, { _init: function(can, msg) { can.onmotion.clear(can), c
 	})
 	},
 	icons: function(can, msg, target) {
-		msg.Table(function(value) {
-			can.page.Append(can, target, [{view: html.ITEM, list: [{view: html.ICON, list: [{img: "/require/"+value.icon}]}, {view: [mdb.NAME, "", value.name]}], onclick: function(event) {
+		msg.Table(function(value) { value.icon = value.icon? "/require/"+value.icon: can.page.drawText(can, value.name, 80)
+			can.page.Append(can, target, [{view: html.ITEM, list: [{view: html.ICON, list: [{img: value.icon}]}, {view: [mdb.NAME, "", value.name]}], onclick: function(event) {
 				can.sup.onexport.record(can.sup, value.name, mdb.NAME, value)
 			}}])
 		})

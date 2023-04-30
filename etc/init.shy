@@ -8,6 +8,13 @@
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
 
+~web.chat.macos
+	applications install "" cli.qrcode
+	applications install "" nfs.trash
+	applications install "" web.dream
+	applications install "" web.space
+	applications install "" web.code.vimer
+
 ~aaa 
 	role white void web.code.git.trend
 	role white void web.code.git.spide
