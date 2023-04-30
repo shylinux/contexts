@@ -1,4 +1,4 @@
-package macosx
+package macos
 
 import (
 	ice "shylinux.com/x/icebergs"
@@ -9,13 +9,17 @@ import (
 	kit "shylinux.com/x/toolkits"
 )
 
-const MACOSX = "macosx"
+const MACOS = "macos"
 
-var Index = &ice.Context{Name: MACOSX}
+var Index = &ice.Context{Name: MACOS, Commands: ice.Commands{
+	ice.CTX_INIT: {Hand: func(m *ice.Message, arg ...string) {
+		ice.Info.Load(m).Cmd(FINDER, ice.CTX_INIT)
+	}},
+}}
 
 func init() { chat.Index.Register(Index, nil) }
 
-func Prefix(arg ...string) string { return chat.Prefix(MACOSX, kit.Keys(arg)) }
+func Prefix(arg ...string) string { return chat.Prefix(MACOS, kit.Keys(arg)) }
 
 func CmdHashAction(arg ...string) ice.Actions {
 	file := kit.FileLines(2)

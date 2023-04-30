@@ -1,4 +1,4 @@
-package macosx
+package macos
 
 import ice "shylinux.com/x/icebergs"
 

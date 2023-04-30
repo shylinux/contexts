@@ -31,7 +31,7 @@ import (
 	_ "shylinux.com/x/golang-story/src/kubernetes"
 	_ "shylinux.com/x/golang-story/src/prometheus"
 
-	_ "shylinux.com/x/contexts/src/macosx"
+	_ "shylinux.com/x/contexts/src/macos"
 )
 
 func main() { print(ice.Run()) }

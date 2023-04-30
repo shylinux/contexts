@@ -32,5 +32,4 @@ require (
 	shylinux.com/x/ice v1.3.2
 	shylinux.com/x/icebergs v1.5.6
 	shylinux.com/x/toolkits v0.7.5
-	shylinux.com/x/webview v0.0.2 // indirect
 )

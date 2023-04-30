@@ -1,8 +1,9 @@
 Volcanos(chat.ONIMPORT, {
-	_init: function(can, msg, cb) { can.ui = {}, cb(msg), can.onmotion.clear(can), can.page.styleHeight(can, can._output, can.ConfHeight())
+	_init: function(can, msg, cb) { if (can.isCmdMode()) { can.onappend.style(can, html.OUTPUT), can.ConfHeight(can.page.height()) }
+		can.ui = {}, can.base.isFunc(cb) && cb(msg), can.onmotion.clear(can), can.page.styleHeight(can, can._output, can.ConfHeight())
 		can.onimport._menu(can), can.onimport._dock(can), can.onimport._desktop(can, msg), can.onlayout.background(can, can.user.info.background, can._fields)
 	},
-	_menu: function(can) { can.onappend.plugin(can, {index: "web.chat.macosx.menu", style: html.OUTPUT}, function(sub) { can.ui.menu = sub
+	_menu: function(can) { can.onappend.plugin(can, {index: "web.chat.macos.menu", style: html.OUTPUT}, function(sub) { can.ui.menu = sub
 		sub.onexport.record = function(_, value, key, item) {
 			switch (value) {
 				case "system":
@@ -25,7 +26,7 @@ Volcanos(chat.ONIMPORT, {
 			}
 		}
 	}) },
-	_dock: function(can) { can.onappend.plugin(can, {index: "web.chat.macosx.dock", style: html.OUTPUT}, function(sub) { can.ui.dock = sub
+	_dock: function(can) { can.onappend.plugin(can, {index: "web.chat.macos.dock", style: html.OUTPUT}, function(sub) { can.ui.dock = sub
 		sub.onexport.record = function(sub, value, key, item) { can.onimport._window(can, item) }
 	}) },
 	_desktop: function(can, msg) { var target = can.page.Append(can, can._output, [{view: "desktop"}])._target
