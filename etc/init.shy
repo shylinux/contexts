@@ -27,5 +27,5 @@
 	event listen event dream.create cmd web.code.tmux.session
 
 ~ssh
-	target web.code
+	target web.chat.macos
 	source local.shy

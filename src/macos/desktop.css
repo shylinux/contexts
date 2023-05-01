@@ -28,7 +28,7 @@ fieldset.macos.menu>div.output img { margin-bottom:-8px; }
 fieldset.macos.menu>div.output>div.item { padding:0 5px; float:right; cursor:pointer; }
 fieldset.macos.menu>div.output>div.item img { height:25px; }
 fieldset.macos.menu>div.output>div.icon { padding:0 5px; float:right; cursor:pointer; }
-fieldset.macos.dock>div.output { height:80px; min-width:200px; overflow:visible; display:flex; }
+fieldset.macos.dock>div.output { height:80px; overflow:visible; display:flex; }
 fieldset.macos.dock>div.output>div.item { text-align:center; align-self:baseline; transition:margin-top 0.3s; }
 fieldset.macos.dock>div.output>div.item:hover { background-color:unset; margin-top:-80px; transition:margin-top 0.3s; }
 fieldset.macos.dock>div.output>div.item img { width:80px; transition:width 0.3s; }
