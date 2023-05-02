@@ -8,10 +8,12 @@ fieldset.macos.desktop>div.output>div.desktop:not(.select) { display:none; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset { border-radius:10px; position:absolute; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>div.item.button { border-radius:20px; height:20px; width:20px; scale:0.7; position:absolute; top:15px; right:10px; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>legend { background-color:unset; padding-right:10px; margin:10px 0; }
-fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>* { margin:10px 0; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>* { margin:10px 0px 10px 10px; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>div.item:last-child { margin-right:80px; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>div.icon { margin-top:12px; margin-bottom:8px; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>div.item.icons>span.icon { margin-left:5px; }
-fieldset.macos.desktop>div.output>div.desktop>fieldset>div.action>* { margin:10px 0; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>div.action>* { margin:10px 0px 10px 10px; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>div.action>div.item:last-child { margin-right:80px; }
 fieldset.macos.menu>div.output img { margin-bottom:-8px; }
 fieldset.macos.menu>div.output>div.item { padding:0 5px; float:right; cursor:pointer; }
 fieldset.macos.menu>div.output>div.item img { height:25px; }
@@ -60,6 +62,8 @@ body.dark fieldset.macos.desktop>div.output>div.desktop fieldset>div.output.card
 body.light fieldset.macos.desktop>div.output { background-color:unset; }
 body.black fieldset.macos.desktop>div.output>div.desktop fieldset { background-color:#3433337a; }
 body.black fieldset.macos.desktop>div.output>div.desktop>fieldset>div.output { background-color:#1a1d1d9c; }
+body.black fieldset.macos.desktop>div.output>div.desktop fieldset table.content tr:nth-child(odd) { background-color:#1a1d1ee0; color:white; }
+body.black fieldset.macos.desktop>div.output>div.desktop fieldset table.content tr:nth-child(even) { background-color:#282b2fc7; color:white; }
 body.white fieldset.macos.desktop>div.output>div.desktop fieldset { background-color:#f5f5f594; }
 body.white fieldset.macos.desktop>div.output>div.desktop fieldset>legend { color:black; }
 body.white fieldset.macos.desktop>div.output>div.desktop>fieldset>div.output { background-color:#ffffff94; }

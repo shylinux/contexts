@@ -7,7 +7,7 @@ Volcanos(chat.ONIMPORT, { _init: function(can, msg) { can.onmotion.clear(can), c
 				} can.onimport.layout(can)
 			})
 		}); index == 0 && item.click()
-	}) },
+	}), can.onmotion.hidden(can, can.ui.profile), can.onmotion.hidden(can, can.ui.display) },
 	icons: function(can, msg, target) { msg.Table(function(value) { value.icon = can.misc.PathJoin(value.icon||can.page.drawText(can, value.name, 80))
 		can.page.Append(can, target, [{view: html.ITEM, list: [{view: html.ICON, list: [{img: value.icon}]}, {view: [mdb.NAME, "", value.name]}], onclick: function(event) {
 			can.sup.onexport.record(can.sup, value.name, mdb.NAME, value)

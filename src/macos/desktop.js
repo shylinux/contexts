@@ -7,44 +7,8 @@ Volcanos(chat.ONIMPORT, {
 		sub.onexport.record = function(_, value, key, item) {
 			switch (value) {
 				case "system":
-					var carte = can.user.carte(event, can, {
-						"desktop\t>": function(event) {
-							can.user.carteRight(event, can, {}, [{view: [html.ITEM, "", "create"], onclick: function(event) {
-								can.onaction.create(event, can)
-							}}].concat(can.page.Select(can, can._action, "div.tabs>span.name", function(target) {
-								return {view: [html.ITEM, "", target.innerText+(can.page.ClassList.has(can, target.parentNode, html.SELECT)? " *": "")],
-									onclick: function(event) { target.click() },
-									oncontextmenu: function(event) { can.user.carteRight(event, can, {
-										remove: function() { target.parentNode._close() },
-									}, [], function() {}, carte) },
-								}
-							})), function(event) {}, carte)
-						},
-						"window\t>": function(event) {
-							can.user.carteRight(event, can, {}, can.page.Select(can, can.ui.desktop, "fieldset>legend", function(legend) {
-								return {view: [html.ITEM, "", legend.innerText+(legend.parentNode.style["z-index"] == "10"? " *": "")], onclick: function(event) {
-									can.ondetail.select(can, legend.parentNode)
-								}}
-							}), function(event) {}, carte)
-						},
-						"layout\t>": function(event) {
-							can.user.carteRight(event, can, {
-								grid: function(event) { var list = can.page.SelectChild(can, can.ui.desktop, "fieldset")
-									for (var i = 0; i*i < list.length; i++) {} for (var j = 0; j*i < list.length; j++) {}
-									var height = (can.ConfHeight()-25)/j, width = can.ConfWidth()/i
-									can.core.List(list, function(target, index) {
-										can.page.style(can, target, html.TOP, parseInt(index/i)*height+25, html.LEFT, index%i*width)
-										target._can.onimport.size(target._can, height, width)
-									})
-								},
-								free: function(event) { var list = can.page.SelectChild(can, can.ui.desktop, "fieldset")
-									can.core.List(list, function(target, index) {
-										can.page.style(can, target, html.TOP, can.ConfHeight()/2/list.length*index+25, html.LEFT, can.ConfWidth()/2/list.length*index)
-									})
-								},
-							}, [], function(event) {}, carte)
-						},
-						full: function(event) { can.onaction.full(event, can) },
+					var carte = can.user.carte(event, can, {}, can.core.Item(can.onfigure), function(event, button, meta, carte) {
+						can.onfigure[button](event, can, carte)
 					}); break
 			}
 		}
@@ -84,4 +48,39 @@ Volcanos(chat.ONDETAIL, {
 			fieldset == target && can.onmotion.toggle(can, fieldset, true)
 		})
 	},
+})
+Volcanos(chat.ONFIGURE, {
+	"desktop\t>": function(event, can, carte) {
+		can.user.carteRight(event, can, {}, [{view: [html.ITEM, "", mdb.CREATE], onclick: function(event) {
+			can.onaction.create(event, can)
+		}}].concat(can.page.Select(can, can._action, "div.tabs>span.name", function(target) {
+			return {view: [html.ITEM, "", target.innerText+(can.page.ClassList.has(can, target.parentNode, html.SELECT)? " *": "")],
+				onclick: function(event) { target.click() },
+				oncontextmenu: function(event) { can.user.carteRight(event, can, {
+					remove: function() { target.parentNode._close() },
+				}, [], function() {}, carte) },
+			}
+		})), function(event) {}, carte)
+	},
+	"window\t>": function(event, can, carte) {
+		can.user.carteRight(event, can, {}, can.page.Select(can, can.ui.desktop, "fieldset>legend", function(legend) {
+			return {view: [html.ITEM, "", legend.innerText+(legend.parentNode.style["z-index"] == "10"? " *": "")], onclick: function(event) {
+				can.ondetail.select(can, legend.parentNode)
+			}}
+		}), function(event) {}, carte)
+	},
+	"layout\t>": function(event, can, carte) { var list = can.page.SelectChild(can, can.ui.desktop, html.FIELDSET)
+		can.user.carteRight(event, can, {
+			grid: function(event) { for (var i = 0; i*i < list.length; i++) {} for (var j = 0; j*i < list.length; j++) {}
+				var height = (can.ConfHeight()-25)/j, width = can.ConfWidth()/i; can.core.List(list, function(target, index) {
+					can.page.style(can, target, html.TOP, parseInt(index/i)*height+25, html.LEFT, index%i*width)
+					target._can.onimport.size(target._can, height, width)
+				})
+			},
+			free: function(event) { can.core.List(list, function(target, index) {
+				can.page.style(can, target, html.TOP, can.ConfHeight()/2/list.length*index+25, html.LEFT, can.ConfWidth()/2/list.length*index)
+			}) },
+		}, [], function(event) {}, carte)
+	},
+	full: function(event, can, carte) { can.onaction.full(event, can) },
 })
