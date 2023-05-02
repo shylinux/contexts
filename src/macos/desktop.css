@@ -1,29 +1,17 @@
 fieldset.macos.desktop { background-size:cover; background-position:center; }
-fieldset.macos.desktop>div.output>div.item { text-align:center; width:120px; float:left; overflow:hidden; }
-fieldset.macos.desktop>div.output>div.item img { width:80px; }
 fieldset.macos.desktop>div.output>fieldset.macos { background-color:transparent; }
 fieldset.macos.desktop>div.output>fieldset.macos>div.output { background-color:transparent; }
 fieldset.macos.desktop>div.output>fieldset.macos.menu { line-height:25px; height:25px; width:100%; position:absolute; top:0; }
-fieldset.macos.desktop>div.output>fieldset.macos.controls { height:40%; width:240px; position:absolute; top:20px; right:0; }
-fieldset.macos.desktop>div.output>fieldset.macos.notifications { height:80%; width:240px; position:absolute; top:10%; right:0; }
-fieldset.macos.desktop>div.output>fieldset.macos.dock { border:#ffffff3d solid 1px; border-radius:20px; position:absolute; bottom:10px; left:300px; z-index:11; transition:margin-left 0.3s; }
+fieldset.macos.desktop>div.output>fieldset.macos.dock { border:#ffffff3d solid 1px; border-radius:20px; position:absolute; bottom:10px; z-index:11; transition:margin-left 0.3s; }
 fieldset.macos.desktop>div.output>fieldset.macos.dock:hover { margin-left:-40px; transition:margin-left 0.3s; }
 fieldset.macos.desktop>div.output>div.desktop:not(.select) { display:none; }
-fieldset.macos.desktop>div.output>div.desktop>fieldset { position:absolute; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset { border-radius:10px; position:absolute; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>div.item.button { border-radius:20px; height:20px; width:20px; scale:0.7; position:absolute; top:15px; right:10px; }
-fieldset.macos.desktop>div.output>div.desktop.scale>fieldset { scale:0.6; }
-fieldset.macos.desktop>div.output>div.desktop fieldset { border-radius:10px; }
-fieldset.macos.desktop>div.output>div.desktop fieldset>legend { background-color:unset; padding-right:10px; margin:10px 0; }
-fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>* { margin:10px 0; background-color:unset; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>legend { background-color:unset; padding-right:10px; margin:10px 0; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>* { margin:10px 0; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>div.icon { margin-top:12px; margin-bottom:8px; }
+fieldset.macos.desktop>div.output>div.desktop>fieldset>form.option>div.item.icons>span.icon { margin-left:5px; }
 fieldset.macos.desktop>div.output>div.desktop>fieldset>div.action>* { margin:10px 0; }
-fieldset.macos.desktop>div.output>div.desktop fieldset>div.status { background-color:transparent; }
-fieldset.macos.desktop>div.output>div.desktop fieldset fieldset>legend { margin:0; }
-fieldset.macos.desktop>div.output>div.desktop fieldset fieldset>form.option>* { margin:0; background-color:unset; }
-fieldset.macos.desktop>div.output>div.desktop fieldset fieldset>div.action>* { margin:0; }
-fieldset.macos.desktop>div.output>div.desktop fieldset input { border-radius:5px; box-shadow:unset; }
-fieldset.macos.desktop>div.output>div.desktop fieldset table.content th { background-color:unset; }
-fieldset.macos.desktop>div.output>div.desktop fieldset table.content.action td:last-child { background-color:unset; }
 fieldset.macos.menu>div.output img { margin-bottom:-8px; }
 fieldset.macos.menu>div.output>div.item { padding:0 5px; float:right; cursor:pointer; }
 fieldset.macos.menu>div.output>div.item img { height:25px; }
@@ -40,8 +28,6 @@ div.carte.macos.float { font-size:14px; padding:10px; border:#ffffff5e solid 1px
 div.carte.macos.float div.item { background:transparent; }
 div.carte.macos.float hr { border-bottom:gray solid 1px; }
 div.carte.macos.float { background:#e1e5ea; }
-fieldset.macos.desktop fieldset>form.option>div.item.icons>span.icon { margin-left:5px; }
-
 body.dark div.carte.macos.float { background:#29323beb; color:#e8eaed; }
 fieldset.macos.desktop>div.output>fieldset.macos.dock { background-color:#e9f1f594; }
 fieldset.macos.desktop>div.output>fieldset.macos.menu { background-color:#08234ad1; color:#e8eaed; }

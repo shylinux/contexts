@@ -2,12 +2,9 @@ package macos
 
 import (
 	ice "shylinux.com/x/icebergs"
-	"shylinux.com/x/icebergs/base/ctx"
 	"shylinux.com/x/icebergs/base/log"
 	"shylinux.com/x/icebergs/base/mdb"
-	"shylinux.com/x/icebergs/base/nfs"
 	"shylinux.com/x/icebergs/base/web"
-	kit "shylinux.com/x/toolkits"
 )
 
 const FINDER = "finder"
@@ -29,8 +26,7 @@ func init() {
 		}, CmdHashAction(mdb.NAME))},
 	})
 }
-func DockAppend(m *ice.Message, name, index string, arg ...string) {
-	name, icon := kit.Select(kit.Select("", kit.Split(index, ice.PT), -1), name), ""
-	kit.If(nfs.Exists(m, kit.PathJoin(USR_ICONS, name, nfs.PNG)), func() { icon = kit.PathJoin(USR_ICONS, name, nfs.PNG) })
-	m.Cmd(Prefix(DOCK), mdb.CREATE, mdb.NAME, name, mdb.ICON, icon, ctx.INDEX, index, arg)
+
+func FinderAppend(m *ice.Message, name, index string, arg ...string) {
+	install(m, FINDER, name, index, arg...)
 }
