@@ -2,21 +2,14 @@ title "MacOS"
 chain `
 desktop
 	menu
-		Notifications
-		Control_Center
-		Spotlight_Search
+		session
+		desktop
+		window
+		layout
 	dock
 		Finder
-			Desktop
-			Recents
-			Downloads
 			Applications
-			Documents
 			Pictures
-			Movies
-			Music
-		Trash
 		Safari
-		Preview
 		Terminal
 `

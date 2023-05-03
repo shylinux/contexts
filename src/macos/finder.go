@@ -14,7 +14,7 @@ func init() {
 		FINDER: {Name: "finder list", Actions: ice.MergeActions(ice.Actions{
 			ice.CTX_INIT: {Hand: func(m *ice.Message, arg ...string) {
 				if m.Cmd(DOCK).Length() == 0 {
-					DockAppend(m, FINDER, m.PrefixKey())
+					DockAppend(m, "Finder", m.PrefixKey())
 					DockAppend(m, "Safari", web.CHAT_IFRAME)
 					DockAppend(m, "Terminal", web.CODE_XTERM)
 					DockAppend(m, "", web.CODE_VIMER)

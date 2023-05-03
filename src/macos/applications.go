@@ -26,6 +26,7 @@ func init() {
 				AppInstall(m, "Grapher", web.WIKI_DRAW)
 				AppInstall(m, "Photos", web.WIKI_FEEL)
 				AppInstall(m, "Books", web.WIKI_WORD)
+				m.Cmd(NOTIFICATIONS, mdb.CREATE, mdb.NAME, "runtime", mdb.TEXT, "系统启动成功", ctx.INDEX, "cli.runtime")
 			}},
 			code.INSTALL: {Hand: func(m *ice.Message, arg ...string) { AppInstall(m, arg[0], arg[1], arg[2:]...) }},
 		}, CmdHashAction("index,args"))},
