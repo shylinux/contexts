@@ -15,4 +15,4 @@ body.black div.zone>div.list>div.zone>div.item { background-color:#09466fc2; }
 body.black div.tabs div:hover { background-color:unset; color:white }
 body.black div.tabs div.select { background-color:unset; color:white }
 body.black select, body.black input[type=text], body.black textarea { box-shadow:4px 4px 20px 4px #626bd0; }
-body.dark fieldset:not(.panel) { background-color:#061c3ceb; border-radius:10px; }
+body.black fieldset:not(.panel) { background-color:#061c3ceb; border-radius:10px; }
