@@ -10,6 +10,7 @@
 	webpack insert xterm-addon-fit
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
+	binpack insert usr/icons/
 
 ~web.chat.macos
 	applications install "" cli.qrcode
@@ -36,6 +37,8 @@
 	event listen event serve.start cmd web.broad
 	event listen event dream.create cmd web.code.xterm
 	event listen event dream.create cmd web.code.tmux.session
+	event listen event dream.create cmd web.chat.macos.notifications
+	event listen event dream.create cmd web.chat.iframe
 
 ~ssh
 	target web.chat.macos
