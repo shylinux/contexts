@@ -1,0 +1,9 @@
+{
+  "03638f60b1ca9b72e82ca23e29daf48c": {
+    "meta": {
+      "args": "[{\"name\":\"compile\",\"list\":[{\"index\":\"web.code.compile\",\"args\":[\"amd64\",\"linux\",\"src/main.go\"],\"style\":{\"left\":103,\"top\":25}},{\"index\":\"web.code.docker.client\",\"args\":[\"\",\"\"],\"style\":{\"left\":105,\"top\":196}},{\"index\":\"web.chat.iframe\",\"args\":[\"http://localhost:20000\"],\"style\":{\"left\":499,\"top\":313}}]},{\"name\":\"service\",\"list\":[{\"index\":\"web.code.git.service\",\"args\":[\"\",\"\",\"\",\"\"],\"style\":{\"left\":100,\"top\":25}}]},{\"name\":\"session\",\"list\":[{\"index\":\"web.code.tmux.session\",\"args\":[\"\",\"\",\"\",\"\"],\"style\":{\"left\":100,\"top\":25}}]}]",
+      "name": "compile",
+      "time": "2023-05-07 12:30:01.018"
+    }
+  }
+}

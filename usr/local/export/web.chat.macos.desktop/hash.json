@@ -1,0 +1,42 @@
+{
+  "048e8a": {
+    "meta": {
+      "icon": "usr/icons/Photos.png",
+      "index": "web.wiki.feel",
+      "name": "Photos",
+      "time": "2023-05-05 19:01:27.277"
+    }
+  },
+  "71efea": {
+    "meta": {
+      "args": "month",
+      "icon": "usr/icons/Calendar.png",
+      "index": "web.team.plan",
+      "name": "Calendar",
+      "time": "2023-05-05 19:01:27.277"
+    }
+  },
+  "86b084": {
+    "meta": {
+      "icon": "usr/icons/Books.png",
+      "index": "web.wiki.word",
+      "name": "Books",
+      "time": "2023-05-05 19:01:27.277"
+    }
+  },
+  "cb8e16": {
+    "meta": {
+      "icon": "usr/icons/Grapher.png",
+      "index": "web.wiki.draw",
+      "name": "Grapher",
+      "time": "2023-05-05 19:01:27.277"
+    }
+  },
+  "e4666f": {
+    "meta": {
+      "index": "web.chat.favor",
+      "name": "favor",
+      "time": "2023-05-05 19:01:27.278"
+    }
+  }
+}

@@ -4,6 +4,8 @@ body.black input { background-color:#243783bd; color:cyan; outline:none; }
 body.black textarea { background-color:#243783bd; color:cyan; outline:none; }
 body.black table.content th { background-color:steelblue; }
 body.black table.content.action td:last-child { background-color:steelblue; }
+body.black div.item:hover { background-color:#243783bd; }
+body.black div.item.select { background-color:#243783bd; }
 body.black div.output { background-color:unset; }
 body.black fieldset>div.status { border-top:darkcyan solid 1px; }
 body.black fieldset:not(.panel):not(.float):not(.full) { background-color:#061c3c9e; }
