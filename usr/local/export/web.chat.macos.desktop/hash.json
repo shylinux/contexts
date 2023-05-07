@@ -1,42 +1,50 @@
 {
-  "048e8a": {
+  "3bdfe0": {
+    "meta": {
+      "icon": "/require/usr/icons/Docker.png",
+      "index": "web.code.docker.client",
+      "name": "Docker",
+      "time": "2023-05-07 10:15:29.728"
+    }
+  },
+  "5ed1aa": {
     "meta": {
       "icon": "usr/icons/Photos.png",
       "index": "web.wiki.feel",
       "name": "Photos",
-      "time": "2023-05-05 19:01:27.277"
+      "time": "2023-05-06 21:18:34.064"
     }
   },
-  "71efea": {
+  "8706db": {
     "meta": {
       "args": "month",
       "icon": "usr/icons/Calendar.png",
       "index": "web.team.plan",
       "name": "Calendar",
-      "time": "2023-05-05 19:01:27.277"
+      "time": "2023-05-06 21:18:34.064"
     }
   },
-  "86b084": {
+  "bbc776": {
     "meta": {
-      "icon": "usr/icons/Books.png",
-      "index": "web.wiki.word",
-      "name": "Books",
-      "time": "2023-05-05 19:01:27.277"
+      "index": "web.chat.favor",
+      "name": "favor",
+      "time": "2023-05-06 21:18:34.064"
     }
   },
-  "cb8e16": {
+  "c67967": {
     "meta": {
       "icon": "usr/icons/Grapher.png",
       "index": "web.wiki.draw",
       "name": "Grapher",
-      "time": "2023-05-05 19:01:27.277"
+      "time": "2023-05-06 21:18:34.064"
     }
   },
-  "e4666f": {
+  "f83c61": {
     "meta": {
-      "index": "web.chat.favor",
-      "name": "favor",
-      "time": "2023-05-05 19:01:27.278"
+      "icon": "usr/icons/Books.png",
+      "index": "web.wiki.word",
+      "name": "Books",
+      "time": "2023-05-06 21:18:34.064"
     }
   }
 }
