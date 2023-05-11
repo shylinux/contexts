@@ -26,21 +26,25 @@ field "架构图" web.code.git.spide args `volcanos`
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`
 field "架构图" web.code.git.spide args `icebergs`
-chain `
-ice
-	mdb
-	web
-	aaa
-`
 label `
 ctx mdb web aaa
 lex yac ssh gdb
 tcp nfs cli log
 `
+chain `
+web
+	code
+	wiki
+	chat
+	team
+	mall
+`
 label `
-bash ssh git vim tmux
-java node chrome webview coder input alpha
-wx mp lark wework	
+git ssh xterm qrcode websocket webview
+tmux node java
+alpha input lex yac
+vim bash chrome coder
+wx mp lark wework github
 ` compact true
 
 section "神农架"
@@ -48,5 +52,3 @@ field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
 spark README.md
-source h2/h2.shy
-source h3/h3.shy
