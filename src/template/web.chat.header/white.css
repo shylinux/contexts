@@ -1,4 +1,4 @@
-body.white { color:black; }
+body.white { background-color:white; color:black; }
 body.white legend { background-color:#ffffffc2; }
 body.white input { background-color:#ffffff7d; color:black; }
 body.white textarea { background-color:white; color:black; }

@@ -6,6 +6,7 @@ import (
 	"shylinux.com/x/ice"
 	"shylinux.com/x/icebergs/base/tcp"
 	"shylinux.com/x/icebergs/base/web"
+	_ "shylinux.com/x/icebergs/misc/node"
 	"shylinux.com/x/icebergs/misc/webview"
 	kit "shylinux.com/x/toolkits"
 )

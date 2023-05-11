@@ -1,3 +1,5 @@
+body.light { background-color:#4a566e; }
+body.light.cmd { background-color:white; }
 body.light legend { background-color:lightsteelblue; border-radius:5px; }
 body.light select { border-radius:5px; }
 body.light input { background-color:white; border-radius:5px; }
