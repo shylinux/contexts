@@ -26,7 +26,7 @@ body.light div.action div.tabs:hover { background-color:white; }
 body.light div.action div.tabs.select { background-color:white; }
 body.light div.output { background-color:white; }
 body.light fieldset>div.status { border-top:transparent solid 1px; }
-body.light fieldset:not(.panel) { background-color:aliceblue; color:black; border-radius:10px; }
+body.light fieldset:not(.panel):not(.cmd) { background-color:aliceblue; color:black; border-radius:10px; }
 body.light fieldset.panel:not(.main) { background-color:#4a566e; color:#d0d3da; }
 body.light fieldset.panel:not(.main)>div.output { background-color:#4a566e; color:#d0d3da; }
 body.light fieldset.panel:not(.main)>div.output fieldset>div.output { color:black; }
