@@ -12,3 +12,5 @@ body.white fieldset:not(.panel):not(.float):not(.full) { background-color:#fffff
 body.white fieldset.float { background-color:aliceblue; }
 body.white fieldset.full { background-color:aliceblue; }
 body.white div.float { background-color:aliceblue; }
+body.white fieldset.panel.River:not(.main):not(.auto) div.item:hover { background-color:#243783bd; }
+body.white fieldset.panel.River:not(.main):not(.auto) div.item.select { background-color:#243783bd; }

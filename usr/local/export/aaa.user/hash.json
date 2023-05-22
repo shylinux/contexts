@@ -1,8 +1,9 @@
 {
   "28780fc2a18723825b3cba021eb90ab1": {
     "meta": {
+      "background": "usr/icons/background.jpg",
       "language": "zh",
-      "time": "2023-05-14 16:05:20.137",
+      "time": "2023-05-22 22:04:28.959",
       "username": "shylinux",
       "userrole": "tech",
       "userzone": "dev"
@@ -11,7 +12,7 @@
   "364d28ceb39aea833ab2b1323819bb05": {
     "meta": {
       "background": "usr/icons/background.jpg",
-      "time": "2023-05-14 16:05:20.134",
+      "time": "2023-05-22 22:04:28.958",
       "username": "shy",
       "userrole": "root",
       "userzone": "ops"

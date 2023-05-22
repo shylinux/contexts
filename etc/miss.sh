@@ -1,10 +1,10 @@
 #!/bin/sh
 
 if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish/plug.sh ]; then source $HOME/.ish/plug.sh; else
-	export ctx_dev=${ctx_dev:="https://shylinux.com"}
 	temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp intshell
-fi; require conf.sh; require miss.sh; ish_dev_git_prepare
+fi
 
+require miss.sh
 ish_miss_prepare_compile
 ish_miss_prepare_develop
 ish_miss_prepare_project
@@ -16,17 +16,9 @@ ish_miss_prepare_volcanos
 ish_miss_prepare_toolkits
 ish_miss_prepare_icebergs
 ish_miss_prepare release
-ish_miss_prepare linux-story
-ish_miss_prepare nginx-story
-ish_miss_prepare golang-story
-ish_miss_prepare redis-story
-
-# ish_miss_prepare 20220202-family
-# ish_miss_prepare 20220624-career
-# ish_miss_prepare wubi-dict
-# ish_miss_prepare word-dict
-# ish_miss_prepare echarts
 ish_miss_prepare icons
+
+ish_sys_link_create $PWD/usr/linux-story $PWD/usr/local/work/linux-story
 
 ish_miss_prepare websocket
 ish_miss_prepare go-qrcode
