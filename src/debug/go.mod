@@ -8,14 +8,4 @@ replace (
 	shylinux.com/x/toolkits => ./usr/toolkits
 )
 
-replace (
-	shylinux.com/x/go-git/v5 => ./usr/go-git
-	shylinux.com/x/go-qrcode => ./usr/go-qrcode
-	shylinux.com/x/websocket => ./usr/websocket
-)
-
-require (
-	shylinux.com/x/ice v1.3.2
-	shylinux.com/x/icebergs v1.5.6
-	shylinux.com/x/toolkits v0.7.5
-)
+require shylinux.com/x/ice v1.3.3

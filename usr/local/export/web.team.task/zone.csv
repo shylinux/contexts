@@ -1,7 +1,0 @@
-zone,begin_time,close_time,id,status,level,score,type,name,text,extra
-项目开发,2023-05-02 13:05:02,,1,prepare,3,3,once,界面体验,,
-项目开发,2023-05-04 10:42:09,,2,prepare,3,3,once,界面体验,,
-项目开发,2023-05-22 21:32:39,,3,prepare,3,3,once,界面体验,,"{""index"":""web.team.plan""}"
-项目开发,2023-05-22 10:59:20,,4,prepare,3,3,once,界面体验,,"{""index"":""cli.runtime""}"
-项目开发,2023-05-24 13:03:46,,5,prepare,3,3,once,开发一个编辑器,,"{""index"":""web.code.vimer""}"
-项目开发,2023-05-24 17:04:11,,6,prepare,3,3,once,开发一个终端,,"{""args"":""ish"",""index"":""web.code.xterm""}"
