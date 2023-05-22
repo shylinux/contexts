@@ -18,8 +18,6 @@ ish_miss_prepare_icebergs
 ish_miss_prepare release
 ish_miss_prepare icons
 
-ish_sys_link_create $PWD/usr/linux-story $PWD/usr/local/work/linux-story
-
 ish_miss_prepare websocket
 ish_miss_prepare go-qrcode
 ish_miss_prepare go-git
