@@ -40,6 +40,10 @@
 	event listen event dream.create cmd web.code.tmux.session
 	event listen event dream.create cmd web.chat.macos.notifications
 	event listen event dream.create cmd web.chat.iframe
+	# event listen event dream.tables cmd web.wiki.word
+	# event listen event dream.tables cmd web.wiki.draw
+	# event listen event dream.tables cmd web.chat.macos.desktop
+	# event listen event dream.tables cmd web.team.plan
 
 ~ssh
 	target web.chat.macos
