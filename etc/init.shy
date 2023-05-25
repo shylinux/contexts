@@ -18,6 +18,7 @@
 	binpack insert usr/node_modules/xterm-addon-fit/lib/xterm-addon-fit.js
 	binpack insert usr/node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js
 	binpack insert usr/node_modules/xterm/css/xterm.css
+	binpack insert usr/local/export/
 	binpack insert usr/icons/
 
 ~web.chat.macos
@@ -36,10 +37,10 @@
 ~gdb
 	event listen event serve.start cmd web.serve
 	event listen event serve.start cmd web.broad
-	event listen event dream.create cmd web.code.xterm
+	# event listen event dream.create cmd web.code.xterm
 	event listen event dream.create cmd web.code.tmux.session
 	event listen event dream.create cmd web.chat.macos.notifications
-	event listen event dream.create cmd web.chat.iframe
+	# event listen event dream.create cmd web.chat.iframe
 	# event listen event dream.tables cmd web.wiki.word
 	# event listen event dream.tables cmd web.wiki.draw
 	# event listen event dream.tables cmd web.chat.macos.desktop
