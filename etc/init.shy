@@ -4,6 +4,7 @@
 	spide create name "com" link "http://2021.shylinux.com:9020" 
 	dream create name 20221205-sshd repos https://shylinux.com/x/sshd binary http://2021.shylinux.com:9020/chat/pod/20221205-sshd
 	dream create name 20230511-golang-story repos https://shylinux.com/x/golang-story binary http://2021.shylinux.com:9020/chat/pod/20230511-golang-story
+	dream create name 20230511-docker-story repos https://shylinux.com/x/docker-story binary http://2021.shylinux.com:9020/chat/pod/20230511-docker-story
 	dream create name 20230511-linux-story repos https://shylinux.com/x/linux-story binary http://2021.shylinux.com:9020/chat/pod/20230511-linux-story
 	dream create name 20230511-nginx-story repos https://shylinux.com/x/nginx-story binary http://2021.shylinux.com:9020/chat/pod/20230511-nginx-story
 	dream create name 20230511-redis-story repos https://shylinux.com/x/redis-story binary http://2021.shylinux.com:9020/chat/pod/20230511-redis-story
@@ -24,27 +25,39 @@
 ~web.chat.macos
 	applications install "dream" web.dream icon "usr/icons/Mission Control.png"
 	applications install "compile" web.code.compile icon "usr/icons/go.png"
-	applications install "repos" web.code.git.service icon "usr/icons/git.jpg"
+	applications install "repos" web.code.git.repos icon "usr/icons/git.jpg"
 	applications install "Preferences" web.chat.macos.opens args "System Preferences" icon "usr/icons/System Preferences.png"
 	applications install "QuickTime" web.chat.macos.opens args "QuickTime Player" icon "usr/icons/QuickTime Player.png"
 	applications install "Activity" web.chat.macos.opens args "Activity Monitor" icon "usr/icons/Activity Monitor.png"
 	applications install "Preview" web.chat.macos.opens args "Preview"
 
 ~aaa 
-	role white void web.code.git.trend
-	role white void web.code.git.spide
+	role whiteblack web.wiki.draw
+	role whiteblack web.wiki.feel
+	role whiteblack web.wiki.data
+	role whiteblack web.chat.favor
+	role whiteblack web.chat.macos.desktop
+	role whiteblack web.chat.macos.applications
+	role whiteblack web.chat.macos.notifications
+	role whiteblack web.chat.macos.searchs
+	role whiteblack web.chat.macos.menu
+	role whiteblack web.chat.macos.dock
+	role whiteblack web.code.git.trend
+	role whiteblack web.code.git.spide
+	role white void web.chat.macos.desktop action command
+	role white void web.chat.macos.desktop action run
+	role white void web.wiki.draw action command
+	role white void web.wiki.draw action run
+	role white void /require/usr/icebergs
+	role white void /require/usr/icons
+	role white void usr/local/image
+	role white void usr/local/export
 
 ~gdb
 	event listen event serve.start cmd web.serve
 	event listen event serve.start cmd web.broad
-	# event listen event dream.create cmd web.code.xterm
 	event listen event dream.create cmd web.code.tmux.session
 	event listen event dream.create cmd web.chat.macos.notifications
-	# event listen event dream.create cmd web.chat.iframe
-	# event listen event dream.tables cmd web.wiki.word
-	# event listen event dream.tables cmd web.wiki.draw
-	# event listen event dream.tables cmd web.chat.macos.desktop
-	# event listen event dream.tables cmd web.team.plan
 
 ~ssh
 	target web.chat.macos
