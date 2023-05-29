@@ -20,7 +20,7 @@ ish_miss_prepare icons
 
 # ish_miss_prepare websocket
 # ish_miss_prepare go-qrcode
-# ish_miss_prepare go-git
+ish_miss_prepare go-git
 
 _prepare_ttc() {
 	ish_sys_cli_prepare; ish_dev_tmux_prepare; ish_dev_git_prepare; ish_dev_vim_prepare # ish_dev_vim_plug_prepare
