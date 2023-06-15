@@ -18,7 +18,6 @@ ish_miss_prepare_icebergs
 ish_miss_prepare release
 ish_miss_prepare icons
 
-ish_miss_prepare vue-admin
 # ish_miss_prepare websocket
 # ish_miss_prepare go-qrcode
 ish_miss_prepare go-git
