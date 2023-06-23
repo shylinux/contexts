@@ -1,54 +1,33 @@
-body.light { background-color:#4a566e; }
-body.light.cmd { background-color:white; }
-body.light legend { background-color:lightsteelblue; border-radius:5px; }
-body.light select { border-radius:5px; }
-body.light input { background-color:white; border-radius:5px; }
-body.light input:not([type=button]) { border-radius:0; }
-body.light input:not([type=button]):hover { border:blue solid 1px; }
-body.light input:not([type=button]):focus { border:blue solid 1px; outline:none; }
-body.light table.content tr:hover { background-color:aliceblue; }
-body.light table.content th { background-color:aliceblue; }
-body.light table.content td:hover { background-color:aliceblue; }
-body.light table.content td.select { background-color:aliceblue; }
-body.light table.content.action td:last-child { background-color:aliceblue; }
-body.light tr.line:hover { background-color:aliceblue; }
-body.light tr.line.select { background-color:aliceblue; }
-body.light h1:hover { background-color:aliceblue; }
-body.light h2:hover { background-color:aliceblue; }
-body.light h3:hover { background-color:aliceblue; }
-body.light div.item:hover { background-color:aliceblue; }
-body.light div.item.select { background-color:aliceblue; }
-body.light span.item:hover { background-color:aliceblue; }
-body.light span.item.select { background-color:aliceblue; }
-body.light form.option div.item:hover { background-color:white; }
-body.light form.option div.item.select { background-color:white; }
-body.light div.action div.tabs:hover { background-color:white; }
-body.light div.action div.tabs.select { background-color:white; }
-body.light div.output { background-color:white; }
-body.light fieldset>div.status { border-top:transparent solid 1px; }
-body.light fieldset:not(.panel):not(.cmd) { background-color:aliceblue; color:black; border-radius:10px; }
-body.light fieldset.panel:not(.main) { background-color:#4a566e; color:#d0d3da; }
-body.light fieldset.panel:not(.main)>div.output { background-color:#4a566e; color:#d0d3da; }
-body.light fieldset.panel:not(.main)>div.output fieldset>div.output { color:black; }
-body.light fieldset.panel:not(.main)>div.output div.state:hover { background-color:#2b3446; color:white; }
-body.light fieldset.panel:not(.main)>div.output div.title:hover { background-color:#2b3446; color:white; }
-body.light fieldset.panel:not(.main)>div.output div.menu:hover { background-color:#2b3446; color:white; }
-body.light fieldset.panel:not(.main):not(.auto) div.item:hover { background-color:#2b3446; color:white; }
-body.light fieldset.panel:not(.main):not(.auto) div.item.select { background-color:#2b3446; color:white; }
-body.light fieldset.panel:not(.main):not(.auto) input { background-color:#6b7488; color:white; border-radius:5px; }
-body.light fieldset.panel:not(.main)>div.output>div.item>input::placeholder { background-color:#6b7488; color:#d0d3da; }
-body.light fieldset.panel:not(.main) label { color:#d0d3da; }
-body.light fieldset.input div.output { background-color:aliceblue; }
-body.light fieldset.input tr:hover { background-color:white; }
-body.light fieldset.input td:hover { background-color:white; }
-body.light div.float { background-color:aliceblue; }
-body.light div.carte div.item { background-color:aliceblue; }
-body.light div.carte div.item:hover { background-color:white; }
-body.light div.zone>div.item { background-color:aliceblue; }
-body.light div.zone>div.list>div.zone>div.item { background-color:aliceblue; }
-body.light div.tabs div { background-color:aliceblue; }
-body.light div.tabs div:hover { background-color:white; }
-body.light div.tabs div.select { background-color:white; }
-body.light div.plug legend { background-color:white }
-body.light div.plug legend.select { background-color:aliceblue; }
-body.light div.complete>table { background-color:aliceblue; }
+body.light {
+	--body-bg-color:#4a566e;
+	--body-fg-color:black;
+
+	--legend-bg-color:lightsteelblue;
+	--input-bg-color:white;
+	--input-fg-color:var(--body-fg-color);
+	--input-radius:5px;
+	--input-border:blue solid 1px;
+	--status-border:transparent solid 1px;
+	--output-bg-color:var(--input-bg-color);
+
+	--plugin-radius:10px;
+	--plugin-bg-color:aliceblue;
+	--panel-output-bg-color:var(--body-bg-color);
+	--panel-output-fg-color:#d0d3da;
+	--panel-input-bg-color:#6b7488;
+	--panel-input-fg-color:white;
+	--panel-hover-bg-color:#2b3446;
+	--panel-hover-fg-color:white;
+	--panel-bg-color:var(--panel-output-bg-color);
+	--panel-fg-color:var(--panel-output-fg-color);
+
+	--float-bg-color:var(--plugin-bg-color);
+	--carte-bg-color:var(--plugin-bg-color);
+	--hover-bg-color:var(--input-bg-color);
+	--hover-fg-color:var(--input-fg-color);
+
+	--th-bg-color:var(--plugin-bg-color);
+	--th-fg-color:black;
+	--tr-hover-bg-color:var(--plugin-bg-color);
+	--td-hover-bg-color:var(--plugin-bg-color);
+}

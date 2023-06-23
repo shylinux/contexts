@@ -1,44 +1,28 @@
-body.dark { background-color:black; color:silver; }
-body.dark legend { background-color:#212121; border-radius:5px; }
-body.dark legend:hover { color:white }
-body.dark input { background-color:#232526; color:silver; border-radius:5px; }
-body.dark input:hover { color:white }
-body.dark input:not([type=button]) { border-radius:0; }
-body.dark input:not([type=button]):hover { border:blue solid 1px; }
-body.dark input:not([type=button]):focus { border:blue solid 1px; outline:none; }
-body.dark textarea { background-color:#232526; color:silver; }
-body.dark table.content tr:hover { background-color:black; color:white; }
-body.dark table.content th { background-color:black; }
-body.dark table.content td:hover { background-color:black; }
-body.dark table.content td.select { background-color:black; }
-body.dark table.content.action td:last-child { background-color:black; }
-body.dark tr.line:hover { background-color:black; }
-body.dark tr.line.select { background-color:black; }
-body.dark h1:hover { background-color:black; color:white; }
-body.dark h2:hover { background-color:black; color:white; }
-body.dark h3:hover { background-color:black; color:white; }
-body.dark div.item:hover { background-color:#232526; color:white; }
-body.dark div.item.select { background-color:#232526; color:white; }
-body.dark span.item:hover { background-color:black; color:white; }
-body.dark span.item.select { background-color:black; color:white; }
-body.dark div.action div.tabs:hover { background-color:#232526; color:white; }
-body.dark div.action div.tabs.select { background-color:#232526; color:white; }
-body.dark div.output { background-color:#232526; }
-body.dark fieldset>div.status { border-top:gray solid 1px }
-body.dark fieldset:not(.panel) { background-color:black; border-radius:10px; }
-body.dark fieldset.panel:not(.main) { background-color:black; }
-body.dark fieldset.panel:not(.main)>div.output { background-color:black; }
-body.dark fieldset.input div.output { background-color:black; }
-body.dark fieldset.input tr:hover { background-color:#232526; }
-body.dark fieldset.input td:hover { background-color:#232526; }
-body.dark div.float { background-color:black; }
-body.dark div.carte div.item { background-color:black; }
-body.dark div.carte div.item:hover { background-color:#232526; }
-body.dark div.zone>div.item { background-color:black; }
-body.dark div.zone>div.list>div.zone>div.item { background-color:black; }
-body.dark div.tabs div { background-color:black }
-body.dark div.tabs div:hover { background-color:#232526; color:white }
-body.dark div.tabs div.select { background-color:#232526; color:white }
-body.dark div.plug legend { background-color:#232526 }
-body.dark div.plug legend.select { background-color:black; }
-body.dark div.complete>table { background-color:black; }
+body.dark {
+	--body-bg-color:black;
+	--body-fg-color:silver;
+
+	--legend-bg-color:#212121;
+	--input-bg-color:#232526;
+	--input-fg-color:var(--body-fg-color);
+	--input-radius:5px;
+	--input-border:blue solid 1px;
+	--status-border:gray solid 1px;
+	--output-bg-color:var(--input-bg-color);
+
+	--plugin-radius:var(--input-radius);
+	--plugin-bg-color:var(--body-bg-color);
+	--panel-output-bg-color:var(--body-bg-color);
+	--panel-output-fg-color:var(--body-fg-color);
+	--panel-bg-color:var(--panel-output-bg-color);
+	--panel-fg-color:var(--panel-output-fg-color);
+
+	--float-bg-color:var(--plugin-bg-color);
+	--carte-bg-color:var(--plugin-bg-color);
+	--hover-bg-color:var(--input-bg-color);
+	--hover-fg-color:white;
+
+	--th-bg-color:var(--plugin-bg-color);
+	--tr-hover-bg-color:var(--plugin-bg-color);
+	--td-hover-bg-color:var(--plugin-bg-color);
+}
