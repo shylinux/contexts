@@ -4,29 +4,16 @@ body.white {
 
 	--legend-bg-color:#ffffffc2;
 	--input-bg-color:#ffffff7d;
-	--input-fg-color:var(--body-fg-color);
-	--input-radius:5px;
-	--input-border:blue solid 1px;
-	--status-border:darkcyan solid 1px;
-	--output-bg-color:transparent;
 
-	--plugin-radius:10px;
 	--plugin-bg-color:#ffffffa1;
-	--panel-output-bg-color:transparent;
 	--panel-output-fg-color:silver;
+	--panel-input-bg-color:unset;
+	--panel-input-fg-color:unset;
 	--panel-hover-bg-color:#243783bd;
-	--panel-hover-fg-color:white;
-	--panel-bg-color:var(--panel-output-bg-color);
-	--panel-fg-color:var(--panel-output-fg-color);
 
-	--float-bg-color:var(--plugin-bg-color);
-	--carte-bg-color:var(--plugin-bg-color);
 	--hover-bg-color:white;
 	--hover-fg-color:black;
-
 	--th-bg-color:skyblue;
-	--tr-hover-bg-color:var(--plugin-bg-color);
-	--td-hover-bg-color:var(--plugin-bg-color);
 }
 body.white fieldset.panel.River:not(.main):not(.auto) div.item:hover { background-color:var(--panel-hover-bg-color); }
 body.white fieldset.panel.River:not(.main):not(.auto) div.item.select { background-color:var(--panel-hover-bg-color); }

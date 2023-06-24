@@ -15,10 +15,12 @@
 	webpack insert xterm-addon-fit
 	webpack insert xterm-addon-web-links
 	webpack insert xterm/css/xterm.css
+	webpack insert html2canvas/dist/html2canvas.min.js
 	binpack insert usr/node_modules/xterm/lib/xterm.js
 	binpack insert usr/node_modules/xterm-addon-fit/lib/xterm-addon-fit.js
 	binpack insert usr/node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js
 	binpack insert usr/node_modules/xterm/css/xterm.css
+	binpack insert usr/node_modules/html2canvas/dist/html2canvas.min.js
 	binpack insert usr/local/export/
 	binpack insert usr/icons/
 
