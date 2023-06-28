@@ -1,0 +1,12 @@
+navmenu `
+"About" about/
+  Introduction introduction.shy
+  License license.shy
+"Getting started" started/
+  Install install.shy
+"User interfaces" interfaces/
+  CLI cli.shy
+  WEB web.shy
+"Using Contexts" using/
+"Managing Contexts" managing/
+`

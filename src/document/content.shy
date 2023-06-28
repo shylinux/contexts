@@ -1,0 +1,49 @@
+style flex
+	style column
+		title "Contexts"
+		spark title "一个功能完备的工具系统"
+		order `
+以模块化的方式，将编辑器、命令行、数据库、编译器等几百种工具，高度集成到一个 20M 的程序文件中。
+可一键部署到各种机器上，并快速启动很多个工作空间，以集群化的方式，将这些设备与空间高度组织到一起。
+每个工具都有自己的网页界面，以自己的数据逻辑将其它所有的工具与空间，组织到一个界面中，高效的完成各种工作。
+`
+		style flex
+			spark button "Get Started" route "started/"
+			spark button "Get Download" route "download/"
+		style end
+	style end
+	style column
+		field "" web.code.inner style output width 500px
+		shell `
+vi src/main.go
+
+go run src/main.go
+
+open http://localhost:9020
+` style.width 500px
+	style end
+style end
+
+spark title "编辑器"
+spark `一款网页版的编辑器，打开网页即可随时随地的编程，
+无论这些代码是保存在本机，还是远程，还是任何虚拟的空间，无论是内存还是磁盘。`
+field "编辑器" web.code.inner
+
+spark title "命令行"
+spark `一款网页版的命令行，打开网页即可随时随地的敲命令，
+无论这些命令是运行在本机，还是远程，还是任何虚拟的空间，无论是内存还是磁盘。`
+field "命令行" web.code.xterm args "ish"
+
+spark title "电脑桌面"
+spark `一款网页版的电脑桌面，打开网页即可随时随地的使用各种软件，
+无论这些软件是运行在本机，还是远程，还是任何虚拟的空间，无论是内存还是磁盘。`
+field "电脑桌面" web.chat.macos.desktop style output
+
+spark title "计划表"
+spark `一款网页版的行程计划表，打开网页即可随时随地的安排时间与任务`
+field "计划表" web.team.plan
+
+spark title "绘图工具"
+spark `一款网页版的绘图工具，打开网页即可随时随地的画图，
+无论这些文件是保存在本机，还是远程，还是任何虚拟的空间，无论是内存还是磁盘。`
+field "绘图工具" web.wiki.draw

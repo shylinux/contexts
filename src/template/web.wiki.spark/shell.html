@@ -1,1 +1,1 @@
-<div {{.OptionTemplate}}>{{range $index, $value := .Optionv "list"}}<label>$ </label><span class="item">{{$value}}</span><br>{{end}}</div>
+<div {{.OptionTemplate}} data-meta={{.Option "meta"}}>{{range $index, $value := .Optionv "list"}}<label>$ </label><span class="item">{{$value}}</span><br>{{end}}</div>

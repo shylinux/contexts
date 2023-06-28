@@ -27,4 +27,13 @@ body.dark {
 	--th-bg-color:var(--plugin-bg-color);
 	--td-hover-bg-color:var(--plugin-bg-color);
 	--tr-hover-bg-color:var(--plugin-bg-color);
+
+	--code-comment:green;
+	--code-keyword:royalblue;
+	--code-package:blue;
+	--code-datatype:lavender;
+	--code-function:lightgreen;
+	--code-constant:gray;
+	--code-string:orange;
+	--code-object:silver;
 }
