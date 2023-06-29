@@ -1,0 +1,13 @@
+title "源码编译"
+spark `
+如果想了解 contexts 的源码与原理，可以直接下载源码，自己编译后再启动。
+`
+spark `
+需要安装好 make git golang
+`
+
+web.code.publish source
+
+shell `
+make
+`

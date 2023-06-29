@@ -1,3 +1,33 @@
-spark `
-web
-`
+title "网页交互"
+spark `contexts 提供了网页接口，所有的功能模块，都可以通过网页来使用。`
+
+chapter "启动服务"
+section "直接启动"
+spark `serve 命令直接启动服务。`
+shell `./bin/ice.bin serve start`
+spark `默认的服务端口是 9020，打开 <a href="http://localhost:9020">http://localhost:9020</a> 即可通过网页使用所有的功能。`
+
+section "守护启动"
+spark `如果需要进程常驻，可以使用 forever 守护命令。在开发过程中非常有用，每次执行 make 命令进行编译与构建时，都会发送信号自动重启服务进程。`
+spark `forever 启动守护进程后，会自动启动服务进程，当服务进程意外停止后，会重新拉起服务。`
+shell `./bin/ice.bin forever start`
+
+section "容器启动"
+spark `容器启动命令与前相同，但访问时需要登录认证。`
+spark `contexts 默认会开启 IP 认证授权，只有通过本机访问的请求，才会免登录。`
+spark `但通过容器启动或远程服务器启动的 contexts，访问时都需要登录认证。`
+
+chapter "使用方式"
+section "导航式"
+spark `contexts 启动后，可直接访问 <a href="http://localhost:9020/chat/portal/">http://localhost:9020/chat/portal/</a>，打开后台管理系统。`
+spark `后台管理系统导航栏的内容，都是在 src/main.js 文件中定义的。如需自定义，直接修改即可。`
+spark `contexts 也提供了界面添加功能，点击创建后，依次添加群组、添加应用、添加工具，即可动态自动定义导航栏。`
+iframe "http://localhost:9020"
+
+section "搜索式"
+spark `默认后台管理系统，会提供一个搜索框，搜索到命令后会在结果栏中自动创建工具界面，即可立即使用此工具。`
+iframe "http://localhost:9020?_search=tcp.host"
+
+section "命令式"
+spark `所有的工具，都可以通过 URL 直接访问使用，如工具 web.team.plan 的 URL 是 <a href="http://localhost:9020/chat/cmd/web.team.plan">http://localhost:9020/chat/cmd/web.team.plan</a>，界面如下所示`
+iframe "http://localhost:9020/chat/cmd/web.team.plan"

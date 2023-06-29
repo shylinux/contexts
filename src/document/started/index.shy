@@ -2,11 +2,24 @@ navmenu `
 "About" about/
   Introduction introduction.shy
   License license.shy
-"Getting started" started/
-  Install install.shy
-"User interfaces" interfaces/
-  CLI cli.shy
-  WEB web.shy
-"Using Contexts" using/
-"Managing Contexts" managing/
+"下载安装" install/
+  "快速下载" quick.shy
+  "手动下载" manual.shy
+  "源码编译" source.shy
+  "创建项目" project.shy
+"使用方式" interfaces/
+  "命令式" cli.shy
+  "网页式" web.shy
+"基础功能" using/
+  "创建空间" space.shy
+"应用管理" managing/
+  "启动配置" config.shy
+"功能开发" development/
+  "创建项目" config.shy
+  "创建模块" config.shy
+"架构原理" development/
+  "启动流程" config.shy
+  "事件消息" config.shy
+  "模块注册" config.shy
+  "远程调用" config.shy
 `

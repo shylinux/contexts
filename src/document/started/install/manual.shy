@@ -1,0 +1,9 @@
+title "手动下载"
+spark `如果有其它需要，如下载不同系统或不同架构的 bin 文件，可手动下载。如下，使用 wget 或 curl 命令，下载所需 bin 文件。
+其中 linux 替换成所需系统名如 darwin、windows 等，amd64 替换成所需的架构名如 x86、arm 等`
+web.code.publish binary
+spark `添加执行权限，并重命名文件`
+shell `
+chmod u+x ice.linux.amd64
+mdkir bin; mv ice.linux.amd64 bin/ice.bin
+`
