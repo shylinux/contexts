@@ -29,4 +29,4 @@ _prepare_ttc() {
 	ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 	if tmux -V; then ish_miss_prepare_session miss miss; else ish_miss_serve_log; fi
 }
-ish_miss_make; if [ -n "$*" ]; then ish_miss_serve "$@"; else _prepare_ttc; fi
+ish_miss_make

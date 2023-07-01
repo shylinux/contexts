@@ -1,7 +1,7 @@
 title "快速下载"
-spark `contexts 使用 golang 开发，所以编译后只有一个 bin 文件。直接下载即可使用`
-spark `为了方便下载，可以直接使用如下命令。自动识别出操作系统与处理器类型，下载对应的 bin 文件，并自动启动服务。`
-spark `点击即可下面命令，即可直接复制`
+spark `contexts 使用 golang 开发，所以编译后只有一个 bin 文件。直接下载即可使用。`
+spark `为了方便下载并快速启动，可以使用如下命令。自动识别出操作系统与处理器类型，下载对应的 bin 文件，并自动启动服务。`
+spark `点击下面命令，即可直接复制命令。`
 web.code.publish contexts
 spark warning `contexts 有组建集群的功能，为了快速组建集群，这条命令也带了连接远程服务器的功能。`
 spark warning `如果远程服务器是自己搭建的，或是可信的服务，可直接执行。`

@@ -2,21 +2,38 @@ navmenu `
 "About" about/
   Introduction introduction.shy
   License license.shy
+
 "下载安装" install/
   "快速下载" quick.shy
   "手动下载" manual.shy
   "源码编译" source.shy
-  "创建项目" project.shy
+
 "使用方式" interfaces/
   "命令式" cli.shy
   "网页式" web.shy
+
 "基础功能" using/
+  "笔记文档" note.shy
+  "任务计划" plan.shy
+  "编辑器" vimer.shy
+  "应用桌面" desktop.shy
   "创建空间" space.shy
+  "组建集群" cluster.shy
+  "认证授权" auth.shy
+
 "应用管理" managing/
+  "目录结构" config.shy
   "启动配置" config.shy
+  "启动参数" config.shy
+  "环境变量" config.shy
+  "日志文件" config.shy
+  "进程控制" config.shy
+  "应用数据" config.shy
+
 "功能开发" development/
-  "创建项目" config.shy
-  "创建模块" config.shy
+  "创建项目" project.shy
+  "创建模块" module.shy
+
 "架构原理" development/
   "启动流程" config.shy
   "事件消息" config.shy

@@ -1,13 +1,16 @@
 title "源码编译"
-spark `
-如果想了解 contexts 的源码与原理，可以直接下载源码，自己编译后再启动。
+spark `如果想了解 contexts 的源码与原理，可以直接下载源码，自己编译后再启动。`
+spark `编译 contexts 需要提前安装好以下软件`
+refer `
+make https://www.gnu.org/software/make/
+git https://git-scm.com/download
+golang https://golang.google.cn/dl/
 `
-spark `
-需要安装好 make git golang
-`
-
 web.code.publish source
 
 shell `
-make
+cd contexts
+source etc/miss.sh
 `
+
+spark `执行 etc/miss.sh 脚本，会自动下载所需要的依赖，并编译项目。`

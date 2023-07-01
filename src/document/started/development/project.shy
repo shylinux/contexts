@@ -1,0 +1,41 @@
+title "创建项目"
+
+spark `当 contexts 自带的工具，无法满足使用需求时，可以基于 contexts 快速创建出新的项目。
+
+`
+chapter "创建项目"
+section "初始化项目"
+spark `根据项目名，创建一个新目录，将这里的 demo 换成自己的项目名，并初始化项目。`
+shell `
+mkdir demo
+cd demo
+go mod init demo
+`
+
+section "添加代码"
+spark `添加 main.go，并输入以下内容。`
+shell `
+mkdir src
+vi src/main.go
+`
+
+spark inner `
+package main
+
+import "shylinux.com/x/ice"
+
+func main() { ice.Run() }
+`
+
+section "编译构建"
+spark `添加依赖并编译`
+shell `
+go get shylinux.com/x/ice
+go build -o bin/ice.bin src/main.go
+`
+
+chapter "添加模块"
+spark `contexts 所有功能，都是模块化开发。所以完全独立，可自由的组合与选择。只需要在需要的地方 import 一下即可，自动加载与注册。如下添加英汉词典的模块。`
+
+spark inner src/document/started/development/main.go
+

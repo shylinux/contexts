@@ -15,7 +15,6 @@ chapter "项目"
 label `
 intshell icebergs volcanos
 contexts toolkits learning
-go-git release matrix
 ` index web.code.git.spide
 
 section "火山架"
@@ -51,5 +50,3 @@ field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
 spark README.md
-
-source h2/h2.shy

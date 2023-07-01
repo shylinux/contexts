@@ -1,0 +1,13 @@
+title "电脑桌面"
+spark `contexts 是一个工具系统，内置了很多软件工具。这些工具可以像本机电脑桌面一样，用图标与窗口来使用所有的应用。`
+spark `web.chat.macos.desktop 工具就是 contexts 的电脑桌面。`
+spark `<a href="http://localhost:9020/chat/cmd/desktop"></a>`
+field "" web.chat.macos.desktop style output
+
+spark `在桌面的左上角，可以桌面 + 号，创建新的桌面。每个桌面上可以打开不同的应用工具。`
+spark `打开 dock 工具栏中的 finder，即可查看所有应用列表。`
+spark `在 contexts 中，每个工作空间，都有自己的电脑桌面与应用列表，通过配置文件，可以将任意工具添加到应用列表中。
+应用列表中的所有应用，可以随时添加到桌面与工具栏中。`
+
+spark `同样的，电脑桌面 web.chat.macos.desktop，只是 contexts 的一个工具，可以添加到导航栏中，也可以在搜索框中使用，甚于可以内嵌在任何其它工具中使用。`
+
