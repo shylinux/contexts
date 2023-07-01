@@ -1,22 +1,22 @@
 title "笔记文档"
-brief `web.wiki.word 是 contexts 用来管理笔记与文档的工具，contexts 的文档以 .shy 作为文件格式的后缀。
-语法也非常简单，就是命令加参数，像命令行一样使用。其中命令就是 contexts 中的所有的工具名。
-所以 contexts 中的所有工具都可以在文档中直接使用。`
-spark `包括 contexts 的官网，web.wiki.portal，也只是在 web.wiki.word 上包装了一个布局和路由而已。
+brief `web.wiki.word 是 Contexts 用来管理笔记与文档的工具，Contexts 的文档以 .shy 作为文件格式的后缀。
+语法也非常简单，就是命令加参数，像命令行一样使用。其中命令就是 Contexts 中的所有的工具名。
+所以 Contexts 中的所有工具都可以在文档中直接使用。`
+spark `包括 Contexts 的官网，web.wiki.portal，也只是在 web.wiki.word 上包装了一个布局和路由而已。
 官网的所有内容也是用 .shy 文档来保存的，其中所有的内容在 web.wiki.word 中也一样显示。
 `
-spark `contexts 的文档不需要单独存放，直接和代码在一起，都在 src 目录下，contexts 在构建时，会根据代码结构，将对应的文档打包进 bin 文件中。`
+spark `Contexts 的文档不需要单独存放，直接和代码保存在一起，都在 <code>./src/</code> 目录下，Contexts 在构建时，会根据代码结构，将关联的文档打包进 bin 文件中，以便在运行时随时查看。`
 
 chapter "使用方式"
-spark `同样的，web.wiki.word 工具，也是可以在导航栏中、在搜索栏中、在单独的网页中都能使用，甚至可以被任何其它的工具嵌套使用。如被 web.wiki.portal 嵌套。`
-spark `其中 web.wiki.word 的参数栏中，第一个输入框，是文档的文件名，输入需要查看的文档的文件名即可查看此文档。
+spark `同样的，web.wiki.word 工具，也是可以在导航栏中、在搜索栏中、在单独的网页中都能使用，甚至可以被任何其它的工具嵌套使用。如被 web.wiki.portal 嵌套。
+其中 web.wiki.word 的参数栏中，第一个输入框，是文档的文件名，输入需要查看的文档的文件名即可查看此文档。
 在命令网页中，如下添加参数 path 即可指定文档的文件名。`
-spark `<a href="http://localhost:9020/chat/cmd/word?path=src/document/started/using/note.shy"></a>`
-spark `其中参数有空格或其它特殊字符，需要加引号，单引号、双引号、反引号，其中反引号中的文字可以跨行。`
+spark `<a>http://localhost:9020/chat/cmd/word?path=src/document/started/using/note.shy</a>`
 
 chapter "常用命令"
+spark `其中参数有空格或其它特殊字符，可以加引号，单引号、双引号、反引号，其中反引号中的文字可以跨行。`
 section "文字类"
-spark `文字类的命令很简单，常用的就 title、chapter、section、spark。`
+spark `文字类的命令很简单，常用的就 title、chapter、section、brief、spark。`
 spark inner `
 title "文章标题"
 chapter "章节标题"
@@ -26,7 +26,7 @@ spark "段落文字"
 ` args "src/ main.shy"
 
 spark `spark 命令还支持子命令，如 title、inner、shell、button 等，
-如需其它文字格式，可自行添加 spark 的子命令，只需要在 src/template/web.wiki.spark/ 目录下添加同名的模板文件即可。`
+如需其它文字格式，可自行添加 spark 的子命令，只需要在 <code>./src/template/web.wiki.spark/</code> 目录下添加同名的模板文件即可。`
 
 spark inner `
 spark inner "代码文字"
@@ -38,16 +38,29 @@ spark `其中 shell 命令并不一个单独的命令，只是 spark shell 的�
 还有 chapter 也是 title chapter 的别名，section 也是 title section 别名。`
 
 section "数据类"
-spark inner src/document/started/using/demo.shy
-spark `refer 命令，引用列表，样式如下`
-refer `
-首页 http://localhost:9020
-官网 http://localhost:9020/wiki/portal/
-后台 http://localhost:9020/chat/portal/
-`
+spark `refer 命令，引用列表`
+spark inner src/document/started/using/demo/refer.shy
+source src/document/started/using/demo/refer.shy
+
+spark `order 命令，普通列表`
+spark inner src/document/started/using/demo/order.shy
+source src/document/started/using/demo/order.shy
+
+spark `table 命令，普通表格`
+spark inner src/document/started/using/demo/table.shy
+source src/document/started/using/demo/table.shy
+
+section "绘图类"
+spark `label 命令，绘制标签。`
+spark inner src/document/started/using/demo/label.shy
+source src/document/started/using/demo/label.shy
+
+spark `chain 命令，绘制结构图，每一行是一个节点，用缩进代表层级。`
+spark inner src/document/started/using/demo/chain.shy
+source src/document/started/using/demo/chain.shy
 
 section "影音类"
-spark `影音类的文件，存放在 ./usr/local/image/ 目录下。当然参数也可以是一个完整的 URL 地址，直接引用外部的资源文件。`
+spark `影音类的文件，存放在 <code>./usr/local/image/</code> 目录下。当然参数也可以是一个完整的 URL 地址，直接引用外部的资源文件。`
 spark inner `
 image background.jpg 
 video some.mov

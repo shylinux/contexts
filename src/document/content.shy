@@ -15,8 +15,11 @@ style flex
 	style column
 		field "" web.code.inner style output width 500px
 		shell `
+mkdir -p demo/src; cd demo
 vi src/main.go
 
+go mod init demo
+go get shylinux.com/x/ice
 go run src/main.go
 
 open http://localhost:9020

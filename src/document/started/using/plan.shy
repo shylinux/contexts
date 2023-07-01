@@ -1,11 +1,11 @@
 title "任务计划"
-spark `web.team.plan 是 contexts 用来管理任务与计划的工具，此外在状态栏中附加了另外三个工具 web.team.todo、web.team.task、web.team.epic `
-spark `<a href="http://localhost:9020/chat/cmd/plan"></a>`
+spark `web.team.plan 是 Contexts 用来管理任务与计划的工具，此外在状态栏中附加了另外三个工具 web.team.todo、web.team.task、web.team.epic `
+spark `<a>http://localhost:9020/chat/cmd/plan</a>`
 field "" web.team.plan
 spark `web.team.plan 提供了日视图、周视图、月视图、年视图、长视图等，不同的时间维度来展示任务列表。
 双击时间的单元格，即可打开创建任务的对话框。其中 zone 与 name 是必选参数，指定分类与名称。
 单击任务，在任务表的右侧，即可显示出任务详情。`
-spark `web.team.plan 工具，看上去功能很简单，但却不简单，因为在 contexts 中，所有的工具，都可以嵌套任何其它工具，甚至子空间、子设备中的所有工具。
+spark `web.team.plan 工具，看上去功能很简单，但却不简单，因为在 Contexts 中，所有的工具，都可以嵌套任何其它工具，甚至子空间、子设备中的所有工具。
 给任何一个任务，都可以绑定一个工具。在详情中，点击插件，输入工具名与参数，即可在任务选中时，在时间表下面显示工具，可以直接使用。
 所以对于 web.team.plan 来说，它就是一个时间的框架，用时间的维度，将所有的工具显示在时间表中。`
-spark `同样适用于 contexts 系统中其它所有工具，每一个工具都以自己的数据逻辑，将其它所有的工具、空间、设备，组织在一起。所以每个工具，都是一个操作系统。`
+spark `同样适用于 Contexts 系统中其它所有工具，每一个工具都以自己的数据逻辑，将其它所有的工具、空间、设备，组织在一起。所以每个工具，都是一个操作系统。`

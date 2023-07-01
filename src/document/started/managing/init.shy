@@ -1,0 +1,26 @@
+title "启动配置"
+spark `Contexts 的启动配置都存保存在 etc/ 目录中，etc/init.shy 是启动配置，
+etc/local.shy 是启动配置拆分出来的一个文件，只存放一些关于密码类或本地的一些私有化配置，代码提交时会忽略这个文件。`
+
+chapter "配置语法"
+spark `和文档文件格式完全一样，也是命令式语法，都是命令加参数。`
+spark `为了减少重复的命令前缀，可以用波浪线 ～ 加上模块名，切换模块，此后的命令，只用输入命令名即可。`
+
+section "source"
+spark `source 命令可以用来引入其它的配置文件，当配置文件比较大时，可以拆分成多个文件，用 source 引入即可。`
+
+section "config"
+spark `config 命令是通用的配置操作命令，可以用来读写所有工具的配置。`
+
+chapter "常用配置"
+section "event"
+spark `event 是事件类的命令，监听某个事件然后执行指定的命令。如服务启动时、空间创建时、用户注册时等事件。`
+
+section "role"
+spark `role 是角色管理，什么角色拥有什么权限，都可以在启动时配置。`
+
+section "binpack insert"
+spark `binpack insert 是后端构建时，需要将哪些文件打包进 bin 文件中。`
+
+section "webpack insert"
+spark `webpack insert 是前端打包构建时，需要将哪些文件打包进 html 文件中。`

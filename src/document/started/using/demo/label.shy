@@ -1,0 +1,4 @@
+label `
+linux nginx docker redis mysql
+bash git golang vim tmux
+`

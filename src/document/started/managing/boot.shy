@@ -1,0 +1,39 @@
+title "启动参数"
+spark `Contexts 在命令行终端中，有三种使用方式，命令式、交互式、守护式。`
+
+chapter `命令式`
+spark `命令式用来执行一次性命令`
+shell `./bin/ice.bin tcp.host` with echo
+
+chapter `交互式`
+spark `交互式，会启动一个常驻功能和一个交互shell，可以多次执行命令。`
+
+section `启动服务`
+shell `./bin/ice.bin serve start dev "" port 9030 nodename demo`
+spark `serve 启动服务的参数如下`
+order `
+dev 指定上级服务节点。
+proto 指定服务启动的协议 http 或 https
+host 指定服务启动时绑定的本机 IP 地址
+port 指定服务启动的端口号，默认 9020
+nodename 指定本机节点名
+username 指定根用户名
+usernick 指定根用户的昵称
+`
+
+section `启动空间`
+shell `./bin/ice.bin space dial dev "http://localhost:9020" name demo`
+order `
+dev 指定服务节点。
+name 指定空间名。
+`
+
+chapter `守护式`
+spark `将进程意外结束，或是编译时接收到信号，交互进程会直接结束。
+为了自动重启，开发了 forever 命令。forever 可以用来启动任何进程，当进程停止时的返回 0，forever 也会退出，但返回其它值时，会重新拉起进程。`
+
+section `启动服务`
+shell `./bin/ice.bin forever start serve`
+
+section `启动空间`
+shell `./bin/ice.bin forever start space dev "http://localhost:9020"`

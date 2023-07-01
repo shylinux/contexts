@@ -1,33 +1,34 @@
 title "网页交互"
-spark `contexts 提供了网页接口，所有的功能模块，都可以通过网页来使用。`
+spark `Contexts 提供了网页接口，所有的功能模块，都可以通过网页来使用。`
 
 chapter "启动服务"
-spark `通过网页使用 contexts 前，需要先启动 web 服务器。`
+spark `通过网页使用 Contexts 前，需要先启动 web 服务器。Contexts 自带了多种启动方式。`
 
 section "直接启动"
 spark `serve 命令直接启动服务。`
 shell `./bin/ice.bin serve start`
-spark `默认的服务端口是 9020，打开 <a href="http://localhost:9020">http://localhost:9020</a> 即可通过网页使用所有的功能。`
+spark `默认的服务端口是 9020，打开 <a>http://localhost:9020</a> 即可通过网页使用所有的功能。`
+spark `服务启动后，会在终端上，启动一个交互式的 shell，可执行任何命令。因为 contexts 不支持密码登录，所以初始用户的权限，可以在终端上分配。`
 
 section "守护启动"
-spark `如果需要进程常驻，可以使用 forever 守护命令。在开发过程中非常有用，每次执行 make 命令进行编译与构建时，都会发送信号自动重启服务进程。`
-spark `forever 启动守护进程后，会自动启动服务进程，当服务进程意外停止后，会重新拉起服务。`
+spark `如果需要进程常驻，可以使用 forever 守护命令。在开发过程中非常有用，每次执行 make 命令进行编译与构建时，都会发送信号自动重启服务进程。
+forever 启动守护进程后，才会自动启动服务进程，当服务进程意外停止后，会重新拉起服务。`
 shell `./bin/ice.bin forever start`
 
 section "容器启动"
-spark `contexts 使用 golang 开发，完全跨平台，支持 Linux、macOS、Windows 等。`
-spark `并且 contexts 只有一个 bin 文件，运行时生成的所有文件，也只在当前目录。所以只要删除这个目录，就不会在系统上留下任何痕迹。`
-spark `但有时，也会用到容器部署，在容器中，也只需要下载一个 bin 文件即可，惟一的区别是需要登录认证。`
-spark `因为 contexts 默认会开启 IP 认证授权，只有通过本机访问的请求，才会免登录。`
-spark `但通过容器启动或远程服务器启动的 contexts，访问时都需要登录认证。`
+spark `Contexts 使用 Golang 开发，完全跨平台，支持 Linux、macOS、Windows 等。
+并且 Contexts 只有一个 bin 文件，运行时生成的所有文件，也只在当前目录。所以只要删除这个目录，就不会在系统上留下任何痕迹。`
+spark `但有时，也会用到容器部署，在容器中，也只需要下载一个 bin 文件即可，惟一的区别是需要登录认证。
+因为 Contexts 默认会开启 IP 认证授权，只有通过本机访问的请求，才会免登录。
+但通过容器启动或远程服务器启动的 Contexts，访问时都需要登录认证。`
 
 chapter "使用方式"
-spark `在 contexts 中，所有的工具，即可以添加到导航栏，通过结构化的组织起来，也可以搜索框被快速查找出来，还可以通过 URL 地址，直接在单独的网页中使用。`
+spark `在 Contexts 中，所有的工具，既可以添加到导航栏，通过结构化的组织起来，也可以搜索框被快速查找出来，还可以通过 URL 地址，直接在单独的网页中使用。`
 
 section "导航式"
-spark `contexts 启动后，可直接访问 <a href="http://localhost:9020/chat/portal/">http://localhost:9020/chat/portal/</a>，即可打开后台管理系统。`
-spark `后台管理系统导航栏的内容，都是在 src/main.js 文件中定义的。如需自定义，直接此文件修改即可。`
-spark `contexts 也提供了界面添加功能，点击创建后，依次添加群组、添加应用、添加工具，即可动态自动定义导航栏。`
+spark `Contexts 启动后，可直接访问 <a>http://localhost:9020/chat/portal/</a>，即可打开后台管理系统。
+后台管理系统导航栏的内容，都是在 src/main.js 文件中定义的。如需自定义，直接此文件修改即可。
+Contexts 也提供了界面添加功能，点击创建后，依次添加群组、添加应用、添加工具，即可动态自动定义导航栏。`
 iframe "http://localhost:9020"
 
 section "搜索式"
@@ -35,5 +36,8 @@ spark `默认后台管理系统，会提供一个搜索框，所有的工具都�
 iframe "http://localhost:9020?_search=tcp.host"
 
 section "命令式"
-spark `所有的工具可以通过 URL 直接访问使用，如工具 web.team.plan 的 URL 是 <a href="http://localhost:9020/chat/cmd/web.team.plan">http://localhost:9020/chat/cmd/web.team.plan</a>，界面如下所示`
+spark `所有的工具可以通过 URL 直接访问使用，如工具 web.team.plan 的 URL 是 <a>http://localhost:9020/chat/cmd/web.team.plan</a>。`
 iframe "http://localhost:9020/chat/cmd/web.team.plan"
+
+chapter "登录认证"
+spark `如果在其它设备上，访问本机的服务，都是需要认证的。前端网页在检测到没有登录，会展示一个登录页面。复制下面的授权命令，在后台执行，即可授权登录。`

@@ -13,22 +13,23 @@ navmenu `
   "网页式" web.shy
 
 "基础功能" using/
-  "笔记文档" note.shy
-  "任务计划" plan.shy
   "编辑器" vimer.shy
+  "任务计划" plan.shy
+  "笔记文档" note.shy
   "应用桌面" desktop.shy
   "创建空间" space.shy
   "组建集群" cluster.shy
   "认证授权" auth.shy
 
 "应用管理" managing/
-  "目录结构" config.shy
-  "启动配置" config.shy
-  "启动参数" config.shy
-  "环境变量" config.shy
-  "日志文件" config.shy
-  "进程控制" config.shy
-  "应用数据" config.shy
+  "目录结构" dir.shy
+  "启动配置" init.shy
+  "启动参数" boot.shy
+  "环境变量" env.shy
+  "日志文件" log.shy
+  "进程控制" signal.shy
+  "数据目录" var.shy
+  "资源目录" usr.shy
 
 "功能开发" development/
   "创建项目" project.shy

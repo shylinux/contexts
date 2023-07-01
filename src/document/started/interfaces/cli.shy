@@ -1,17 +1,11 @@
 title "命令交互"
-spark `contexts 提供了命令接口，所有的功能模块，都可以通过命令行来使用。`
+spark `Contexts 提供了命令接口，所有的功能模块，都可以通过命令行来使用。`
 
 spark `tcp.host 查看网卡信息`
-shell `
-./bin/ice.bin tcp.host
-` with echo
+shell `./bin/ice.bin tcp.host` with echo
 
 spark `cli.system 执行本机命令`
-shell `
-./bin/ice.bin cli.system pwd
-` with echo
+shell `./bin/ice.bin cli.system pwd` with echo
 
 spark `nfs.dir 查看目录列表`
-shell `
-./bin/ice.bin nfs.dir
-` with echo
+shell `./bin/ice.bin nfs.dir` with echo

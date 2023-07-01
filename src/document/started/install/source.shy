@@ -1,16 +1,41 @@
 title "源码编译"
-spark `如果想了解 contexts 的源码与原理，可以直接下载源码，自己编译后再启动。`
-spark `编译 contexts 需要提前安装好以下软件`
+spark `如果想了解 Contexts 的源码与原理，可以直接下载项目源码，自己编译后再启动。编译 Contexts 需要提前安装好以下几个软件`
 refer `
 make https://www.gnu.org/software/make/
 git https://git-scm.com/download
 golang https://golang.google.cn/dl/
 `
 web.code.publish source
-
+spark `执行 <code>etc/miss.sh</code> 脚本，会自动下载所需要的依赖，并编译项目。`
 shell `
 cd contexts
 source etc/miss.sh
 `
 
-spark `执行 etc/miss.sh 脚本，会自动下载所需要的依赖，并编译项目。`
+chapter "项目组成"
+spark `Contexts 前后端框架和核心模块全部自研，只有少部分功能使用到了外部代码，并且随时会干掉，最终不依赖任何外部项目，做到完全自举。`
+
+section "项目组成"
+spark `Contexts 主要由以下几个项目组成。`
+order `
+前端框架 https://shylinux.com/x/volcanos
+后端框架 https://shylinux.com/x/icebergs
+脚本库 https://shylinux.com/x/intshell
+工具库 https://shylinux.com/x/toolkits
+图标库 https://shylinux.com/x/icons
+打包库 https://shylinux.com/x/ice
+`
+
+section "外部依赖"
+spark `Contexts 后端只依赖三个外部库。`
+order `
+https://shylinux.com/x/websocket
+https://shylinux.com/x/go-qrcode
+https://shylinux.com/x/go-git
+`
+spark `Contexts 前端只使用了三个外部库。`
+order `
+bootstrap-icons
+html2canvas
+xterm
+`

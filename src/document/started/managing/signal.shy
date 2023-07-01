@@ -1,0 +1,5 @@
+title "进程控制"
+spark `Contexts 可以通过信号控制进程。`
+spark `在终端启动 Contexts 后，<code>Ctrl + C</code> 重启服务进程。<code>Ctrl + \\</code> 退出服务进程。`
+spark `执行 make 命令时，会发送 INT 信号，重启进程。`
+

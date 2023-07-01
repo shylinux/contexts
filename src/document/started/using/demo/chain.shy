@@ -1,0 +1,14 @@
+chain `
+contexts
+	icebergs
+		base
+		core
+		misc
+	toolkits
+	volcanos
+		lib
+		page
+		panel
+		plugin
+`
+

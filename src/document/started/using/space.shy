@@ -1,12 +1,12 @@
 title "工作空间"
-spark `contexts 下载并启动后，会以当前运行目录为工作空间，加载启动脚本和保存数据与文件。`
-spark `contexts 不推荐使用全局的资源或家目录的文件，为了减少全局依赖与资源冲突。从而可以在一台机器上启动任意多个空间。`
-spark `contexts 推荐使用空间来管理项目与任务。contexts 每个空间都是一个独立的目录，与独立的守护进程。
-每个空间即可以使用相同的 contexts，也可以使用不同的 contexts，即不同的工具集合。因为每个项目内容可能是不一样的，使用的工具也可能是不一样的。`
+spark `Contexts 下载并启动后，会以当前运行目录为工作空间，加载启动脚本和保存数据与文件。`
+spark `Contexts 不推荐使用全局的资源或家目录的文件，为了减少全局依赖与资源冲突。从而可以在一台机器上启动任意多个空间。`
+spark `Contexts 推荐使用空间来管理项目与任务。Contexts 每个空间都是一个独立的目录，与独立的守护进程。
+每个空间即可以使用相同的 Contexts，也可以使用不同的 Contexts，即不同的工具集合。因为每个项目内容可能是不一样的，使用的工具也可能是不一样的。`
 
 chapter "创建空间"
 section "启动服务"
-spark `首先，启动 contexts 服务。并打开后台管理系统。<a href="http://localhost:9020/chat/portal/"></a>`
+spark `首先，启动 Contexts 服务。并打开后台管理系统。<a>http://localhost:9020/chat/portal/</a>`
 shell `
 ./bin/ice.bin forever start
 open http://localhost:9020
@@ -14,20 +14,20 @@ open http://localhost:9020
 
 section "打开工具"
 spark `如果导航栏未定制，在左边导航栏中打开运维群 -> 应用，然后在右边工作区中，找到 dream，即空间管理的工具。`
-spark `<a href="http://localhost:9020/chat/portal/?river=operate&storm=web&index=web.dream"></a>`
+spark `<a>http://localhost:9020/chat/portal/?river=operate&storm=web&index=web.dream</a>`
 iframe "http://localhost:9020/chat/portal/?river=operate&storm=web&index=web.dream"
 spark `或在搜索框中，直接搜索 dream 即可打开空间管理的工具。`
-spark `<a href="http://localhost:9020?_search=dream"></a>`
+spark `<a>http://localhost:9020?_search=dream</a>`
 iframe "http://localhost:9020?_search=dream"
-spark `或是直接打开命令网页，<a href="http://localhost:9020/chat/cmd/web.dream"></a>`
+spark `或是直接打开命令网页，<a>http://localhost:9020/chat/cmd/web.dream</a>`
 iframe "http://localhost:9020/chat/cmd/web.dream"
 
 section "创建空间"
 spark `点击工具栏中的创建按钮，即可打开创建对话框。`
-spark `空间创建有 name、repos、binary、template 四个参数，其中 name 是必选参数，指定项目名，创建空间时，contexts 会默认给项目名加一个时间前缀。`
+spark `空间创建有 name、repos、binary、template 四个参数，其中 name 是必选参数，指定项目名，创建空间时，Contexts 会默认给项目名加一个时间前缀。`
 order `
-repos 指定 git 仓库地址，contexts 将此仓库下载到本地，然后把此目录当成工作空间。
-binary 指定 bin 文件，contexts 会自动下载并使用这个 bin 文件，来启动守护进程。
+repos 指定 git 仓库地址，Contexts 将此仓库下载到本地，然后把此目录当成工作空间。
+binary 指定 bin 文件，Contexts 会自动下载并使用这个 bin 文件，来启动守护进程。
 template 指定模板目录，空间创建时，会从模板目录中复制所需要的文件。
 `
 spark `空间创建成功后，会在 ./usr/local/work 目录下创建一个空间的目录。并启动一个守护进程。

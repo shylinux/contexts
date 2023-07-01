@@ -1,27 +1,27 @@
 title "组建集群"
-spark `contexts 既可以在一台机器上，启动任意多个工作空间。也可以把多台机器组网到一起。在 contexts 看来，本机的工作空间，与其它设备上的工作空间是没有区别的，使用方式完全一样。`
+spark `Contexts 既可以在一台机器上，启动任意多个工作空间。也可以把多台机器组网到一起。在 Contexts 看来，本机的工作空间，与其它设备上的工作空间是没有区别的，使用方式完全一样。`
 spark `因为现在每个人都可能会有很多台电脑，比如笔记本、台式机、开发机、服务器、开发板等，每台设备上的软件都需要下载、安装、配置，还要不断的同步数据，这是一个非常复杂且浪费时间的事情。`
-spark `使用 contexts 就可以很方便的，管理起这么多种设备和软件。只需要构建一个 contexts 项目，选择自己的工具集合，就可以通过交叉编译，生成各种操作系统上可运行的软件。`
-spark `contexts 还会自动组网，将所有设备连接到一起。通过任意一台设备，都可以使用其它设备上的所有工具与数据。即使这些设备不在一起，比如公司的电脑和家里的电脑。`
+spark `使用 Contexts 就可以很方便的，管理起这么多种设备和软件。只需要构建一个 Contexts 项目，选择自己的工具集合，就可以通过交叉编译，生成各种操作系统上可运行的软件。`
+spark `Contexts 还会自动组网，将所有设备连接到一起。通过任意一台设备，都可以使用其它设备上的所有工具与数据。即使这些设备不在一起，比如公司的电脑和家里的电脑。`
 
 chapter "启动服务"
-spark `contexts 服务启动时，默认的会启动集群的功能，本机的工作空间与其它机器的连接此服务的方式都是一样，惟一不同中的是，为了安全，子设备的名称是用 IP+Port，如需自定义需要认证授权后才行。`
+spark `Contexts 服务启动时，默认的会启动集群的功能，本机的工作空间与其它机器的连接此服务的方式都是一样，惟一不同中的是，为了安全，子设备的名称是用 IP+Port，如需自定义需要认证授权后才行。`
 shell `./bin/ice.bin forever start`
 
 chapter "连接服务"
-spark `在另一台设备上，同样下载好 contexts，并启动服务，在启动命令后加上参数"dev xxx"，指定需要连接的服务节点即可。`
+spark `在另一台设备上，同样下载好 Contexts，并启动服务，在启动命令后加上参数"dev xxx"，指定需要连接的服务节点即可。`
 shell `./bin/ice.bin forever start dev "http://192.168.10.12:9020"`
 
 chapter "访问子设备"
 spark `当子设备的服务起动成功，并连接上父设备后，就可以把子设备当成父设备的工作空间来使用。`
 section "打开子设备"
 spark `如果导航栏未定制，在左边导航栏中打开运维群 -> 应用，然后在右边工作区中，找到 space，即空间管理的工具。`
-spark `<a href="http://localhost:9020/chat/portal/?river=operate&storm=web&index=space"></a>`
+spark `<a>http://localhost:9020/chat/portal/?river=operate&storm=web&index=space</a>`
 iframe "http://localhost:9020/chat/portal/?river=operate&storm=web&index=space"
 spark `或在搜索框中，直接搜索 space 即可打开空间管理的工具。搜索结果如果有多个，需要手动选择，点击"ctx command web space"一行，才会打开 space 工具。`
-spark `<a href="http://localhost:9020?_search=space"></a>`
+spark `<a>http://localhost:9020?_search=space</a>`
 iframe "http://localhost:9020?_search=space"
-spark `或是直接打开命令网页，<a href="http://localhost:9020/chat/cmd/web.space"></a>`
+spark `或是直接打开命令网页，<a>http://localhost:9020/chat/cmd/web.space</a>`
 iframe "http://localhost:9020/chat/cmd/web.space"
 spark `在空间列表中，找到新启动的子设备，点击打开，即可进入子空间的管理界面。`
 
