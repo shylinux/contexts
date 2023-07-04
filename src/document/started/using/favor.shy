@@ -1,0 +1,22 @@
+title "收藏夹"
+spark `在工作过程中，经常会用到一些文本、链接、图片等，需要不断的来回复制与粘贴。为了更加方便的管理这些常用数据，可以使用 web.chat.favor 命令。`
+spark demo favor
+
+chapter "添加数据"
+section "创建"
+spark `在工具栏，点击创建，依次输入参数 type、name、text，然后提交即可。`
+
+section "上传"
+spark `web.chat.favor 还支持上传文件。`
+
+section "粘贴"
+spark `web.chat.favor 还支持从粘贴板直接获取数据。`
+
+section "截图"
+spark `web.chat.favor 还支持截图。`
+
+section "录屏"
+spark `web.chat.favor 还支持录屏。`
+
+chapter "查看详情"
+spark `在 web.chat.favor 中的数据是有多种格式的，如果是图片，可以直接预览。可以在最后一例中，点击按键进行操作。也可以点击某一行的 hash 字段，即可直接切换视图到详情。`

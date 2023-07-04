@@ -1,6 +1,6 @@
 navmenu `
 "关于" about/
-  "简介" introduction.shy
+  "项目" introduction.shy
   "授权" license.shy
 
 "下载安装" install/
@@ -15,13 +15,18 @@ navmenu `
 "基础功能" using/
   "编辑器" vimer.shy
   "代码库" repos.shy
-  "笔记文档" note.shy
+  "收藏夹" favor.shy
   "任务计划" plan.shy
+  "笔记文档" note.shy
+  "官方网站" site.shy
+  "思维导图" draw.shy
   "应用桌面" desktop.shy
+
+"高级特性" feature/
   "创建空间" space.shy
   "组建集群" cluster.shy
-  "认证授权" auth.shy
   "共享链接" share.shy
+  "认证授权" auth.shy
 
 "应用管理" managing/
   "目录结构" dir.shy

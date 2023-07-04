@@ -1,8 +1,7 @@
 title "应用桌面"
 spark `Contexts 是一个工具系统，内置了很多软件工具。这些工具可以像本机电脑桌面一样，用图标与窗口的界面，来使用所有的软件工具。
 web.chat.macos.desktop 命令就是 Contexts 的电脑桌面。`
-spark `<a>http://localhost:9020/chat/cmd/desktop</a>`
-field "" web.chat.macos.desktop style output
+spark demo web.chat.macos.desktop style output
 
 chapter "桌面列表"
 spark `Contexts 支持多桌面，可以创建出任意多个桌面。在桌面的左上角，点击 + 号，就可以创建一个新桌面，每个桌面上可以打开不同的软件工具。

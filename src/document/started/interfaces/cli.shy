@@ -1,11 +1,26 @@
 title "命令交互"
 spark `Contexts 提供了命令接口，所有的软件工具，都可以通过命令行来使用。`
 
+chapter "目录结构"
+spark `Contexts 下载成功后，进入 Contexts 的目录。 Contexts 运行时的所有文件，都只保存在当前目录下。一个完整的目录结构如下。`
+order `
+src/ 源码目录，存放本项目所有的代码与文档，如 main.go、main.js、main.shy。
+etc/ 配置目录，存放启动脚本等各种配置类的文件，如 init.shy、local.shy、exit.shy。
+bin/ 程序目录，存放编译好的可执行程序文件，如 ice.bin。
+var/ 数据目录，程序运行时，需要用的各种数据文件，如日志文件、缓存文件。
+usr/ 资源目录，一些外部资源文件，如第三方库、图标库、发布文件。
+`
+spark `因为 Contexts 支持集群化的多空间，每一个工作目录，即是一个工作空间。
+所有的资源都只存在当前目录，这样可以保证每个工作空间的完整性与独立性。所以每个工作空间，都可以有自己的代码仓库、程序文件、配置文件、运行数据等。
+`
+spark `所以在使用 Contexts 时，所有的命令都在这个目录下执行。并不需要安装到全局的 PATH 中，直接 ./bin/ice.bin 即可。`
+
+chapter "执行命令"
 spark `tcp.host 查看网卡信息`
 shell `./bin/ice.bin tcp.host` with echo
 
-spark `cli.system 执行本机命令`
-shell `./bin/ice.bin cli.system pwd` with echo
-
 spark `nfs.dir 查看目录列表`
 shell `./bin/ice.bin nfs.dir` with echo
+
+spark `cli.system 执行本机命令`
+shell `./bin/ice.bin cli.system pwd` with echo

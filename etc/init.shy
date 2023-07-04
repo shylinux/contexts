@@ -34,31 +34,19 @@
 	applications install "Preview" web.chat.macos.opens args "Preview"
 
 ~aaa 
-	role whiteblack web.wiki.draw
-	role whiteblack web.wiki.feel
-	role whiteblack web.wiki.data
-	role whiteblack web.chat.favor
-	role whiteblack web.chat.macos.desktop
-	role whiteblack web.chat.macos.applications
-	role whiteblack web.chat.macos.notifications
-	role whiteblack web.chat.macos.searchs
-	role whiteblack web.chat.macos.menu
-	role whiteblack web.chat.macos.dock
 	role whiteblack web.code.git.trend
 	role whiteblack web.code.git.spide
-	role white void web.chat.macos.desktop action command
-	role white void web.chat.macos.desktop action run
+	role whiteblack web.wiki.draw
+	role whiteblack web.wiki.feel
+	role whiteblack web.chat.favor
 	role white void web.wiki.draw action command
 	role white void web.wiki.draw action run
-	role white void web.wiki.portal
-	role white void portal
-	role white void LICENSE
-	role white void etc/path
 	role white void /require/usr/icebergs
-	role white void /require/modules/
 	role white void /require/usr/icons
+	role white void /require/modules/
 	role white void usr/local/image
-	role white void usr/local/export
+	role white void etc/path
+	role white void LICENSE
 
 ~gdb
 	event listen event serve.start cmd web.serve

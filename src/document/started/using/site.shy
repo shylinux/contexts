@@ -1,0 +1,16 @@
+title "官方网站"
+spark `Contexts 的官方网站，web.wiki.portal 就是用文档驱动的，使用 .shy 的文件格式，都保存在 ./src/document/ 目录下。`
+
+chapter "目录与文件"
+spark `在 ./src/document/ 目录下，有两个特别的文件。一个是 ./src/document/index.shy 用来生成标题栏。另外就是各个子目录下的 index.shy 用来生成导航栏。`
+
+section "标题栏"
+spark `./src/document/index.shy 标题栏文档的内容如下。`
+spark inner src/document/index.shy
+
+section "导航栏"
+spark `./src/document/stated/index.shy 导航栏文档的内容如下。`
+spark inner src/document/started/index.shy
+
+chapter "布局与路由"
+spark `标题栏的路由，会触发网页跳转。而导航栏的路由，只会刷新局部视图，并且添加了视图缓存。`

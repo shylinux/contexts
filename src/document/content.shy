@@ -3,17 +3,17 @@ style flex
 		title "Contexts"
 		spark title "一个功能完备的工具系统"
 		order `
-以模块化的方式，将编辑器、命令行、数据库、编译器等几百种工具，高度集成到一个 20M 的程序文件中。
+将编辑器、命令行、数据库、编译器等几百种工具，以模块化的方式，高度集成到一个 20M 的程序文件中。
 一键部署到各种机器上，快速启动很多个工作空间，以集群化的方式，将这些空间、设备高度组织到一起。
 每个工具都有网页界面，以自己的数据逻辑将其它所有的工具与空间，组织到自己的界面中，高效的完成各种工作。
 `
 		style flex
-			spark button "Get Download" route "download/" style.background blue style.color white
-			spark button "Get Started" route "started/" style.background blue style.color white
+			spark button "Get Download" route "download/" bg blue fg white
+			spark button "Get Started" route "started/" bg blue fg white
 		style end
 	style end
-	style column flex "0 0 460px" overflow hidden
-		spark inner src/main.go width 420px
+	style column flex "0 0 500px" overflow hidden
+		spark inner src/main.go width 460px
 		shell `
 mkdir -p demo/src; cd demo
 vi src/main.go
