@@ -1,0 +1,57 @@
+title "space"
+brief `space 命令，执行远程命令。`
+
+chapter "界面"
+spark demo space
+
+chapter "参数"
+spark `没有参数时，输出节点列表。指定了参数 name 即节点名，则输出此节点的详细信息。如果还指定了参数 cmds，则将 cmds 参数指定的命令，发送到 name 参数指定节点上去执行。`
+order `
+name: 空间名。
+cmds: 命令。
+`
+
+chapter "操作"
+order `
+open，打开一个节点的首页。
+remove，删除一个节点。
+`
+chapter "搜索"
+spark `默认结果，输出子服务节点，父节点。`
+
+chapter "接口"
+section "/space/"
+spark `监听子空间或子设备，发送的 websocket 连接请求，并创建新的双向连接。`
+
+chapter "命令"
+section "dial"
+spark `启动工作空间`
+shell `space dial dev dev name demo`
+order `
+dev: 指定远程服务地址。
+name: 指定本节点的名称。
+`
+
+section "start"
+spark `启动工作空间`
+shell `space start dev dev name demo`
+order `
+dev: 指定远程服务地址。
+name: 指定本节点的名称。
+`
+
+section "login"
+spark `授权登录。`
+shell `space login 113_87_49_222_52203`
+
+section "domain"
+spark `返回当前空间的地址。`
+shell `space domain`
+
+section "main"
+spark `返回空间的首页。`
+shell `space main`
+
+chapter "配置"
+order `main: 通过 config 命令指定空间的首页`
+shell `config web.space meta.main "desktop"`

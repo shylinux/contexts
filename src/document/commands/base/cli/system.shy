@@ -1,0 +1,12 @@
+title "system"
+spark `system 命令，执行系统命令。`
+
+chapter "界面"
+spark demo system
+
+chapter "参数"
+spark `system 需要一个参数 cmd，来指定需要执行的系统命令。`
+order `
+cmd: 指定命令。
+`
+

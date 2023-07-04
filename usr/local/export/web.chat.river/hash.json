@@ -1,60 +1,46 @@
 {
-  "657d37": {
+  "fae17a": {
     "hash": {
-      "9c073c": {
+      "3cde7c": {
         "hash": {},
         "list": [
           {
-            "icon": "bi bi-terminal",
             "id": 1,
-            "index": "web.code.xterm",
-            "time": "2023-06-25 12:49:08.993"
+            "index": "web.dream",
+            "time": "2023-05-27 23:00:20.876"
+          },
+          {
+            "id": 2,
+            "index": "web.code.mysql.client",
+            "space": "20230511-mysql-story",
+            "time": "2023-05-27 23:25:59.460"
+          },
+          {
+            "id": 3,
+            "index": "web.code.redis.client",
+            "space": "20230511-redis-story",
+            "time": "2023-05-27 23:26:06.758"
+          },
+          {
+            "id": 4,
+            "index": "web.code.golang.project",
+            "space": "20230511-golang-story",
+            "time": "2023-05-27 23:42:55.509"
           }
         ],
         "meta": {
-          "count": 1,
-          "icon": "bi bi-terminal",
-          "name": "term",
+          "count": 4,
+          "name": "server",
           "text": "hello",
-          "time": "2023-06-25 12:48:58.274"
+          "time": "2023-05-27 23:00:16.814"
         }
       }
     },
     "meta": {
-      "icon": "bi bi-terminal",
-      "name": "term",
+      "name": "server",
       "text": "hello",
-      "time": "2023-06-25 12:48:52.175",
-      "type": "root"
-    }
-  },
-  "71a871": {
-    "hash": {
-      "ab14d0": {
-        "hash": {},
-        "list": [
-          {
-            "icon": "bi bi-calendar-day",
-            "id": 1,
-            "index": "web.team.plan",
-            "time": "2023-06-24 20:17:15.170"
-          }
-        ],
-        "meta": {
-          "count": 1,
-          "icon": "bi bi-calendar-day",
-          "name": "hi",
-          "text": "hello",
-          "time": "2023-06-24 20:17:04.053"
-        }
-      }
-    },
-    "meta": {
-      "icon": "bi bi-calendar-day",
-      "name": "hi",
-      "text": "hello",
-      "time": "2023-06-24 20:17:00.837",
-      "type": "root"
+      "time": "2023-05-27 22:11:31.127",
+      "type": "tech"
     }
   }
 }

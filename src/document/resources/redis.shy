@@ -1,0 +1,12 @@
+chapter "redis-story"
+brief `基于 Contexts 开发的，Redis 管理工具，包括客户端、安装器、集群管理工具等。`
+table `
+模块 命令 功能
+shylinux.com/x/redis-story/src/client web.code.redis.client Redis的客户端
+shylinux.com/x/redis-story/src/server web.code.redis.server Redis的下载、编译、安装
+shylinux.com/x/redis-story/src/cluster web.code.redis.cluster Redis的集群部署与管理工具
+`
+shell `
+git clone https://shylinux.com/x/redis-story
+cd redis-story; source etc/miss.sh
+`

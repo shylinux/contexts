@@ -1,0 +1,24 @@
+title "user"
+brief `user 命令，用户管理。`
+
+chapter "界面"
+spark demo user
+
+chapter "参数"
+spark `没有参数时，输出用户列表。指定了参数 username，则输出此用户的详情信息。`
+order `username: 用户名。`
+
+chapter "操作"
+order `
+create: 创建一个用户。
+remove: 删除一个用户。
+`
+section "create"
+spark `create 创建一个新的用户需要以下参数，其中 username 是必选，其它的都是可选。`
+order `
+usernick: 用户昵称
+username: 用户名
+userrole: 用户角色
+userzone: 用户领域
+background: 背景图片
+`

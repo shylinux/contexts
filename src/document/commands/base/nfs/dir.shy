@@ -1,0 +1,15 @@
+title "dir"
+brief `dir 命令，是目录管理器。`
+
+chapter "界面"
+spark demo dir
+
+chapter "参数"
+spark `输出指定路径下的文件列表。`
+order `path: 目录路径或文件路径。`
+
+chapter "操作"
+order `
+upload: 上传文件。
+trash: 清理文件。
+`

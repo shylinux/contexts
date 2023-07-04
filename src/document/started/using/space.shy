@@ -1,8 +1,9 @@
 title "工作空间"
-spark `Contexts 下载并启动后，会以当前运行目录为工作空间，加载启动脚本和保存数据与文件。`
-spark `Contexts 不推荐使用全局的资源或家目录的文件，为了减少全局依赖与资源冲突。从而可以在一台机器上启动任意多个空间。`
-spark `Contexts 推荐使用空间来管理项目与任务。Contexts 每个空间都是一个独立的目录，与独立的守护进程。
-每个空间即可以使用相同的 Contexts，也可以使用不同的 Contexts，即不同的工具集合。因为每个项目内容可能是不一样的，使用的工具也可能是不一样的。`
+spark `Contexts 下载并启动后，会以当前运行目录为工作空间，加载启动脚本和保存数据与文件。
+Contexts 不推荐使用全局的资源或家目录的文件，为了减少全局依赖与资源冲突。从而可以在一台机器上启动任意多个空间。
+Contexts 推荐使用空间来管理项目与任务。`
+spark `Contexts 每个空间都是一个独立的目录，与独立的守护进程。
+每个空间既可以使用相同的 Contexts，也可以使用不同的 Contexts，即不同的工具集合。因为每个项目内容可能是不一样的，使用的工具也可能是不一样的。`
 
 chapter "创建空间"
 section "启动服务"
@@ -20,11 +21,11 @@ spark `或在搜索框中，直接搜索 dream 即可打开空间管理的工具
 spark `<a>http://localhost:9020?_search=dream</a>`
 iframe "http://localhost:9020?_search=dream"
 spark `或是直接打开命令网页，<a>http://localhost:9020/chat/cmd/web.dream</a>`
-iframe "http://localhost:9020/chat/cmd/web.dream"
+spark demo dream
 
 section "创建空间"
 spark `点击工具栏中的创建按钮，即可打开创建对话框。`
-spark `空间创建有 name、repos、binary、template 四个参数，其中 name 是必选参数，指定项目名，创建空间时，Contexts 会默认给项目名加一个时间前缀。`
+spark `空间创建有 name、repos、binary、template 四个参数，其中 name 是必选参数，指定空间名，创建空间时，Contexts 会默认给空间名加一个时间前缀。`
 order `
 repos 指定 git 仓库地址，Contexts 将此仓库下载到本地，然后把此目录当成工作空间。
 binary 指定 bin 文件，Contexts 会自动下载并使用这个 bin 文件，来启动守护进程。
@@ -38,3 +39,39 @@ spark `空间创建成功后，会自动打开空间首页。之后也可以在�
 spark `空间打开后，即可在这个空间中，使用任意工具，去完成自己的工作。`
 spark `所有的工具产生的数据与文件，也只会保存在自己空间目录下，不会对其它空间有任何影响。`
 spark `如果当前空间下的工具，不能满足使用，也可以随时开发，创建新的工具。`
+
+chapter "发布空间"
+spark `Contexts 中的空间，除有独立的目录与进程，用来进行资源隔离和项目管理以外，还有更多的功能特性。`
+spark `虽然工作空间，默认没有分配端口，没有启动任何服务，但是可以通过服务进程作反向代理，将工作空间内的工具、文件、资源对外发布。`
+
+section "服务源"
+spark `Contexts 的工作空间启动后，可以通过服务进程中的空间管理工具来操作。
+也可以在单独网页中使用。例如 redis-story 项目的首页地址是 <a>http://localhost:9020/chat/pod/20230511-redis-story</a>`
+iframe "http://localhost:9020/chat/pod/20230511-redis-story"
+spark `每个工作空间，都可以灵活的配置自己的首页。Contexts 中的所有工具，都有自己的网页界面，都可以作为空间的首页来使用。
+例如 redis-story 项目，就选择 web.code.macos.desktop 命令作为自己的首页，这样打开 redis-story 空间，就是一个电脑桌面，完全用图标和窗口来使用所有工具。`
+
+spark `因为 Contexts 的工作空间，就是一个工作目录加一个守护进程，资源占有非常少，比虚拟机或是容器占有更少的资源。
+Contexts 的工作空间，为项目管理与服务部署，提供了一个更加轻量、更加完备的解决方案。
+`
+spark `每个工作空间下的所有软件工具也可以单独使用。如下地址，pod 和 cmd 分别指定空间名与命令名。`
+spark `<a>http://localhost:9020/chat/pod/20230511-redis-story/cmd/host</a>`
+iframe "http://localhost:9020/chat/pod/20230511-redis-story/cmd/host"
+
+section "镜像源"
+spark `Contexts 使用 Golang 开发，所以具备了交叉编译的功能。Contexts 封装了一个编译工具 web.code.compile，可以方便的将本空间的代码编译成指定系统与架构的程序，并将相关资源一起打包。`
+spark `<a>http://localhost:9020/chat/cmd/compile</a>`
+spark `编译后的程序文件会放到空间目录的 ./usr/publish/ 目录下，通过服务进程作了一个代理，就可以在其它机器，直接下载这个空间的程序文件，并起动任意多个完全相同的空间。`
+spark `这种使用方式，其实就是最快速的 devops，
+原始空间就是开发环境，在其它机器起动的空间就是测试环境或生产环境，
+从开发环境到生产环境，之间所有环节完全打通，甚至可以做到，从开发到上线，只需要一秒钟。并且开发环境与生产环境，完全同时在线，可以实现更快速的闭环互动，全面加速整个研发流程。`
+spark `如果直接用 wget 或 curl 命令，直接访问工作空间的地址，服务进程检测到请求头 UserAgent 判断出是命令行中的请求。则会直接返回空间的程序文件。
+因为 bin 文件中，打包了完整的资源文件，所以这样就可以在另一台设备上，快速部署出一个完全一样的工作空间。这个命令只是简单的下载程序文件，在实际使用时，会从空间中复制一个功能更完整的下载命令。`
+shell `wget http://localhost:9020/chat/pod/20230511-redis-story`
+
+section "代码源"
+spark `每个工作空间，都可以绑定一个代码库，在空间目录下的所有文件，都可以被提交到代码库里，包括代码、配置、数据等。
+不同机器的上工作空间就可以通过代码库，来同步代码与数据，并且记录每次变更的信息。同一台机器上的不同空间，当然也可以共用一个代码库。`
+
+spark `每个空间的地址，可以直接当成代码地址来使用。服务节点，会自动去查询工作空间的仓库地址，做一个内部重定向。`
+shell `git clone http://localhost:9020/chat/pod/20230511-redis-story`

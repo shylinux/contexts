@@ -1,12 +1,22 @@
-title "电脑桌面"
-spark `Contexts 是一个工具系统，内置了很多软件工具。这些工具可以像本机电脑桌面一样，用图标与窗口来使用所有的软件工具。
-web.chat.macos.desktop 工具就是 Contexts 的电脑桌面。`
+title "应用桌面"
+spark `Contexts 是一个工具系统，内置了很多软件工具。这些工具可以像本机电脑桌面一样，用图标与窗口的界面，来使用所有的软件工具。
+web.chat.macos.desktop 命令就是 Contexts 的电脑桌面。`
 spark `<a>http://localhost:9020/chat/cmd/desktop</a>`
-field "电脑桌面" web.chat.macos.desktop style output
+field "" web.chat.macos.desktop style output
 
-spark `在桌面的左上角，可以桌面 + 号，创建很多个新的桌面，每个桌面上可以打开不同的软件工具。打开 dock 工具栏中的 finder 工具，即可查看所有应用列表。`
+chapter "桌面列表"
+spark `Contexts 支持多桌面，可以创建出任意多个桌面。在桌面的左上角，点击 + 号，就可以创建一个新桌面，每个桌面上可以打开不同的软件工具。
+在顶部的菜单栏里就是桌面列表，每个桌面都可以自定义标题。`
+
+chapter "应用列表"
+spark `在桌面的底部，是 dock 工具栏，其中第一个图标是 finder 工具，点击打开，即可查看所有应用列表。`
 spark `在 Contexts 中，每个工作空间，都有自己的电脑桌面与应用列表，通过配置文件，可以将任意的工具添加到应用列表中。
-应用列表中的所有应用，可以随时添加到桌面与工具栏中。`
+应用列表中的所有应用，可以随时添加到桌面上与工具栏中。`
 
-spark `同样的，电脑桌面 web.chat.macos.desktop，只是 Contexts 的一个工具，可以添加到导航栏中，也可以在搜索框中使用，甚于可以内嵌在任何其它工具中使用。`
+chapter "会话管理"
+spark `Contexts 的电脑桌面，支持会话管理。可以将桌面列表、已经打开的应用的窗口状态，保存到一个命名的会话中。
+这样，可以在之后，重新打开会话，恢复所有桌面与窗口的状态。`
+
+chapter "使用方式"
+spark `同样的，电脑桌面 web.chat.macos.desktop，只是 Contexts 的一个小工具，可以添加到管理系统的导航栏中，也可以在搜索框中直接查找，甚于可以内嵌在任何其它工具中使用。`
 

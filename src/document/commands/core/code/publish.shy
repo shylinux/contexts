@@ -1,0 +1,14 @@
+title "publish"
+brief `publish 命令，发布工具。
+将编译好的程序文件或其它资源文件对外发布，供自由的下载。`
+spark `在工具界面的工作区，默认的会生成一个下载命令，复制此命令，在终端执行，即可从本服务器，快速下载程序文件启动服务，并且连接到本服务器，成为本服务器的子设备。`
+
+chapter "界面"
+spark demo publish
+
+chapter "参数"
+spark `没有参数 path 时，会显示资源列表。否则会显示参数 path 指定文件的详细信息。`
+order `path: 文件路径。`
+
+chapter "目录"
+spark `发布出去的文件，都保存在 ./usr/publish/ 目录下。`

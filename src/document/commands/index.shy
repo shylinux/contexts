@@ -1,0 +1,42 @@
+navmenu `
+基础模块 base/
+	ctx ctx/
+		command command.shy
+		config config.shy
+	cli cli/
+		system system.shy
+		daemon daemon.shy
+	web web/
+		serve serve.shy
+		space space.shy
+	aaa aaa/
+		user user.shy
+
+	lex lex/
+	yac yac/
+	ssh ssh/
+	gdb gdb/
+
+	tcp tcp/
+		host host.shy
+	nfs nfs/
+		dir dir.shy
+		cat cat.shy
+	mdb mdb/
+	log log/
+
+功能模块 core/
+	code code/
+		compile compile.shy
+		publish publish.shy
+	wiki wiki/
+		word word.shy
+	chat chat/
+	team team/
+	mall mall/
+
+其它模块 misc/
+	tmux tmux/
+		session session.shy
+		buffer buffer.shy
+`

@@ -1,0 +1,32 @@
+title "compile"
+brief `compile 命令，编译工具。`
+
+chapter "界面"
+spark demo compile
+
+chapter "参数"
+order `
+arch: CPU 类型。
+os: 操作系统类型。
+src: 源码文件。
+`
+
+chapter "操作"
+section "run"
+spark `将参数 src 指定的源码文件，编译成 os 和 arch 参数指定的类型。`
+
+section "binpack"
+spark `将所有资源打包进 binpack.go 文件中。`
+
+section "webpack"
+spark `将前端所有代码打包到一个文件中。`
+
+section "devpack"
+spark `删除前端的打包文件。`
+
+section "install"
+spark `安装编译器。`
+
+chapter "配置"
+section "env"
+spark `指定编译时的环境变量。`

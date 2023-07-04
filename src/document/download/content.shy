@@ -1,1 +1,7 @@
+chapter "快速下载"
+spark `复制如下命令，并在终端执行，即可下载应用并启动服务。`
 web.code.publish contexts
+
+chapter "自由下载"
+spark `Contexts 使用 Golang 开发，支持交叉编译。各平台与架构的下载链接如下。`
+web.code.publish version

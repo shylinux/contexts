@@ -1,0 +1,13 @@
+chapter "mysql-story"
+brief `基于 Contexts 开发的，Mysql 管理工具，包括客户端、安装器、集群管理工具等。`
+table `
+模块 命令 功能
+shylinux.com/x/mysql-story/src/client web.code.mysql.client Mysql的客户端
+shylinux.com/x/mysql-story/src/client web.code.mysql.query Mysql的数据查询
+shylinux.com/x/mysql-story/src/client web.code.mysql.grant Mysql的权限管理
+shylinux.com/x/mysql-story/src/server web.code.mysql.server Mysql的下载、编译、安装
+`
+shell `
+git clone https://shylinux.com/x/mysql-story
+cd mysql-story; source etc/miss.sh
+`

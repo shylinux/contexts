@@ -1,0 +1,33 @@
+title "启动流程"
+spark `总体来说分为四个阶段，init、ice.Frame.Begin、ice.Frame.Start、ice.Frame.Close。`
+spark `init，模块注册期。按照引入的顺序依次将每个模块，注册到某个父模块中。`
+spark `ice.Frame.Begin/c.Merge，模块合并期。全局资源的创建，模块的合并，参数的解析，生成初始化函数。`
+spark `ice.Frame.Start，框架启动期。加载配置与数据，每个模块依次初始化，执行初始化脚本 init.shy。`
+spark `ice.Frame.Close，框架退出期。执行退出脚本 exit.shy，每个模块依次退出，保存配置与数据。`
+
+chain `
+ice.bin
+	init
+		ice.Cmd
+		Index.MergeCommands
+	ice.Run
+		ice.Frame.Begin
+			c.Merge
+			log.Frame.Begin
+			gdb.Frame.Begin
+			ssh.Frame.Begin
+		ice.Frame.Start
+			ice.init
+				ice._init
+				"source etc/init.shy"
+			log.Frame.Start
+			gdb.Frame.Start
+			ssh.Frame.Start
+			"web.serve start"
+		ice.Frame.Close
+			"source etc/exit.shy"
+			ice._exit
+			log.Frame.Close
+			gdb.Frame.Close
+			ssh.Frame.Close
+`

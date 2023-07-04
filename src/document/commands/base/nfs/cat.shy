@@ -1,0 +1,14 @@
+title "cat"
+brief `cat 命令，是文件管理器。`
+
+chapter "界面"
+spark demo cat
+
+chapter "参数"
+spark `没有参数或参数 path 为 / 结尾，则输出此目录下的文件列表。当参数 path 为一个文件路径时，则输出此文件内容。`
+order `path: 目录路径或文件路径。`
+
+chapter "操作"
+order `
+trash: 清理文件。
+`

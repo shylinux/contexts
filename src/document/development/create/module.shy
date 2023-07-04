@@ -1,0 +1,133 @@
+title "创建模块"
+spark `如果框架自带的模块满足不了需求，并且网上找不到现成的功能模块，可使用 Contexts 提供的框架与工具，快速开发出新的功能模块。
+Contexts 添加模块也非常简单，就是在 init 函数里，用命令名加一个结构体，调用 ice.Cmd() 注册到框架即可。`
+
+chapter `创建模块`
+spark `如下创建目录，并添加代码。将目录名与文件名中的 demo 替换成自己所需的模块名。`
+shell `
+mkdir src/demo/
+vi src/demo/demo.go
+`
+spark inner demo.go
+spark `ice.Cmd() 函数会通过反射，查找结构体的方法列表与属性列表，生成模块并注册到框架中。
+只有参数是 (*ice.Message, ...string) 的方法，才会注册到模块中，并且通过同名属性的 tag，来定义接口的参数与其它信息。
+所以，所有的后端接口，第一个参数都是 ice.Message， 第二个参数是根据同名属性的 tag，解析出来的参数列表 arg 。`
+
+spark `例如，这里的 List 方法与 list 属性。通过读出属性 list 的 tag， 解析 name 字段 <code>list path auto</code>，来生成接口参数，
+其中 list 指定接口名，path 指定第一个参数名，auto 指定需要自动生成两个按钮。所以在自动生成的前端界面上，参数栏，有一个输入框名为 path，有两个按钮 list 与 back。
+在后端接收到请求时，参数 path 的值，就会放到 arg[0] 中。
+`
+spark `如果 list 的 tag 是 <code>name:"list path file line auto"</code>，
+那么在自动生成的前端界面上，就会有三个输入框，名称依次为 path、file、line。
+后端接收到的请求时，arg[0] 就是 path 的值，arg[1] 就是 file 的值，arg[2] 就是 line 的值。
+`
+spark `另外，工具的标题栏是 <code>demo(示例模块)</code>，就是从属性 list 的 tag 中， 取的 help 与 从 ice.Cmd() 第一个参数中取的命令名。`
+
+section "struct tag 语法"
+spark `Contexts 会根据属性的 tag，自动生成前端界面。tag 的完整语法是 <code>name:type=value@script</code>。
+如 list 的 tag 完整定义是 <code>name:"list path:text=src/@key.js auto"</code>，其中 path 是参数名，另外三个字段如下`
+order `
+:号后面，是参数的类型，text 是文本输入框，select 是下拉选择框，button 是按钮。
+=号后面，是参数的初始值，如果参数的类型是select，参数值用逗号 <code>,</code> 分隔多个参数。
+@号后面，是前端插件，可以用指定的脚本，自定义这个输入控件的交互，如 key.js、date.js。
+`
+spark `这三个字段都是可以选的，如 <code>path:text</code>、<code>path=src/</code>、<code>path:text=src/</code>，都是可正常解析的。
+需要注意的是，中间不能有任何空格和空值，否则就是两个参数了，如 <code>path :text</code>、<code>path:=src/</code> 都是非法的。
+`
+
+chapter "ice.Message 消息"
+spark `在 Contexts 中，不论是后端模块，还是前端模块，不论是本地调用，还是远程调用，都是统一的由消息驱动。
+所以 ice.Message 提供了丰富的接口。这里简单介绍几个最常用的接口。`
+
+section "获取参数"
+spark `除了接口定义的参数 arg，还可以调用 m.Option()，获取更丰富的参数。`
+spark `如下，可以获取用户的相关信息。`
+spark inner `
+m.Option(ice.MSG_USERNAME)
+m.Option(ice.MSG_USERROLE)
+m.Option(ice.MSG_USERNICK)
+`
+
+section "获取配置"
+spark `Contexts 还提供了统一的模块配置。这些配置可以在启动文件 ./etc/init.shy 中设置，也可以在运行时读写，
+服务进程退出前，会把这些配置保存到磁盘中，服务重启时，会再加载到内存，所以这些配置会一直有效。`
+spark inner `
+m.Config("short")
+m.Config("field")
+`
+
+section "返回数据"
+spark `ice.Message 最常用的返回数据有两种，一种是表格类的，一种是文本类的。`
+spark `如下调用 m.Echo，就会在自动生成的前端界面上，输出纯文本 <code>hello world</code>。`
+spark inner `m.Echo("hello world")`
+spark `如下调用 m.Push，就会在自动生成的前端界面上，输出一个表头为 path 和 file ，并且有两行数据的表格。`
+spark inner `
+m.Push("path, "src/").Push("file", "main.go")
+m.Push("path, "etc/").Push("file", "init.shy")
+`
+spark `还可以用 m.StatueTimeCount() 指定在前端界面上状态栏里展示的信息。`
+spark inner `m.StatusTimeCount()`
+
+section "模块调用"
+spark `Contexts 所有的功能都是模块化的，每个模块都可以独立编译，不依赖于其它模块。
+所以要想使用其它模块的功能，是不能直接通过函数调用。后端框架封装了几个模块间调用的接口。`
+spark `如下，查看 src/ 目录下的文件列表，m.Cmdy() 调用了命令 "nfs.dir"，指定了参数 "src/"。`
+spark inner `m.Cmdy("nfs.dir", "src/")`
+
+spark `模块的每次调用都会创建一个新的消息，所以如何合并父消息和子消息的数据，就可以调用不同的接口，m.Cmd()、m.Cmdx()、m.Cmdy()。`
+spark `如下，m.Cmd() 调用 tcp.host 命令，但不会将子消息的数据复制到父消息，而是用 msg 保存了子消息，以便之后处理。`
+spark inner `msg := m.Cmd("tcp.host")`
+
+spark `如下，m.Cmdx() 调用 cli.system 命令，去执行本机命令 pwd，然后将命令返回的文本数据返回赋值给变量 pwd。`
+spark inner `pwd := m.Cmdx("cli.system", "pwd")`
+
+spark `如下，m.Cmdy() 调用 tcp.host 命令，然后将 tcp.host 命令返回的数据，全部复制到当前消息。`
+spark inner `m.Cmdy("tcp.host")`
+
+section "前端脚本"
+spark `Contexts 自动生成的前端界面，默认是使用前端框架 Volcanos 中的 /plugin/table.js 来渲染的界面。可以通过 m.Display() 指定任意 js 文件，来渲染前端界面。`
+shell `
+m.Display("/plugin/table.js")
+m.Display("/plugin/story/trend.js")
+`
+spark `还可以在当前模块下，添加一个前端的脚本文件。例如，添加了 src/demo/demo.js，只需要如下引入即可。`
+shell `m.Display("demo.js")`
+
+
+chapter `添加模块`
+spark `模块创建后，需要在 src/main.go 中引入，然后编译一下项目，重启服务即可。`
+spark inner `
+package main
+
+import (
+	"shylinux.com/x/ice"
+
+	_ "demo/src/demo"
+)
+
+func main() { print(ice.Run()) }
+`
+
+chapter `添加资源`
+section "添加配置"
+spark `Contexts 提供了统一的配置管理。在 ./etc/init.shy 文件中添加模块所需的配置即可。`
+spark `如下定义配置，用 config 命令设置 web.code.demo 命令的 expire 配置。`
+spark inner `config web.code.demo meta.expire 30s`
+spark `需要注意的是 expire 前面有个前缀 meta。其实 config 为每个模块，定义了一个完整的数据库，config 不仅可以读写配置，还可以读写数据，所以 meta 前缀代表配置，其它的前缀还有 hash、list 等。`
+
+spark `当同一模块下的配置比较多时，可以先用 <code>~web.code</code> 切换到 code 模块下，就可以省略命令前缀。`
+spark inner `
+~web.code
+	config demo meta.expire 30s
+	config compile meta.env "GOBIN=xxx,GOPATH=xxx,GOROOT=xxx"
+`
+
+spark `在代码中，就可以取到此配置了。`
+spark inner `m.Config("expire")`
+
+section "添加模板"
+spark `Contexts 提供了统一的模板管理。在 ./src/template/ 目录中添加模块所需的模板即可。`
+
+section "添加文档"
+spark `Contexts 提供了统一的文档管理。在 ./src/document/ 目录中添加模块所需的文档即可。`
+

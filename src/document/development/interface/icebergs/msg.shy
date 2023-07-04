@@ -1,0 +1,2 @@
+title "ice.Message"
+spark `ice.Message 是 Contexts 是核心的结构体。`

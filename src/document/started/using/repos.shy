@@ -1,0 +1,16 @@
+title "代码库"
+spark `Contexts 为了实现功能的完备，代码库和代码源当然是必不可少的功能。`
+spark `Contexts 在启动服务节点时，默认的就已经启动了 Git-Server 代码库服务。支持代码库的创建、上传、下载等功能。
+所以 Contexts 的所有代码，都是存放在 Contexts 启动的服务器上。
+`
+spark `<a>http://localhost:9020/chat/cmd/web.code.git.service</a>`
+spark demo web.code.git.service
+
+chapter "代码库目录"
+spark `Contexts 的代码源，都保存在 ./usr/local/repos/ 目录下`
+
+chapter "代码库权限"
+spark `默认的下载代码是不需要权限，所有人都可以下载代码。
+但上传代码需要权限的，需要用 web.code.git.token 生成令牌，并保存到本地。`
+
+spark `当 web.code.git.service 命令，接收到 receive-pack 请求时，如果代码库不存在，则会自动创建代码库。`

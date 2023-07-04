@@ -1,0 +1,13 @@
+title "word"
+brief `word 命令，笔记文档。`
+
+chapter "界面"
+spark demo word
+
+chapter "参数"
+spark `没有参数 path 时，会显示所有的文档列表。否则会显示参数 path 指定文档的内容。`
+order `path: 文件路径。`
+
+chapter "操作"
+section "play"
+spark `word 命令，还支持文档演示。像 PPT 一样，将笔记文档，按章节一页一页的展示。`

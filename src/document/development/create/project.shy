@@ -1,0 +1,74 @@
+title "创建项目"
+spark `当 Contexts 自带的软件工具，无法满足使用需求时，可使用 Contexts 提供的框架与工具，快速创建出新的项目。`
+
+chapter "创建项目"
+spark `Contexts 提供了后端框架 <code>shylinux.com/x/ice</code>，只需要通过 import 引入依赖，并调用 ice.Run() 即可启动框架。`
+section "初始化"
+spark `先取好一个项目名，并用项目名创建一个新的目录，将这里的 demo 换成自己的项目名即可，并初始化成 golang 的项目 。`
+shell `
+mkdir demo; cd demo
+go mod init demo
+`
+
+section "添加代码"
+spark `添加 src/main.go，并输入以下代码。`
+shell `
+mkdir src
+vi src/main.go
+`
+spark inner `
+package main
+
+import "shylinux.com/x/ice"
+
+func main() { print(ice.Run()) }
+`
+
+section "编译构建"
+spark `下载框架，并编译项目。`
+shell `
+go get shylinux.com/x/ice
+go build -v -o bin/ice.bin src/main.go
+`
+
+section "启动服务"
+spark `服务启动后，也会启动一个交互式的 shell，可以通过命令或信号进行各种操作。`
+shell `./bin/ice.bin forever start`
+order `
+Ctrl + C 重启服务。
+Ctrl + \\ 退出服务。
+exit 命令， 保存数据，并退出服务。
+quit 命令，不保存数据，直接退出服务。
+`
+
+section "访问服务"
+spark `Contexts 的后端框架，默认添加了很多功能模块，开箱即用，如下列表。`
+refer `
+首页 http://localhost:9020/
+官网 http://localhost:9020/wiki/portal/
+后台 http://localhost:9020/chat/portal/
+桌面 http://localhost:9020/chat/cmd/desktop
+文档 http://localhost:9020/chat/cmd/word
+编辑器 http://localhost:9020/chat/cmd/vimer
+`
+
+chapter "添加模块"
+spark `Contexts 所有功能都是模块化的，只需要通过 import 引入即可。每个模块启动时都会通过 init 函数，将自己的功能注册到框架中。`
+spark `如果从网上找到了现成的功能模块，直接引入即可。 如下所示，通过 import 添加了四个功能模块。然后编译项目并重启服务即可。`
+spark inner main.go
+
+chapter "管理系统"
+spark `Contexts 提供了前端框架 <code>https://shylinux.com/x/volcanos</code>，前端也实现了功能模块化，并且由后端驱动。
+Contexts 默认会自带一个后台管理系统，并且可以随时定制化，将任意的软件工具添加到导航栏、搜索栏等。`
+
+section "导航栏"
+spark `后台管理系统，就是用 src/main.js 构建的。新添加的功能模块，如果需要添加到管理系统的导航栏，直接修改 src/main.js 文件即可，代码如下。`
+spark inner main.js
+
+section "搜索栏"
+spark `将新功能添加到搜索栏。打开搜索框，在输入关键字前，会提前展示一些内容。`
+
+chapter "命令网页"
+spark `新添加的功能模块，默认的就会有一个独立的网页展示。地址就像 <a>http://localhost:9020/chat/cmd/vimer</a>，其中 cmd 后面就是工具的名称。
+这样就可以通过 URL 很快的打开任意的软件工具，直接快速的使用功能。
+`

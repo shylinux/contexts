@@ -1,0 +1,24 @@
+navmenu `
+"功能开发" create/
+	"创建项目" project.shy
+	"创建模块" module.shy
+
+"框架原理" contexts/
+	"后端框架" icebergs/
+		"启动流程" boot.shy
+		"模块注册" merge.shy
+		"事件消息" event.shy
+		"远程调用" space.shy
+	"前端框架" volcanos/
+		"加载流程" boot.shy
+		"模块注册" merge.shy
+		"事件消息" event.shy
+		"请求数据" space.shy
+
+"框架接口" interface/
+	"后端框架" icebergs/
+		ice ice.shy
+		Context ctx.shy
+		Message msg.shy
+	"前端框架" volcanos/
+`

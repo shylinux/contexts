@@ -1,0 +1,9 @@
+title "host"
+brief `host 命令，查看网卡信息。`
+
+chapter "界面"
+spark demo host
+
+chapter "参数"
+spark `没有参数时，输出网卡列表。指定了参数 name，则只输出此网卡的信息`
+order `name: 网卡名。`

@@ -1,0 +1,12 @@
+title "command"
+spark `command 命令，输出 Contexts 的命令列表或命令详情。`
+
+chapter "界面"
+spark `使用树状图，来展示命令列表。`
+spark demo command
+
+chapter "参数"
+spark `没有参数时，输出命令列表。指定了参数 key 即命令名，则输出此命令的详细信息。`
+order `
+key: 命令名
+`

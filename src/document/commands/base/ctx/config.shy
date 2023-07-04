@@ -1,0 +1,17 @@
+title "config"
+spark `config 命令，输出配置列表或配置详情。`
+
+chapter "界面"
+spark demo config
+
+chapter "参数"
+spark `没有参数时，输出当前模块的所有配置列表。指定了参数 key 即配置名，则输出此配置的详细信息。`
+order `
+key: 配置名
+`
+
+chapter "操作"
+order `
+export，导出指定命令的配置，到指定的目录中。
+import，导入指定命令的配置，从指定的目录。
+trash，清理指定命令的配置。`

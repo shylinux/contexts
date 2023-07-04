@@ -1,0 +1,35 @@
+title "web.code.tmux.session"
+brief `web.code.tmux.session 命令，tmux 会话管理。`
+
+chapter "界面"
+spark demo web.code.tmux.session
+
+chapter "参数"
+spark `没有参数 session 时，会显示会话列表。没有参数 window 时，会显示窗口列表。没有参数 pane 时，会显示面板列表。没有参数 cmds 会显示面板内容，否则会执行命令。`
+order `
+session: 会话名。
+window: 窗口名。
+pane: 面板名。
+cmds: 命令名。
+`
+
+chapter "操作"
+
+section "create"
+spark `在显示会话列表时，创建会话。`
+spark `在显示窗口列表时，创建窗口。`
+spark `在显示面板列表时，创建面板。`
+
+section "remove"
+spark `在显示会话列表时，删除会话。`
+spark `在显示窗口列表时，删除窗口。`
+spark `在显示面板列表时，删除面板。`
+
+section "select"
+spark `在显示会话列表时，将选中的会话置为当前会话。`
+spark `在显示窗口列表时，将选中的窗口置为当前窗口。`
+spark `在显示面板列表时，将选中的面板置为当前面板。`
+
+chapter "监听事件"
+section "dream.create"
+spark `空间创建成功后，会创建一个与空间同名的 tmux 会话。`
