@@ -25,7 +25,7 @@
       "name": "term",
       "text": "hello",
       "time": "2023-06-25 12:48:52.175",
-      "type": "root"
+      "type": "tech"
     }
   },
   "71a871": {
@@ -54,7 +54,7 @@
       "name": "plan",
       "text": "hello",
       "time": "2023-06-24 20:17:00.837",
-      "type": "root"
+      "type": "tech"
     }
   }
 }
