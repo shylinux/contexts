@@ -1,19 +1,16 @@
 body.black {
-	--body-bg-color:black;
-	--body-fg-color:cyan;
+	--body-bg-color:black; --body-fg-color:cyan;
 
 	--legend-bg-color:#243783bd;
 	--input-bg-color:#243783bd;
 	--output-bg-color:transparent;
 	--status-border:darkcyan solid 1px;
 
-	--plugin-radius:10px;
-	--plugin-bg-color:#061c3c9e;
-	--panel-output-bg-color:transparent;
-	--panel-output-fg-color:var(--body-fg-color);
+	--plugin-border-color:lightgray;
+	--plugin-bg-color:#061c3c9e; --plugin-radius:10px;
+	--panel-output-bg-color:transparent; --panel-output-fg-color:var(--body-fg-color);
 
-	--hover-bg-color:#243783bd;
-	--hover-fg-color:white;
+	--hover-bg-color:#243783bd; --hover-fg-color:white;
 	--th-bg-color:steelblue;
 }
 body.black input { outline:none; }

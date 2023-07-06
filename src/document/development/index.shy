@@ -21,4 +21,6 @@ navmenu `
 		Context ctx.shy
 		Message msg.shy
 	"前端框架" volcanos/
+"相关技术" technology/
+	"web" content.shy
 `
