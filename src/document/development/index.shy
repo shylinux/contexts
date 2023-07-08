@@ -22,5 +22,5 @@ navmenu `
 		Message msg.shy
 	"前端框架" volcanos/
 "相关技术" technology/
-	"web" content.shy
+	"开发工具" content.shy
 `

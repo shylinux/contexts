@@ -6,6 +6,10 @@ golang https://golang.google.cn/dl/
 `
 web.code.publish source
 spark `执行 <code>etc/miss.sh</code> 脚本，会自动下载所需要的依赖，并编译项目。`
+spark `启动服务进程。`
+shell `ish_miss_serve`
+spark `结束服务进程。`
+shell `exit`
 
 chapter "项目组成"
 spark `Contexts 前后端框架和核心模块全部自研，只有少部分功能使用到了外部代码，并且随时会被干掉，最终不依赖于任何外部项目，做到完全自举。`

@@ -1,13 +1,27 @@
 title "手动下载"
-spark `如果有其它需要，例如下载不同系统或不同架构的 bin 文件，可手动下载。如下使用 wget 或 curl 命令，下载所需的 bin 文件。
-其中 linux 替换成所需系统名，如 darwin、windows 等，amd64 替换成所需的架构名，如 x86、arm 等`
+spark `如果有其它需要，例如下载不同系统或不同架构的 bin 文件，可手动下载。如下使用 curl 或 wget 命令，下载所需的 bin 文件。`
 web.code.publish manual
+spark `在 Windows 系统上，可以下载 <a href="https://git-scm.com/download">Git-Bash</a>，在 Git-Bash 的命令行中下载。`
 
 spark `本服务器已经编译好的程序文件如下表`
 web.code.publish version
 
 spark `添加执行权限，并重命名文件。`
-shell `
+shell linux `
 chmod u+x ice.linux.amd64
-mdkir bin; mv ice.linux.amd64 bin/ice.bin
+mkdir bin; mv ice.linux.amd64 bin/ice.bin
+` darwin `
+chmod u+x ice.darwin.amd64
+mkdir bin; mv ice.darwin.amd64 bin/ice.bin
+` windows `
+chmod u+x ice.windows.amd64
+mkdir bin; mv ice.windows.amd64 bin/ice.bin
+`
+spark `启动服务进程。`
+shell `
+./bin/ice.bin
+`
+spark `退出服务进程。`
+shell `
+exit
 `
