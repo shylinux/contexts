@@ -1,7 +1,6 @@
 title "源码编译"
 spark `如果想了解 Contexts 的源码与原理，可以直接下载项目所有源码，自己编译后再启动。编译 Contexts 需要提前安装好以下几个软件`
 refer `
-make https://www.gnu.org/software/make/
 git https://git-scm.com/download
 golang https://golang.google.cn/dl/
 `
