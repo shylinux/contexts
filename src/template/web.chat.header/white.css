@@ -1,15 +1,14 @@
 body.white {
-	--body-bg-color:white;
-	--body-fg-color:black;
+	--body-bg-color:white; --body-fg-color:black;
 
 	--legend-bg-color:#ffffffc2;
 	--input-bg-color:#ffffff7d;
 
-	--plugin-bg-color:#ffffffa1;
-	--panel-output-fg-color:silver;
 	--panel-input-bg-color:unset;
 	--panel-input-fg-color:unset;
+	--panel-output-fg-color:silver;
 	--panel-hover-bg-color:#243783bd;
+	--plugin-bg-color:#ffffffa1;
 
 	--hover-bg-color:white;
 	--hover-fg-color:black;

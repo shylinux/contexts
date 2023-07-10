@@ -1,5 +1,5 @@
 navmenu `
-"Contexts" /
+"{{ .Make.Remote | Base | Capital }}" /
 _
 "下 载" download/
 "文 档" started/

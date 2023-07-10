@@ -1,6 +1,6 @@
 style flex
 	style column
-		title "Contexts"
+		title "{{ .Make.Remote | Base | Capital }}"
 		spark title "一个功能完备的工具系统"
 		order `
 将编辑器、命令行、数据库、编译器等几百种工具，以模块化的方式，高度集成到一个 20M 的程序文件中。
@@ -15,12 +15,10 @@ style flex
 	style column flex "0 0 500px" overflow hidden
 		spark inner src/main.go width 460px
 		shell `
-mkdir -p demo/src; cd demo
-vi src/main.go
+git clone {{ .Make.Remote }}
+cd {{ .Make.Remote | Base }} && source etc/miss.sh
 
-go mod init demo
-go get shylinux.com/x/ice
-go run src/main.go
+./bin/ice.bin
 
 open http://localhost:9020
 `

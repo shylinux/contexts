@@ -43,7 +43,6 @@
 	role white void usr/local/image
 
 ~gdb
-	event listen event serve.start cmd web.serve
 	event listen event serve.start cmd web.broad
 	event listen event dream.create cmd web.code.tmux.session
 	event listen event dream.create cmd web.chat.macos.notifications

@@ -1,22 +1,21 @@
 body.dark {
-	--body-bg-color:black;
-	--body-fg-color:silver;
+	--body-bg-color:black; --body-fg-color:silver;
 
 	--legend-bg-color:#212121;
 	--input-bg-color:#232526;
 	--input-fg-color:var(--body-fg-color);
-	--input-radius:5px;
 	--input-border:blue solid 1px;
+	--input-radius:5px;
 	--output-bg-color:var(--input-bg-color);
 	--status-border:gray solid 1px;
 
-	--plugin-radius:var(--input-radius);
-	--plugin-bg-color:var(--body-bg-color);
-	--plugin-fg-color:var(--body-fg-color);
-	--panel-output-bg-color:var(--body-bg-color);
-	--panel-output-fg-color:var(--body-fg-color);
 	--panel-bg-color:var(--panel-output-bg-color);
 	--panel-fg-color:var(--panel-output-fg-color);
+	--panel-output-bg-color:var(--body-bg-color);
+	--panel-output-fg-color:var(--body-fg-color);
+	--plugin-bg-color:var(--body-bg-color);
+	--plugin-fg-color:var(--body-fg-color);
+	--plugin-radius:var(--input-radius);
 
 	--float-fg-color:var(--plugin-fg-color);
 	--float-bg-color:var(--plugin-bg-color);
@@ -28,12 +27,7 @@ body.dark {
 	--td-hover-bg-color:var(--plugin-bg-color);
 	--tr-hover-bg-color:var(--plugin-bg-color);
 
-	--code-comment:green;
-	--code-keyword:royalblue;
-	--code-package:blue;
-	--code-datatype:lavender;
-	--code-function:lightgreen;
-	--code-constant:gray;
-	--code-string:orange;
-	--code-object:silver;
+	--code-comment:green; --code-keyword:royalblue; --code-package:blue;
+	--code-datatype:lavender; --code-function:lightgreen;
+	--code-constant:gray; --code-string:orange; --code-object:silver;
 }

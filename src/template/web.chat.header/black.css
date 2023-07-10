@@ -6,11 +6,15 @@ body.black {
 	--output-bg-color:transparent;
 	--status-border:darkcyan solid 1px;
 
+	--panel-output-bg-color:transparent;
+   	--panel-output-fg-color:var(--body-fg-color);
+	--plugin-bg-color:#061c3c9e;
 	--plugin-border-color:lightgray;
-	--plugin-bg-color:#061c3c9e; --plugin-radius:10px;
-	--panel-output-bg-color:transparent; --panel-output-fg-color:var(--body-fg-color);
+   	--plugin-radius:10px;
 
-	--hover-bg-color:#243783bd; --hover-fg-color:white;
+	--hover-bg-color:#243783bd;
+   	--hover-fg-color:white;
+
 	--th-bg-color:steelblue;
 }
 body.black input { outline:none; }
