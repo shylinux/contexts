@@ -8,8 +8,8 @@ style flex
 每个工具都有网页界面，以自己的数据逻辑将其它所有的工具与空间，组织到自己的界面中，高效的完成各种工作。
 `
 		style flex
-			spark button "Get Download" route "download/" bg blue fg white
-			spark button "Get Started" route "started/" bg blue fg white
+			spark button "下 载" route "download/" bg blue fg white
+			spark button "文 档" route "started/" bg blue fg white
 		style end
 	style end
 	style column flex "0 0 500px" overflow hidden

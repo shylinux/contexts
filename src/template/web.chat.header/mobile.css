@@ -1,52 +1,39 @@
-body.mobile legend { font-size:1.4rem; height:32px; }
-body.mobile input:not([type=file]) { margin-right:0px; }
-body.mobile form.option>div.item { margin:0; height:32px; }
-body.mobile form.option>div.item.icon { font-size:32px; padding:2px 4px; }
-body.mobile form.option>div.item.icon.prev { font-size:26px; }
-body.mobile form.option>div.item.icon.next { font-size:26px; }
-body.mobile form.option>div.item.textarea { height:unset; }
+body.mobile table.content { width:100%; }
+body.mobile form.option>div.item { margin:0; }
 body.mobile form.option>div.item.button>input { display:none; }
-body.mobile form.option>div.button.icons>input { display:none; }
+body.mobile fieldset>div.status { max-height:32px; overflow:hidden; }
 body.mobile fieldset:not(.panel):not(.input):not(.play)>div.action>div:not(.icons) { display:none; }
-body.mobile fieldset.plugin:not(.float):not(.full):not(.cmd)>form.option>div.icon { display:block; }
+body.mobile fieldset.plugin:not(.float):not(.full):not(.cmd)>form.option>div.icon:not(.delete) { display:block; }
 body.mobile fieldset.plugin:not(.float):not(.full):not(.cmd)>form.option>div.button>span.icon { display:block; }
 body.mobile fieldset.plugin:not(.float):not(.full):not(.cmd)>div.action>div.button>span.icon { display:inline-block; }
 body.mobile fieldset.plugin:not(.float):not(.full):not(.cmd)>div.action>div.button>input { display:none; }
-body.mobile form.option>div.button>span.icon { line-height:32px; font-size:32px; height:32px; }
-body.mobile div.action>div.button>span.icon { line-height:32px; font-size:32px; height:32px; }
-body.mobile fieldset>div.status { max-height:32px; }
-body.mobile div.item.text>span.icon.delete { top:4px; }
-body.mobile div.action>div.item { margin:0; height:32px; }
-body.mobile div.carte div.item { padding:10px; }
-body.mobile table.content th { padding:6px; }
-body.mobile table.content { width:100%; }
 body.mobile fieldset.plugin:not(.float):not(.full):not(.cmd) { margin:10px 0; }
-body.mobile fieldset.Action>div.output>fieldset.plugin:not(.float):not(.full):not(.cmd)>legend { margin:10px; }
+body.mobile { --header-height:48px; }
 body.mobile fieldset.Header { padding:0; width:100%; position:fixed; top:0; }
-body.mobile.landscape fieldset.Header { position:unset; }
-body.mobile fieldset.Header>div.output { font-size:1.4rem; line-height:48px; height:48px; }
-body.mobile fieldset.Header div.output div.search { padding:0; height:48px; width:100%; margin:0; }
-body.mobile fieldset.Header div.output div.search>input { font-size:2.2rem; background-color:#21181838; color:white; height:53px; width:100%; }
+body.mobile fieldset.Header>div.output { font-size:1.4rem; line-height:var(--header-height); height:var(--header-height); }
 body.mobile fieldset.Header div.output div.item.text.title.search { display:none; }
 body.mobile fieldset.Header div.output div.item:not(.avatar) { padding:0px 10px; }
 body.mobile fieldset.Search>div.action>div.item.filter>input { width:100%; }
-/* body.mobile fieldset.River { min-width:240px; position:fixed; top:48px; z-index:10; } */
-body.mobile fieldset.River { position:fixed; top:48px; z-index:10; }
-/* body.mobile fieldset.River>div.output { font-size:1.4rem; width:320px; } */
+body.mobile fieldset.Search>div.action>div.item.filter>span { position:absolute; }
+body.mobile fieldset.Search>div.action>div.item.filter { width:100%; position:relative; }
+body.mobile fieldset.Search>div.output>div.content { height:400px; }
+body.mobile fieldset.River { position:fixed; top:var(--header-height); z-index:100; }
 body.mobile fieldset.River>div.output { font-size:1.4rem; min-width:240px; }
-body.mobile fieldset.Action { margin-top:48px; }
-body.mobile.landscape fieldset.Action { margin-top:0; }
-body.mobile fieldset.Action.cmd { margin-top:0; margin-bottom:0; }
+body.mobile fieldset.Action { margin-top:var(--header-height); }
+body.mobile fieldset.Action.cmd { margin-top:0; }
 body.mobile fieldset.Action>div.output { overflow-x:hidden; }
+body.mobile fieldset.Action>div.output>fieldset.plugin:not(.float):not(.full):not(.cmd)>legend { margin:10px; }
 body.mobile fieldset.Action>div.output>fieldset.plugin:not(.output):not(.float):not(.full):not(.cmd) { padding:0px; }
-body.mobile fieldset.Footer { font-size:1.4rem; height:48px; width:100%; position:fixed; bottom:0; }
-body.mobile fieldset.Footer div.output { height:48px; }
-body.mobile fieldset.Footer div.output div { height:48px; }
-body.mobile fieldset.Footer input[name=cmd] { height:48px; }
-body.mobile.landscape fieldset.Footer { display:none; }
 body.mobile fieldset.Footer { display:none; }
-body.mobile fieldset.input.date div.output td { padding:8px 20px; }
+body.mobile.landscape fieldset.Header { position:unset; }
+body.mobile.landscape fieldset.Action { margin-top:0; }
 body.mobile fieldset.word.float>div.output>div.project { top:32px; }
-body.mobile fieldset.word>div.output { overflow-x:hidden; }
 body.mobile fieldset.word>div.output>fieldset.story>form.option>div.text { display:none; }
-body.mobile fieldset>div.status { overflow:hidden; }
+body.mobile fieldset.word>div.output { overflow-x:hidden; }
+body.mobile fieldset.web.code.inner.cmd>div.output { overflow:hidden; }
+body.mobile fieldset.web.wiki.portal>div.output>div.layout { display:block; }
+body.mobile fieldset.web.wiki.portal>div.output>div.layout>div.nav { padding:10px; height:unset; }
+body.mobile fieldset.web.wiki.portal>div.output>div.layout>div.main { padding:10px; height:unset; min-width:unset; }
+body.mobile fieldset.web.wiki.portal>div.output>div.header div.story[data-name=navmenu] div.item { padding:10px; }
+body.mobile fieldset.word>div.output div.story.flex { display:block; }
+body.mobile fieldset.word>div.output div.story.flex>* { padding:unset; }

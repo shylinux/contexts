@@ -10,6 +10,7 @@
 	dream create name 20230511-nginx-story repos https://shylinux.com/x/nginx-story binary http://2021.shylinux.com:9020/chat/pod/20230511-nginx-story
 	dream create name 20230511-redis-story repos https://shylinux.com/x/redis-story binary http://2021.shylinux.com:9020/chat/pod/20230511-redis-story
 	dream create name 20230511-mysql-story repos https://shylinux.com/x/mysql-story binary http://2021.shylinux.com:9020/chat/pod/20230511-mysql-story
+	dream button web.wiki.portal web.chat.macos.desktop web.code.xterm web.code.vimer web.code.compile web.code.git.repos
 
 ~web.code
 	webpack insert xterm
