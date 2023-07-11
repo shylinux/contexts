@@ -20,12 +20,12 @@ body.dark {
 	--float-fg-color:var(--plugin-fg-color);
 	--float-bg-color:var(--plugin-bg-color);
 	--carte-bg-color:var(--plugin-bg-color);
-	--hover-bg-color:var(--input-bg-color);
+	--hover-bg-color:#5066b945;
 	--hover-fg-color:white;
 
 	--th-bg-color:var(--plugin-bg-color);
-	--td-hover-bg-color:var(--plugin-bg-color);
-	--tr-hover-bg-color:var(--plugin-bg-color);
+	--td-hover-bg-color:var(--hover-bg-color);
+	--tr-hover-bg-color:var(--hover-bg-color);
 
 	--code-comment:green; --code-keyword:royalblue; --code-package:blue;
 	--code-datatype:lavender; --code-function:lightgreen;

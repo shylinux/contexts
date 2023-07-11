@@ -28,8 +28,8 @@ body.light {
    	--hover-fg-color:var(--input-fg-color);
 
 	--th-bg-color:var(--plugin-bg-color); --th-fg-color:black;
-	--td-hover-bg-color:var(--plugin-bg-color);
-	--tr-hover-bg-color:var(--plugin-bg-color);
+	--td-hover-bg-color:var(--hover-bg-color);
+	--tr-hover-bg-color:var(--hover-bg-color);
 
 	--code-fg-color:white;
 }
