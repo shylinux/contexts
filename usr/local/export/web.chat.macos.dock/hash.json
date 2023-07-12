@@ -1,10 +1,34 @@
 {
+  "5bd63f": {
+    "meta": {
+      "icon": "/require/usr/icons/go.png",
+      "index": "web.code.compile",
+      "name": "compile",
+      "time": "2023-07-12 10:16:45.614"
+    }
+  },
+  "72d11d": {
+    "meta": {
+      "icon": "/require/usr/icons/git.jpg",
+      "index": "web.code.git.repos",
+      "name": "repos",
+      "time": "2023-07-12 10:16:45.614"
+    }
+  },
   "7b06e7": {
     "meta": {
       "icon": "usr/icons/Safari.png",
       "index": "web.chat.iframe",
       "name": "Safari",
       "time": "2023-05-24 15:32:00.613"
+    }
+  },
+  "955f91": {
+    "meta": {
+      "icon": "/require/usr/icons/Mission Control.png",
+      "index": "web.dream",
+      "name": "dream",
+      "time": "2023-07-12 10:16:45.613"
     }
   },
   "99baca": {

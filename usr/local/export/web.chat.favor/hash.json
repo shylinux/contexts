@@ -7,6 +7,14 @@
       "type": "link"
     }
   },
+  "417770": {
+    "meta": {
+      "name": "localhost:20001",
+      "text": "http://localhost:20001",
+      "time": "2023-07-11 22:17:54.257",
+      "type": "link"
+    }
+  },
   "6722d8": {
     "meta": {
       "name": "2021.shylinux.com:20001",
@@ -15,11 +23,11 @@
       "type": "link"
     }
   },
-  "849d44": {
+  "7f1e21": {
     "meta": {
-      "name": "vue-admin",
-      "text": "http://localhost:8080",
-      "time": "2023-06-03 21:40:49.928",
+      "name": "localhost:20000",
+      "text": "http://localhost:20000",
+      "time": "2023-07-11 22:17:43.357",
       "type": "link"
     }
   }
