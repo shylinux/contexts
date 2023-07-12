@@ -3,13 +3,13 @@
 	# config serve meta.main "/chat/cmd/web.wiki.portal/"
 	# config serve meta.open "http://localhost:9020/chat/cmd/web.wiki.feel"
 	spide create name "com" link "http://2021.shylinux.com:9020" 
-	dream create name 20221205-sshd repos https://shylinux.com/x/sshd binary http://2021.shylinux.com:9020/chat/pod/20221205-sshd
-	dream create name 20230511-golang-story repos https://shylinux.com/x/golang-story binary http://2021.shylinux.com:9020/chat/pod/20230511-golang-story
-	dream create name 20230511-docker-story repos https://shylinux.com/x/docker-story binary http://2021.shylinux.com:9020/chat/pod/20230511-docker-story
-	dream create name 20230511-linux-story repos https://shylinux.com/x/linux-story binary http://2021.shylinux.com:9020/chat/pod/20230511-linux-story
-	dream create name 20230511-nginx-story repos https://shylinux.com/x/nginx-story binary http://2021.shylinux.com:9020/chat/pod/20230511-nginx-story
-	dream create name 20230511-redis-story repos https://shylinux.com/x/redis-story binary http://2021.shylinux.com:9020/chat/pod/20230511-redis-story
-	dream create name 20230511-mysql-story repos https://shylinux.com/x/mysql-story binary http://2021.shylinux.com:9020/chat/pod/20230511-mysql-story
+	dream create name "20221205-sshd" repos "https://shylinux.com/x/sshd" binary "http://2021.shylinux.com:9020/chat/pod/20221205-sshd"
+	dream create name "20230511-golang-story" repos "https://shylinux.com/x/golang-story" binary "http://2021.shylinux.com:9020/chat/pod/20230511-golang-story"
+	dream create name "20230511-docker-story" repos "https://shylinux.com/x/docker-story" binary "http://2021.shylinux.com:9020/chat/pod/20230511-docker-story"
+	dream create name "20230511-linux-story" repos "https://shylinux.com/x/linux-story" binary "http://2021.shylinux.com:9020/chat/pod/20230511-linux-story"
+	dream create name "20230511-nginx-story" repos "https://shylinux.com/x/nginx-story" binary "http://2021.shylinux.com:9020/chat/pod/20230511-nginx-story"
+	dream create name "20230511-redis-story" repos "https://shylinux.com/x/redis-story" binary "http://2021.shylinux.com:9020/chat/pod/20230511-redis-story"
+	dream create name "20230511-mysql-story" repos "https://shylinux.com/x/mysql-story" binary "http://2021.shylinux.com:9020/chat/pod/20230511-mysql-story"
 	dream button web.wiki.portal web.chat.macos.desktop web.code.xterm web.code.vimer web.code.compile web.code.git.repos
 
 ~web.code
@@ -19,10 +19,11 @@
 	webpack insert xterm/css/xterm.css
 	webpack insert html2canvas/dist/html2canvas.min.js
 	binpack insert usr/node_modules/xterm/lib/xterm.js
+	binpack insert usr/node_modules/xterm/css/xterm.css
 	binpack insert usr/node_modules/xterm-addon-fit/lib/xterm-addon-fit.js
 	binpack insert usr/node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js
-	binpack insert usr/node_modules/xterm/css/xterm.css
 	binpack insert usr/node_modules/html2canvas/dist/html2canvas.min.js
+	binpack insert usr/node_modules/bootstrap-icons/font/
 	binpack insert usr/local/export/
 	binpack insert usr/icons/
 
@@ -45,8 +46,7 @@
 
 ~gdb
 	event listen event serve.start cmd web.broad
-	event listen event dream.create cmd web.code.tmux.session
-	event listen event dream.create cmd web.chat.macos.notifications
+	# event listen event dream.create cmd web.code.tmux.session
 
 ~ssh
 	target web.chat.macos
