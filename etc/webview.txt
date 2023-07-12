@@ -1,3 +1,4 @@
+# desktop "http://localhost:9020/chat/cmd/web.chat.macos.desktop?debug=true"
 vimer "http://localhost:9020/chat/cmd/web.code.vimer?debug=true"
 # vimer "http://localhost:9020/chat/cmd/web.code.vimer"
 # goods "http://localhost:9020/chat/cmd/web.mall.goods"
