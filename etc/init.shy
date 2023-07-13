@@ -25,7 +25,7 @@
 	binpack insert usr/node_modules/html2canvas/dist/html2canvas.min.js
 	binpack insert usr/node_modules/bootstrap-icons/font/
 	binpack insert usr/local/export/
-	binpack insert usr/icons/
+	# binpack insert usr/icons/
 
 ~web.chat.macos
 	applications install "dream" web.dream icon "usr/icons/Mission Control.png"
