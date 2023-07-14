@@ -2,7 +2,6 @@ publish = usr/publish
 binarys = bin/ice.bin
 version = src/version.go
 binpack = src/binpack.go
-# flags = -ldflags "-w -s -H windowsgui" -v
 flags = -ldflags "-w -s" -v
 
 all: def

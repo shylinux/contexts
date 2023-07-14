@@ -25,15 +25,14 @@
 	binpack insert usr/node_modules/html2canvas/dist/html2canvas.min.js
 	binpack insert usr/node_modules/bootstrap-icons/font/
 	binpack insert usr/local/export/
-	# binpack insert usr/icons/
 
 ~web.chat.macos
 	applications install "dream" web.dream icon "usr/icons/Mission Control.png"
 	applications install "repos" web.code.git.repos icon "usr/icons/git.jpg"
 	applications install "compile" web.code.compile icon "usr/icons/go.png"
+	applications install "Activity" cli.procinfo icon "usr/icons/Activity Monitor.png"
 	applications install "Settings" web.chat.macos.opens args "System Settings" icon "usr/icons/System Settings.png"
 	applications install "QuickTime" web.chat.macos.opens args "QuickTime Player" icon "usr/icons/QuickTime Player.png"
-	applications install "Activity" cli.procinfo icon "usr/icons/Activity Monitor.png"
 	applications install "Preview" web.chat.macos.opens args "Preview"
 
 ~aaa 
@@ -45,7 +44,7 @@
 	role white void usr/local/image
 
 ~gdb
-	event listen event serve.start cmd web.broad
+	# event listen event serve.start cmd web.broad
 	# event listen event dream.create cmd web.code.tmux.session
 
 ~ssh

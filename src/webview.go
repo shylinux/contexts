@@ -8,9 +8,10 @@ import (
 	_ "shylinux.com/x/icebergs/misc/chrome"
 	_ "shylinux.com/x/icebergs/misc/java"
 	_ "shylinux.com/x/icebergs/misc/node"
-	"shylinux.com/x/icebergs/misc/webview"
 	_ "shylinux.com/x/icons"
 	kit "shylinux.com/x/toolkits"
+
+	"shylinux.com/x/icebergs/misc/webview"
 )
 
 func main() {
