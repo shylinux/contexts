@@ -2,13 +2,13 @@ module shylinux.com/x/contexts
 
 go 1.13
 
-// replace (
-// 	shylinux.com/x/go-git/v5 => ./usr/go-git
-// 	shylinux.com/x/go-qrcode => ./usr/go-qrcode
-// 	shylinux.com/x/icons => ./usr/icons
-// 	shylinux.com/x/websocket => ./usr/websocket
-// 	shylinux.com/x/webview => ./usr/webview
-// )
+replace (
+	shylinux.com/x/go-git/v5 => ./usr/go-git
+	shylinux.com/x/go-qrcode => ./usr/go-qrcode
+	shylinux.com/x/icons => ./usr/icons
+	shylinux.com/x/websocket => ./usr/websocket
+	shylinux.com/x/webview => ./usr/webview
+)
 
 replace (
 	shylinux.com/x/ice => ./usr/release
