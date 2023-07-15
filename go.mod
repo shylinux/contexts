@@ -9,14 +9,12 @@ go 1.13
 // 	shylinux.com/x/websocket => ./usr/websocket
 // 	shylinux.com/x/webview => ./usr/webview
 // )
-//
-// replace (
-// 	shylinux.com/x/ice => ./usr/release
-// 	shylinux.com/x/icebergs => ./usr/icebergs
-// 	shylinux.com/x/toolkits => ./usr/toolkits
-// )
 
-// replace shylinux.com/x/icons => ./usr/icons
+replace (
+	shylinux.com/x/ice => ./usr/release
+	shylinux.com/x/icebergs => ./usr/icebergs
+	shylinux.com/x/toolkits => ./usr/toolkits
+)
 
 require (
 	shylinux.com/x/ice v1.3.6
