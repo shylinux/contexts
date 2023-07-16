@@ -15,6 +15,8 @@ body.dark {
 	--panel-output-fg-color:var(--body-fg-color);
 	--plugin-bg-color:var(--body-bg-color);
 	--plugin-fg-color:var(--body-fg-color);
+	/* --plugin-border-color:dimgray; */
+	--plugin-border-color:#404141;
 	--plugin-radius:var(--input-radius);
 
 	--float-fg-color:var(--plugin-fg-color);

@@ -8,11 +8,9 @@ main() {
 			;;
 		dev) # 开发环境
 			shift && prepare_system; require miss.sh; [ -f ~/.gitconfig ] || ish_dev_git_prepare
-			if [ -n "$ctx_pod" ]; then
-				git clone $ctx_dev/chat/pod/$ctx_pod; cd $ctx_pod && source etc/miss.sh dev dev "$@"
-			else
-				git clone $ctx_dev contexts; cd contexts && source etc/miss.sh dev dev "$@"
-			fi
+			git config --global "url.$ctx_dev/x/.insteadof" "${ctx_repos%/*}/"
+			git clone $ctx_repos ${ctx_repos##*/}; cd ${ctx_repos##*/} && source etc/miss.sh
+			ish_miss_serve_log dev dev "$@"
 			;;
 		cmd) # 命令环境
 		   	ish_sys_dev_init >/dev/null; shift; [ -n "$*" ] && ish_sys_dev_run "$@"

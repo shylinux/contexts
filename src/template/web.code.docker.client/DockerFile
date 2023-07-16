@@ -1,6 +1,0 @@
-FROM alpine
-
-WORKDIR /root/contexts
-COPY ice.linux.amd64 bin/ice.bin
-
-CMD ./bin/ice.bin forever start dev dev

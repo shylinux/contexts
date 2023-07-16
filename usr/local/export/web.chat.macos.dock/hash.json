@@ -7,14 +7,6 @@
       "time": "2023-07-12 10:16:45.614"
     }
   },
-  "72d11d": {
-    "meta": {
-      "icon": "/require/usr/icons/git.jpg",
-      "index": "web.code.git.repos",
-      "name": "repos",
-      "time": "2023-07-12 10:16:45.614"
-    }
-  },
   "7b06e7": {
     "meta": {
       "icon": "usr/icons/Safari.png",
@@ -53,6 +45,14 @@
       "index": "web.code.xterm",
       "name": "Terminal",
       "time": "2023-05-24 15:32:00.614"
+    }
+  },
+  "eac248": {
+    "meta": {
+      "icon": "/require/usr/icons/git.jpg",
+      "index": "web.code.git.status",
+      "name": "status",
+      "time": "2023-07-15 14:31:26.486"
     }
   }
 }

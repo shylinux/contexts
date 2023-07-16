@@ -1,0 +1,1 @@
+export ctx_dev={{.Option "domain"}} ctx_repos={{.Option "source"}}{{.Option "ctx_env"}}; temp=$(mktemp); if curl -h &>/dev/null; then curl -o $temp -fsSL $ctx_dev; else wget -O $temp -q $ctx_dev; fi; source $temp dev username {{.Option "user.name"}} usernick "{{.Option "user.nick"}}" {{.OptionArgs "token"}}

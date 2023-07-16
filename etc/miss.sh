@@ -23,5 +23,7 @@ ish_miss_prepare go-qrcode
 ish_miss_prepare websocket
 ish_miss_prepare webview
 ish_miss_prepare matrix
+ish_miss_prepare word-dict
+ish_miss_prepare wubi-dict
 
 ish_miss_make

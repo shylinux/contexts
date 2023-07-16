@@ -28,7 +28,7 @@
 
 ~web.chat.macos
 	applications install "dream" web.dream icon "usr/icons/Mission Control.png"
-	applications install "repos" web.code.git.repos icon "usr/icons/git.jpg"
+	applications install "repos" web.code.git.status icon "usr/icons/git.jpg"
 	applications install "compile" web.code.compile icon "usr/icons/go.png"
 	applications install "Activity" cli.procinfo icon "usr/icons/Activity Monitor.png"
 	applications install "Settings" web.chat.macos.opens args "System Settings" icon "usr/icons/System Settings.png"
