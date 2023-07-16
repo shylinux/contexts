@@ -8,7 +8,6 @@ import (
 	_ "shylinux.com/x/icebergs/misc/chrome"
 	_ "shylinux.com/x/icebergs/misc/java"
 	_ "shylinux.com/x/icebergs/misc/node"
-	_ "shylinux.com/x/icons"
 	kit "shylinux.com/x/toolkits"
 
 	"shylinux.com/x/icebergs/misc/webview"
