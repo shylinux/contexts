@@ -10,20 +10,20 @@ ish_miss_prepare_develop
 ish_miss_prepare_project
 
 ish_miss_prepare_contexts
-ish_miss_prepare_intshell
-ish_miss_prepare_learning
-ish_miss_prepare_volcanos
-ish_miss_prepare_toolkits
-ish_miss_prepare_icebergs
-ish_miss_prepare release
+# ish_miss_prepare_intshell
+# ish_miss_prepare_learning
+# ish_miss_prepare_volcanos
+# ish_miss_prepare_toolkits
+# ish_miss_prepare_icebergs
+# ish_miss_prepare release
 
-ish_miss_prepare icons
-ish_miss_prepare go-git
-ish_miss_prepare go-qrcode
-ish_miss_prepare websocket
-ish_miss_prepare webview
-ish_miss_prepare matrix
-ish_miss_prepare word-dict
-ish_miss_prepare wubi-dict
+# ish_miss_prepare icons
+# ish_miss_prepare go-git
+# ish_miss_prepare go-qrcode
+# ish_miss_prepare websocket
+# ish_miss_prepare webview
+# ish_miss_prepare matrix
+# ish_miss_prepare wubi-dict
+# ish_miss_prepare word-dict
 
 ish_miss_make

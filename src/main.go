@@ -6,7 +6,6 @@ import (
 	_ "shylinux.com/x/icebergs/misc/chrome"
 	_ "shylinux.com/x/icebergs/misc/java"
 	_ "shylinux.com/x/icebergs/misc/node"
-	_ "shylinux.com/x/icons"
 )
 
 func main() { print(ice.Run()) }
