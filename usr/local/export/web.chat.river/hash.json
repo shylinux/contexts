@@ -15,12 +15,6 @@
             "index": "web.code.docker.client",
             "space": "20230511-docker-story",
             "time": "2023-07-21 18:29:04.335"
-          },
-          {
-            "id": 3,
-            "index": "web.code.docker.server",
-            "space": "20230511-docker-story",
-            "time": "2023-07-21 18:29:17.329"
           }
         ],
         "meta": {
@@ -37,7 +31,7 @@
       "name": "cloud",
       "text": "hello",
       "time": "2023-07-21 18:28:25.227",
-      "type": "root"
+      "type": "tech"
     }
   },
   "657d37": {
