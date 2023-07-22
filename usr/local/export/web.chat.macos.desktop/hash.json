@@ -23,6 +23,15 @@
       "time": "2023-05-24 15:32:00.608"
     }
   },
+  "859fcd": {
+    "meta": {
+      "icon": "/require/src/client/docker.png?pod=20230511-docker-story",
+      "index": "web.code.docker.client",
+      "name": "client",
+      "space": "20230511-docker-story",
+      "time": "2023-07-21 18:22:57.599"
+    }
+  },
   "dfd878": {
     "meta": {
       "args": "month",
