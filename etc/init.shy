@@ -24,7 +24,6 @@
 	binpack insert usr/node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js
 	binpack insert usr/node_modules/html2canvas/dist/html2canvas.min.js
 	binpack insert usr/node_modules/bootstrap-icons/font/
-	binpack insert usr/local/export/
 	binpack insert usr/icons/
 
 ~ssh

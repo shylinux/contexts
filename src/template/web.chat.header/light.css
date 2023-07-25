@@ -32,4 +32,5 @@ body.light {
 	--tr-hover-bg-color:var(--hover-bg-color);
 
 	--code-fg-color:white;
+	--box-shadow:gray 3px 3px 10px;
 }
