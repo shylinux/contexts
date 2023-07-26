@@ -9,7 +9,7 @@ Volcanos({river: {
 		issue: {name: "发布 issue", icon: "bi bi-list-check", index: ["web.code.compile", "web.code.publish", "web.code.bench", "web.code.pprof", "web.dream", "web.space", "web.code.git.service", "web.code.git.status"]},
 	}},
 	operate: {name: "运维群", icon: "bi bi-gear", type: aaa.TECH, storm: {
-		web: {name: "应用 web", icon: "bi bi-browser-chrome", index: ["broad", "serve", "space", "dream", "share"]},
+		web: {name: "应用 web", icon: "bi bi-browser-chrome", index: ["broad", "serve", "space", "dream", "share", "count"]},
 		aaa: {name: "权限 aaa", icon: "bi bi-people-fill", index: ["offer", "email", "user", "totp", "sess", "role"]},
 		cli: {name: "系统 cli", icon: "bi bi-windows", index: ["qrcode", "daemon", "runtime", "cli.procstat", "cli.procinfo", "mirrors", "signal", "timer", "routine", "log.debug"]},
 		nfs: {name: "文件 nfs", icon: "bi bi-server", index: ["dir", "cat", "tar", "pack", "tail", "trash", "server", "host", "port"]},
