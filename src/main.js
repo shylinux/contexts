@@ -1,6 +1,6 @@
 Volcanos({river: {
 	product: {name: "产品群", icon: "bi bi-bar-chart-line-fill", storm: {
-		office: {name: "办公 office", icon: "bi bi-bar-chart-line-fill",  index: ["web.wiki.portal", "web.chat.macos.desktop", "web.wiki.feel", "web.wiki.draw"]},
+		office: {name: "办公 office", icon: "bi bi-bar-chart-line-fill",  index: ["web.wiki.portal", "web.chat.macos.desktop", "web.wiki.feel", "web.chat.flows", "web.wiki.draw"]},
 	}},
 	project: {name: "研发群", icon: "bi bi-git", storm: {
 		studio: {name: "研发 studio", icon: "bi bi-git", index: ["web.code.vimer", "web.code.git.status", "web.chat.favor", "web.team.plan", "web.wiki.word"]},
