@@ -23,6 +23,14 @@
       "time": "2023-05-24 15:32:00.608"
     }
   },
+  "ae5978": {
+    "meta": {
+      "icon": "/require/usr/icons/flows.png",
+      "index": "web.chat.flows",
+      "name": "flows",
+      "time": "2023-07-30 23:59:25.139"
+    }
+  },
   "dfd878": {
     "meta": {
       "args": "month",
