@@ -1,3 +1,5 @@
+body.light.cmd { --body-bg-color:aliceblue; }
+body.white.cmd { --body-bg-color:white; }
 body.light {
 	--body-bg-color:#4a566e; --body-fg-color:black;
 
@@ -32,5 +34,5 @@ body.light {
 	--tr-hover-bg-color:var(--hover-bg-color);
 
 	--code-fg-color:white;
-	--box-shadow:gray 3px 3px 10px;
+	--box-shadow:gray 2px 2px 8px;
 }
