@@ -1,4 +1,11 @@
 title "Contexts"
+refer `
+https://www.unicode.org/charts/PDF/
+https://www.unicode.org/charts/PDF/U0000.pdf
+https://www.unicode.org/charts/PDF/U2300.pdf
+https://www.unicode.org/charts/PDF/U25A0.pdf
+https://www.unicode.org/charts/PDF/U2600.pdf
+`
 chapter "实践"
 label `
 code wiki chat team mall
