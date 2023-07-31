@@ -24,7 +24,11 @@
 	binpack insert usr/node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js
 	binpack insert usr/node_modules/html2canvas/dist/html2canvas.min.js
 	binpack insert usr/node_modules/bootstrap-icons/font/
+	binpack insert usr/local/export/web.chat.flows/
 	binpack insert usr/icons/
+
+~web.chat.macos
+	applications install "" web.route icon usr/icons/route.png
 
 ~ssh
 	source local.shy
