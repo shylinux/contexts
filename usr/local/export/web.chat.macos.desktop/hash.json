@@ -23,22 +23,6 @@
       "time": "2023-05-24 15:32:00.608"
     }
   },
-  "9cd5d2": {
-    "meta": {
-      "icon": "/require/usr/icons/info.png",
-      "index": "runtime",
-      "name": "runtime",
-      "time": "2023-07-31 09:19:45.235"
-    }
-  },
-  "ae5978": {
-    "meta": {
-      "icon": "/require/usr/icons/flows.png",
-      "index": "web.chat.flows",
-      "name": "flows",
-      "time": "2023-07-30 23:59:25.139"
-    }
-  },
   "dfd878": {
     "meta": {
       "args": "month",
