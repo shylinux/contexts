@@ -1,58 +1,50 @@
 {
-  "5bd63f": {
+  "672e5c": {
     "meta": {
-      "icon": "/require/usr/icons/go.png",
-      "index": "web.code.compile",
-      "name": "compile",
-      "time": "2023-07-12 10:16:45.614"
+      "icon": "usr/icons/git.jpg",
+      "index": "web.code.git.status",
+      "name": "status",
+      "time": "2023-08-03 09:42:37.310"
     }
   },
-  "7b06e7": {
+  "8003c1": {
+    "meta": {
+      "icon": "usr/icons/go.png",
+      "index": "web.code.compile",
+      "name": "compile",
+      "time": "2023-08-03 09:42:37.310"
+    }
+  },
+  "875ef2": {
     "meta": {
       "icon": "usr/icons/Safari.png",
       "index": "web.chat.iframe",
       "name": "Safari",
-      "time": "2023-05-24 15:32:00.613"
+      "time": "2023-08-03 09:42:37.309"
     }
   },
-  "90ef94": {
-    "meta": {
-      "icon": "/require/usr/icons/Mission Control.png",
-      "index": "dream",
-      "name": "dream",
-      "time": "2023-07-31 09:19:45.235"
-    }
-  },
-  "99baca": {
-    "meta": {
-      "icon": "usr/icons/vimer.png",
-      "index": "web.code.vimer",
-      "name": "vimer",
-      "time": "2023-05-24 15:32:00.615"
-    }
-  },
-  "d5df43": {
+  "ad6e4f": {
     "meta": {
       "icon": "usr/icons/Finder.png",
       "index": "web.chat.macos.finder",
       "name": "Finder",
-      "time": "2023-05-24 15:32:00.612"
+      "time": "2023-08-03 09:42:37.309"
     }
   },
-  "e615d4": {
+  "b1d8f4": {
+    "meta": {
+      "icon": "usr/icons/vimer.png",
+      "index": "web.code.vimer",
+      "name": "vimer",
+      "time": "2023-08-03 09:42:37.309"
+    }
+  },
+  "fd7492": {
     "meta": {
       "icon": "usr/icons/Terminal.png",
       "index": "web.code.xterm",
       "name": "Terminal",
-      "time": "2023-05-24 15:32:00.614"
-    }
-  },
-  "eac248": {
-    "meta": {
-      "icon": "/require/usr/icons/git.jpg",
-      "index": "web.code.git.status",
-      "name": "status",
-      "time": "2023-07-15 14:31:26.486"
+      "time": "2023-08-03 09:42:37.309"
     }
   }
 }
