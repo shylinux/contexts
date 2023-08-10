@@ -5,11 +5,11 @@ import (
 )
 
 type {{.Option "name"}} struct {
-	list string `name:"list path auto" help:"示例"`
+	list string `name:"list name auto" help:"示例"`
 }
 
 func (s {{.Option "name"}}) List(m *ice.Message, arg ...string) {
 	m.Echo("hello world")
 }
 
-func init() { ice.Cmd("{{.Option "key"}}", {{.Option "name"}}{}) }
+func init() { ice.CodeModCmd({{.Option "name"}}{}) }

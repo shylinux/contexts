@@ -1,0 +1,9 @@
+chapter "golang-story"
+brief `基于 Contexts 开发的，Golang 管理工具，包括客户端、安装器、集群管理工具等。`
+table `
+模块 命令 功能
+`
+shell `
+git clone https://shylinux.com/x/golang-story
+cd golang-story; source etc/miss.sh
+`
