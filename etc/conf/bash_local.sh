@@ -2,6 +2,8 @@
 
 touch ~/.hushlogin
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export TZ=Asia/Shanghai
+export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export CGO_ENABLED=0
